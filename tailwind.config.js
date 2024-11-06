@@ -38,6 +38,13 @@ module.exports = {
       c1_caption: '12px',
       c2_caption: '12px',
       c3_caption: '10px',
+      buttonText: '14px',
+    },
+    fontFamily:{
+      subtitleFont: ['Open Sans', 'sans-serif'],
+      bodyFont: ['Roboto', 'sans-serif'],
+      captionFont: ['Roboto', 'sans-serif'],
+      buttonFont: ['Roboto', 'sans-serif'],
     }
   },
   plugins: [],
