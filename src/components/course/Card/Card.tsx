@@ -8,7 +8,6 @@ interface CardProps {
 }
 
 
-// todo: cva?
 const Card: React.FC<CardProps> = ({ image, title, description, altText = 'Image' }) => {
     return (
         <div className="flex flex-row items-center p-4 bg-white rounded-lg shadow-md max-w-md">
