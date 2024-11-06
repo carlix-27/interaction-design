@@ -7,7 +7,7 @@ const buttonVariant = cva(['w-full sm:w-fit', 'rounded-lg'], {
         variant:{
             fulfilled:[
                 'bg-primary-500 text-grey-50',
-                'active: bg-primary-800 text-grey-50',
+                'focus: bg-primary-800 text-grey-50',
             ],
             outlined:[
                 'bg-grey-50 text-primary-500 border border-grey-50',

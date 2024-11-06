@@ -1,5 +1,4 @@
 import type { StorybookConfig } from "@storybook/react-webpack5";
-import '../src/index.css'
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -18,6 +17,6 @@ const config: StorybookConfig = {
   docs: {
      autodocs: "tag",
   },
-  staticDirs: ["..\\public"],
+  staticDirs: ["../public"],
 };
 export default config;
