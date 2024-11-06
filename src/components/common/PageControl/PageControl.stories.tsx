@@ -1,8 +1,6 @@
 import React from 'react';
 import {Meta, StoryObj} from "@storybook/react";
 import {PageControl} from "./PageControl";
-import Card from "../../course/Card/Card";
-import Button from "../Button";
 
 const meta: Meta<typeof PageControl> = {
     title: 'PageControl',

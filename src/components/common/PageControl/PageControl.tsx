@@ -1,7 +1,6 @@
 import React from "react";
-import {cva, VariantProps} from "class-variance-authority";
+import { cva } from "class-variance-authority";
 
-// todo: Como englobo los dots en la estructura que tienen?
 
 interface PageControlProps{
     totalDots: number;
