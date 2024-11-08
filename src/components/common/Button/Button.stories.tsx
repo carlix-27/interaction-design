@@ -7,7 +7,7 @@ const meta: Meta<typeof Button> = {
     tags: ['autodocs'],
     argTypes: {
         variant: {
-            options:['fulfilled', 'outlined', 'ghost'],
+            options:['fulfilled', 'focus', 'outlined', 'active','ghost', 'disabled'],
             control:{type:'select'},
             defaultValue:'fulfilled'
         },
@@ -34,12 +34,27 @@ export const Fulfilled: Story = {
 
 }
 
+export const Focus: Story = {
+    name: 'Focus',
+    render:(args) => <Button variant={'focus'} {...args}>Button</Button>
+}
+
 export const Outlined: Story = {
     name: 'Outlined',
     render: (args) => <Button variant={'outlined'} {...args}>Button</Button>
 }
 
+export const Active: Story = {
+    name: 'Active',
+    render: (args) => <Button variant={'active'} {...args}>Button</Button>
+}
+
 export const Ghost: Story = {
     name: 'Ghost',
     render: (args) => <Button variant={'ghost'} {...args}>Button</Button>
+}
+
+export const Disabled: Story = {
+    name: 'Disabled',
+    render: (args) => <Button variant={'disabled'} {...args}>Button</Button>
 }

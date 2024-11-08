@@ -7,20 +7,25 @@ const buttonVariant = cva(['w-full sm:w-fit', 'rounded-lg'], {
         variant:{
             fulfilled:[
                 'bg-primary-500 text-grey-50',
+            ],
+            focus: [
                 'focus: bg-primary-800 text-grey-50',
             ],
             outlined:[
                 'bg-grey-50 text-primary-500 border border-grey-50',
+            ],
+            active: [
                 'active: bg-primary-100 text-primary-500 border border-primary-100',
-                'disabled: text-grey-400 border border-grey-50',
             ],
             ghost:[
                 'bg-transparent text-primary-500',
-                'disabled: text-grey-400',
             ],
+            disabled:[
+                'disabled: bg-grey-50 text-grey-400 border border-grey-50',
+            ]
         },
         size:{
-            medium:['px-8 py-0 text-buttonText font-buttonFont'],
+            medium:['px-8 py-1 drop-shadow-md rounded-2xl text-buttonText font-buttonFont'],
         }
     },
     defaultVariants:{

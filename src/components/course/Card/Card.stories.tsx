@@ -15,17 +15,17 @@ type CardStories = StoryObj<typeof Card>;
 
 export const InstructorCard: CardStories = {
     name: 'InstructorCard',
-    render: args => <Card image={'https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4='} title={'John Marston'} description={'Especialista en diseño UX/UI\\nConocimiento profesional de Javascript'}></Card>
+    render: args => <Card image={'circle-profile-avatar.png'} title={'John Marston'} description={'Especialista en diseño UX/UI. Conocimiento profesional de Javascript'} type={'instructor'}></Card>
 }
 
 export const ProjectCard: CardStories = {
     name: 'ProjectCard',
-    render: args => <Card image={''} title={'Proyecto 1'} description={'Calculadora básica'}></Card>
+    render: args => <Card image={'https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg'} title={'Proyecto 1'} description={'Calculadora básica'} type={'unit/project'}></Card>
 
 }
 
 export const UnitCard: CardStories = {
     name: 'UnitCard',
-    render: args => <Card image={''} title={'Unidad 1'} description={'En esta unidad comenzarás tus primeros pasos en Javascript'}></Card>
+    render: args => <Card image={'https://upload.wikimedia.org/wikipedia/commons/a/a4/JavaScript_code.png'} title={'Unidad 1'} description={'En esta unidad comenzarás tus primeros pasos en Javascript'} type={'unit/project'}></Card>
 
 }
