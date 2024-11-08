@@ -9,16 +9,16 @@ interface CommentProps {
 
 const Comment: React.FC<CommentProps> = ({ authorName, content, authorIcon, isOnline = false }) => {
     return (
-        <div className="comment-container bg-white p-4 rounded-2xl shadow-md flex items-center">
+        <div className="comment-container bg-grey-50 p-4 w-2/4 rounded-3xl shadow-md flex items-center">
             <div className="relative mr-4">
                 <img
                     src={authorIcon}
                     alt="Author Icon"
-                    className="w-12 h-12 rounded-full"
+                    className="w-16 h-16 rounded-full"
                     style={{ backgroundColor: '#3f51b5' }}
                 />
                 {isOnline && (
-                    <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
+                    <span className="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></span>
                 )}
             </div>
             <div>
