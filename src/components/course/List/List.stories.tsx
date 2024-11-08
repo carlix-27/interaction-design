@@ -19,7 +19,7 @@ export const DropDown: ListStories = {
         show_details: true,
     },
     name: 'DropDown',
-    render: (args) => <List title={args.title} details={args.details} show_details={args.show_details}></List>
+    render: (args) => <List title={args.title} details={args.details} show_details={args.show_details} type='drop-down'></List>
 }
 
 export const RequirementList: ListStories = {
@@ -29,5 +29,6 @@ export const RequirementList: ListStories = {
         show_details: false,
     },
     name: 'RequirementList',
-    render: (args) => <List title={args.title} details={args.details} show_details={args.show_details}></List>
+    render: (args) => <List title={args.title} details={args.details} show_details={args.show_details} type='list'></List>
 }
+
