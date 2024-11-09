@@ -1,48 +1,57 @@
-import React from 'react';
-import { Meta, StoryObj } from "@storybook/react";
-import Pill, { PillProps } from "./Pill";
+import { Meta, StoryObj } from '@storybook/react';
+import Pill from './Pill'; // Asegúrate de que la ruta sea correcta
 
-// Meta configuración para Storybook
+// Configuración de los metadatos para Storybook
 const meta: Meta<typeof Pill> = {
-    title: 'Components/Pill',
+    title: 'Componentes/Pill', // Nombre del componente en el menú de Storybook
     component: Pill,
     argTypes: {
         variant: {
             control: 'select',
-            options: ['default', 'selected', 'disabled'], // Opciones para cambiar la variante
+            options: ['default', 'selected', 'disabled'],
+            description: 'El estilo o estado de la píldora',
+            defaultValue: 'default',
         },
-        label: {
+        size: {
+            control: 'select',
+            options: ['small', 'medium', 'large'],
+            description: 'El tamaño de la píldora',
+            defaultValue: 'medium',
+        },
+        children: {
             control: 'text',
+            description: 'Contenido dentro de la píldora',
+            defaultValue: 'Texto de ejemplo',
         },
-    }
+    },
 };
 
 export default meta;
 
-// Tipo de template para las variantes de Pill
 type Story = StoryObj<typeof Pill>;
 
-// Variantes para mostrar en Storybook
+// Definir cada una de las variantes como una historia independiente
+
 export const Default: Story = {
-    name: 'Default',
     args: {
         variant: 'default',
-        label: 'Default Pill',
+        size: 'medium',
+        children: 'Default',
     },
 };
 
 export const Selected: Story = {
-    name: 'Selected',
     args: {
         variant: 'selected',
-        label: 'Selected Pill',
+        size: 'medium',
+        children: 'Selected',
     },
 };
 
 export const Disabled: Story = {
-    name: 'Disabled',
     args: {
         variant: 'disabled',
-        label: 'Disabled Pill',
+        size: 'medium',
+        children: 'Disabled',
     },
 };
