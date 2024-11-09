@@ -1,10 +1,9 @@
-import React from "react";
 import { Meta, StoryObj } from '@storybook/react';
-import CourseCard, { CourseCardProps } from "./CourseCard";
+import CourseCard from "./CourseCard";
 
 const meta: Meta<typeof CourseCard> = {
-    title: "CourseCard",  // Título de la historia en Storybook
-    component: CourseCard, // El componente que Storybook mostrará
+    title: "CourseCard",
+    component: CourseCard,
     argTypes: {
         title: { control: "text" },
         description: { control: "text" },
@@ -17,7 +16,7 @@ const meta: Meta<typeof CourseCard> = {
     },
 };
 
-export default meta; // Esta es la exportación por defecto que espera ESLint
+export default meta;
 
 type Story = StoryObj<typeof CourseCard>;
 

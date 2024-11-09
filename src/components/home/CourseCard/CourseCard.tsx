@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from "react";
 import { cva, VariantProps } from "class-variance-authority";
 
 const cardVariant = cva(
-    ['flex flex-col justify-center items-center rounded-lg bg-white'],
+    ['flex flex-col justify-center items-center rounded-[16px] bg-white'],
     {
         variants: {
             shadow: {
@@ -31,7 +31,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ title, description, size, image
     return (
         <div className={cardVariant({ size, shadow})} {...rest}>
             <div className="h-[86px]">
-                <img src={image} alt={title} className="w-full h-full object-cover rounded-t-lg"/>
+                <img src={image} alt={title} className="w-full h-full object-cover rounded-t-[16px]"/>
             </div>
             <div className="text-center min-h-[40px] flex flex-col py-2 px-4 justify-center items-center self-stretch">
                 <h3 className="text-gray-950 text-b2_bodyBold font-semibold">{title}</h3>
