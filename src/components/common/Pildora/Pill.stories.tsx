@@ -3,7 +3,7 @@ import Pill from './Pill'; // Asegúrate de que la ruta sea correcta
 
 // Configuración de los metadatos para Storybook
 const meta: Meta<typeof Pill> = {
-    title: 'Componentes/Pill', // Nombre del componente en el menú de Storybook
+    title: 'Pill', // Nombre del componente en el menú de Storybook
     component: Pill,
     argTypes: {
         variant: {
