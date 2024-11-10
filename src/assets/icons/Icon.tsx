@@ -87,6 +87,44 @@ const Icon: React.FC<IconProps> = ({ name }) => {
                     stroke="#A80CE8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
+        case 'medal-gold':
+            return <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 2L9 8" stroke="#FFA500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 2L15 8" stroke="#FFA500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2L12 8" stroke="#FFA500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                <circle cx="12" cy="14" r="6" fill="none" stroke="#FFA500" stroke-width="2"/>
+
+                <text x="12" y="17" text-anchor="middle" font-size="8" font-family="Arial" fill="#FFA500">1</text>
+            </svg>
+
+        case 'medal-silver':
+            return <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 2L9 8" stroke="#6D717F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 2L15 8" stroke="#6D717F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2L12 8" stroke="#6D717F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="14" r="6" fill="none" stroke="#6D717F" stroke-width="2"/>
+                <text x="12.1" y="17" text-anchor="middle" font-size="8" font-family="Arial" fill="#6D717F">2</text>
+            </svg>
+
+        case 'medal-bronze':
+            return <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 2L9 8" stroke="#CD7F32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 2L15 8" stroke="#CD7F32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2L12 8" stroke="#CD7F32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="14" r="6" fill="none" stroke="#CD7F32" stroke-width="2"/>
+                <text x="12" y="16.5" text-anchor="middle" font-size="8" font-family="Arial" fill="#CD7F32">3</text>
+            </svg>
+
+        case 'medal-default':
+            return <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 2L9 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 2L15 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2L12 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="14" r="6" fill="none" stroke="#000000" stroke-width="2"/>
+            </svg>
+
+
         case 'list':
             return <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                 <path d="M8.5 6L20.5 6" stroke="#A80CE8" stroke-width="1.5" stroke-linecap="round"
