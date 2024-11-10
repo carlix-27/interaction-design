@@ -1,12 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Button from "./components/common/Button";
+import React from "react";
+import "./App.css";
+import VisualizeContent from "./pages/VisualizeContent";
 
 function App() {
   return (
     <div className="App">
-      <Button>Hola</Button>
+      <VisualizeContent />
     </div>
   );
 }
