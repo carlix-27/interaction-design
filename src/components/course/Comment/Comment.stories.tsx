@@ -8,7 +8,6 @@ const meta: Meta<typeof Comment> = {
     argTypes: {
         authorName: { control: 'text' },
         content: { control: 'text' },
-        authorIcon: { control: 'text' },
         isOnline: { control: 'boolean' },
     }
 }
@@ -21,11 +20,10 @@ export const ActiveComment: Template = {
     args: {
         authorName: "Alan Walker",
         content:'Un curso muy entretenido y muy variado en su contenido.',
-        authorIcon: 'man_thinking_avatar.png',
         isOnline: true
     },
 
     name: 'ActiveComment',
-    render: (args) => <Comment authorName={args.authorName} content={args.content} authorIcon={args.authorIcon} isOnline={args.isOnline}></Comment>
+    render: (args) => <Comment authorName={args.authorName} content={args.content} isOnline={args.isOnline}></Comment>
 }
 
