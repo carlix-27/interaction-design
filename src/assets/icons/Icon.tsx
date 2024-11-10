@@ -64,6 +64,19 @@ const Icon: React.FC<IconProps> = ({ name }) => {
                     stroke="#131927" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
+        case 'bell-notification':
+            return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path
+                    d="M18.1336 11.5C18.7155 16.8755 21 18.5 21 18.5H3C3 18.5 6 16.3667 6 8.9C6 7.20261 6.63214 5.57475 7.75736 4.37452C8.88258 3.17428 10.4087 2.5 12 2.5C12.3373 2.5 12.6717 2.5303 13 2.58949"
+                    stroke="#131927" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path
+                    d="M19 8.5C20.6569 8.5 22 7.15685 22 5.5C22 3.84315 20.6569 2.5 19 2.5C17.3431 2.5 16 3.84315 16 5.5C16 7.15685 17.3431 8.5 19 8.5Z"
+                    stroke="#A80CE8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path
+                    d="M13.7295 21.5C13.5537 21.8031 13.3014 22.0547 12.9978 22.2295C12.6941 22.4044 12.3499 22.4965 11.9995 22.4965C11.6492 22.4965 11.3049 22.4044 11.0013 22.2295C10.6977 22.0547 10.4453 21.8031 10.2695 21.5"
+                    stroke="#131927" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
         case 'house-solid':
             return <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                 <g clip-path="url(#clip0_2892_407)">
@@ -164,7 +177,6 @@ const Icon: React.FC<IconProps> = ({ name }) => {
 
         case 'man_with_dog':
             return <img src="/man_with_dog.svg" alt="Man with dog Avatar" className="w-full h-full"/>
-
 
 
         default:
