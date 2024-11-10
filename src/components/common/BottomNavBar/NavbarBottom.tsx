@@ -1,4 +1,4 @@
-// BottomNavBar.tsx
+// NavbarBottom.tsx
 import React from 'react';
 import Icon from "../../../assets/icons/Icon";
 
@@ -7,7 +7,7 @@ export interface BottomNavBarProps {
     onButtonClick: (button: 'home' | 'list' | 'user') => void;
 }
 
-const BottomNavBar: React.FC<BottomNavBarProps> = ({ activeButton, onButtonClick }) => {
+const NavbarBottom: React.FC<BottomNavBarProps> = ({ activeButton, onButtonClick }) => {
     const buttonClasses = "flex flex-col items-center flex-1 justify-center relative";
 
     return (
@@ -51,4 +51,4 @@ const BottomNavBar: React.FC<BottomNavBarProps> = ({ activeButton, onButtonClick
     );
 };
 
-export default BottomNavBar;
+export default NavbarBottom;

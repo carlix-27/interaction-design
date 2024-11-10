@@ -1,11 +1,11 @@
-// BottomNavBar.stories.tsx
+// NavbarBottom.stories.tsx
 import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import BottomNavBar, { BottomNavBarProps } from './BottomNavBar';
+import NavbarBottom, { BottomNavBarProps } from './NavbarBottom';
 
-const meta: Meta<typeof BottomNavBar> = {
-    title: 'Components/BottomNavBar',
-    component: BottomNavBar,
+const meta: Meta<typeof NavbarBottom> = {
+    title: 'Components/NavbarBottom',
+    component: NavbarBottom,
     argTypes: {
         activeButton: {
             control: {
@@ -27,7 +27,7 @@ export const HomeActive: Story = {
     render: (args) => {
         const [activeButton, setActiveButton] = useState(args.activeButton);
         return (
-            <BottomNavBar
+            <NavbarBottom
                 {...args}
                 activeButton={activeButton}
                 onButtonClick={setActiveButton}
@@ -43,7 +43,7 @@ export const ListActive: Story = {
     render: (args) => {
         const [activeButton, setActiveButton] = useState(args.activeButton);
         return (
-            <BottomNavBar
+            <NavbarBottom
                 {...args}
                 activeButton={activeButton}
                 onButtonClick={setActiveButton}
@@ -59,7 +59,7 @@ export const UserActive: Story = {
     render: (args) => {
         const [activeButton, setActiveButton] = useState(args.activeButton);
         return (
-            <BottomNavBar
+            <NavbarBottom
                 {...args}
                 activeButton={activeButton}
                 onButtonClick={setActiveButton}
