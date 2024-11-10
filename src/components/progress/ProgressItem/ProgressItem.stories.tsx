@@ -32,3 +32,10 @@ Default.args = {
   name: "Top Performer",
   percentage: 75,
 };
+
+export const SilverMedal = Template.bind({});
+SilverMedal.args = {
+  medalType: "silver",
+  name: "Second performer",
+  percentage: 75,
+};

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export interface ProgressBarProps {
   progress: number; // expects a percentage value (0-100)
@@ -10,12 +10,12 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ progress, type }) => {
     <div
       className={
         type === "rounded-top"
-          ? "w-full bg-grey-50 rounded-b-lg h-4 overflow-hidden"
-          : "w-full bg-grey-50 rounded-full h-4 overflow-hidden"
+          ? "w-full bg-grey-50 rounded-b-lg h-2 overflow-hidden"
+          : "w-full bg-grey-50 rounded-full h-2 overflow-hidden"
       }
     >
       <div
-        className="bg-primary-500 h-full rounded-bl-lg transition-all duration-500 ease-out"
+        className="bg-primary-500 h-full rounded-lg transition-all duration-500 ease-out"
         style={{ width: `${progress}%` }}
       ></div>
     </div>

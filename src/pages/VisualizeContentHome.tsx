@@ -3,16 +3,18 @@ import Button from "../components/common/Button";
 import List from "../components/course/List/List";
 import Card from "../components/course/Card/Card";
 import { PageControl } from "../components/common/PageControl/PageControl";
+import { iconList } from "../assets/icons/icon_list";
+import Icon from "../assets/icons/Icon";
+import { Link } from "react-router-dom";
 
-function VisualizeContent() {
-  // @ts-ignore
+function VisualizeContentHome() {
   return (
     <div>
       <h1 className={"font-bodyFont"}>Navbar</h1>
       <div className={"grid gap-y-4 px-8"}>
         <div>
           <p className={"font-subtitleFont text-left"}>Vista Previa</p>
-          {/*<Video />*/}
+          <p>Video</p>
         </div>
         <div className={"grid gap-y-4"}>
           <p className={"font-subtitleFont text-left"}>
@@ -23,7 +25,9 @@ function VisualizeContent() {
             <Button variant={"outlined"}>UI/UX</Button>
             <Button variant={"outlined"}>Figma</Button>
           </div>
-          <Button variant={"fulfilled"}>Iniciar Curso</Button>
+          <Link to={"/course"}>
+            <Button variant={"fulfilled"}>Iniciar Curso</Button>
+          </Link>
         </div>
         <div className={"grid gap-y-4"}>
           <p className={"font-subtitleFont text-left"}>Requisitos</p>
@@ -34,7 +38,7 @@ function VisualizeContent() {
             type={"list"}
           ></List>
           <List
-            title={"Contexión a internet"}
+            title={"Conexión a internet"}
             details={"Detalles"}
             show_details={false}
             type={"list"}
@@ -53,7 +57,7 @@ function VisualizeContent() {
         </div>
         <div className={"grid gap-y-4"}>
           <p className={"font-subtitleFont text-left"}>Proyectos Destacados</p>
-          <div className={"grid gap-y-2 justify-center"}>
+          <div className={"grid gap-y-2 "}>
             <Card
               image={
                 "https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg"
@@ -62,18 +66,29 @@ function VisualizeContent() {
               description={"Calculadora básica"}
               type={"unit/project"}
             ></Card>
-            <PageControl totalDots={4} activePage={0} />
+            <div className={"inline-flex justify-center"}>
+              <PageControl totalDots={4} activePage={0} />
+            </div>
           </div>
         </div>
         <div>
           <p className={"font-subtitleFont text-left"}>
             Amigos que hacen este curso
           </p>
-          <div></div>
+          <div>
+            <div className={"flex gap-4"}>
+              <Icon name={iconList.avatarWoman} />
+              <Icon name={iconList.avatarManThinking} />
+              <Icon name={iconList.avatarWomanHeartSign} />
+            </div>
+            <div className={"inline-flex justify-center"}>
+              <PageControl totalDots={4} activePage={0} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default VisualizeContent;
+export default VisualizeContentHome;
