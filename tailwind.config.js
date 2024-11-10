@@ -46,10 +46,22 @@ module.exports = {
         captionFont: ["Roboto", "sans-serif"],
         buttonFont: ["Roboto", "sans-serif"],
       },
+      boxShadow: {
+        'custom-figma': '0px 4px 4px rgba(0, 0, 0, 0.25)', // Sombra personalizada para la imagen
+      },
+
     },
     animation: {
       spin: "spin 1s linear infinite",
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.text-shadow': {
+          textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+        },
+      })
+    }
+  ],
 };
