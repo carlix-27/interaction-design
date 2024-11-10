@@ -141,10 +141,35 @@ const Icon: React.FC<IconProps> = ({ name }) => {
                       stroke-linejoin="round"/>
             </svg>
 
+        case 'woman_avatar':
+            return <img src="/woman_avatar.svg" alt="Woman Avatar" className="w-full h-full"/>
+
+        case 'man_thinking':
+            return <img src="/man_thinking_avatar.svg" alt="Man Thinking Avatar" className="w-full h-full"/>
+
+        case 'woman_large_pink_hair':
+            return <img src="/woman_large_pink_hair.svg" alt="Woman Large Pink Hair Avatar" className="w-full h-full"/>
+
+        case 'woman_blue_dress':
+            return <img src="/woman_blue_dress.svg" alt="Woman Blue Dress Avatar" className="w-full h-full"/>
+
+        case 'woman_v_sign':
+            return <img src="/woman_v_sign.svg" alt="Woman V Avatar" className="w-full h-full"/>
+
+        case 'woman_heart_sign':
+            return <img src="/woman_heart_sign.svg" alt="Woman Heart Sign Avatar" className="w-full h-full"/>
+
+        case 'man_thumb_up':
+            return <img src="/man_thumb_up.svg" alt="Man Thumb Up Avatar" className="w-full h-full"/>
+
+        case 'man_with_dog':
+            return <img src="/man_with_dog.svg" alt="Man with dog Avatar" className="w-full h-full"/>
+
+
 
         default:
-                return null;
+            return null;
     }
 };
 
-                export default Icon;
+export default Icon;
