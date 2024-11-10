@@ -141,9 +141,10 @@ const Icon: React.FC<IconProps> = ({ name }) => {
                       stroke-linejoin="round"/>
             </svg>
 
+
         default:
-            return null;
+                return null;
     }
 };
 
-export default Icon;
+                export default Icon;
