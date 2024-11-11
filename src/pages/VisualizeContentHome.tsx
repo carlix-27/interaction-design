@@ -7,18 +7,30 @@ import { iconList } from "../assets/icons/icon_list";
 import Icon from "../assets/icons/Icon";
 import { Link } from "react-router-dom";
 import Comment from "../components/course/Comment/Comment";
+import NavbarTop from "../components/common/NavbarTop/NavbarTop";
+import NavbarBottom from "../components/common/BottomNavBar/NavbarBottom";
 
 function VisualizeContentHome() {
   return (
-    <div className={"bg-primary-50 h-full py-2"}>
-      <h1 className={"font-bodyFont"}>Navbar</h1>
-      <div className={"grid gap-y-4 px-8"}>
+    <div className={"grid gap-y-8 bg-primary-50 h-full"}>
+      <NavbarTop courseName={"JavaScript"} />
+      <div className={"grid gap-y-4 px-8 pb-24"}>
         <div>
-          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Vista Previa</p>
+          <p
+            className={
+              "font-subtitleFont text-left text-subtitle2 font-semibold"
+            }
+          >
+            Vista Previa
+          </p>
           <p>Video</p>
         </div>
         <div className={"grid gap-y-4"}>
-          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>
+          <p
+            className={
+              "font-subtitleFont text-left text-subtitle2 font-semibold"
+            }
+          >
             Habilidades que aprenderas
           </p>
           <div className={"flex gap-2"}>
@@ -31,7 +43,13 @@ function VisualizeContentHome() {
           </Link>
         </div>
         <div className={"grid gap-y-4"}>
-          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Requisitos</p>
+          <p
+            className={
+              "font-subtitleFont text-left text-subtitle2 font-semibold"
+            }
+          >
+            Requisitos
+          </p>
           <List
             title={"Computer"}
             icon={iconList.computer}
@@ -48,7 +66,13 @@ function VisualizeContentHome() {
           ></List>
         </div>
         <div className={"grid gap-y-4"}>
-          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Instructor</p>
+          <p
+            className={
+              "font-subtitleFont text-left text-subtitle2 font-semibold"
+            }
+          >
+            Instructor
+          </p>
           <Card
             image={"circle-profile-avatar.png"}
             title={"John Marston"}
@@ -59,7 +83,13 @@ function VisualizeContentHome() {
           ></Card>
         </div>
         <div className={"grid gap-y-4"}>
-          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Proyectos Destacados</p>
+          <p
+            className={
+              "font-subtitleFont text-left text-subtitle2 font-semibold"
+            }
+          >
+            Proyectos Destacados
+          </p>
           <div className={"grid gap-y-2"}>
             <Card
               image={
@@ -75,7 +105,11 @@ function VisualizeContentHome() {
           </div>
         </div>
         <div className={"grid gap-y-2"}>
-          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>
+          <p
+            className={
+              "font-subtitleFont text-left text-subtitle2 font-semibold"
+            }
+          >
             Amigos que hacen este curso
           </p>
           <div className={"grid gap-y-2"}>
@@ -90,14 +124,28 @@ function VisualizeContentHome() {
           </div>
         </div>
         <div className={"grid gap-y-2"}>
-          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Comentarios</p>
-          <Comment authorName={"Alan Walker"} content={"Un curso muy entretenido y muy variado en su contenido"} picture={iconList.avatarManThinking}/>
+          <p
+            className={
+              "font-subtitleFont text-left text-subtitle2 font-semibold"
+            }
+          >
+            Comentarios
+          </p>
+          <Comment
+            authorName={"Alan Walker"}
+            content={"Un curso muy entretenido y muy variado en su contenido"}
+            picture={iconList.avatarManThinking}
+          />
         </div>
         <div className={"flex gap-2 pt-4"}>
           <Button variant={"outlined"}>Volver arriba</Button>
           <Button variant={"fulfilled"}>Ver más reseñas</Button>
         </div>
       </div>
+      <NavbarBottom
+        activeButton={"home"}
+        onButtonClick={() => console.log("Test")}
+      />
     </div>
   );
 }

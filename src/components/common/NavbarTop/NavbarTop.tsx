@@ -15,10 +15,10 @@ const NavbarTop: React.FC<NavbarTopProps> = ({
                                                  onNotificationsClick,
                                              }) => {
     return (
-        <div className="inline-flex items-center w-[364px] h-[43px] gap-[56px]">
+        <div className="inline-flex items-center justify-center w-full h-fit gap-x-12 pt-10">
             {/* Icono de regresar */}
             <div
-                className="flex w-[37px] h-[37px] p-[3px_2px_3px_4px] justify-center items-center  shadow-custom-figma rounded-full bg-gray-50"
+                className="flex w-[37px] h-[37px] p-[3px_5px_3px_3px] justify-center items-center  shadow-custom-figma rounded-full bg-gray-50"
                 onClick={onBackClick}
             >
                 <Icon name="arrow-left" />
