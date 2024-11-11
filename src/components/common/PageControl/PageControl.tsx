@@ -7,7 +7,7 @@ interface PageControlProps {
 }
 
 const dotStyles = cva(
-  ["w-4 h-4 rounded-full mx-1.5 transition-color duration-300"],
+  ["w-3 h-3 rounded-full mx-1.5 transition-color duration-300"],
   {
     variants: {
       active: {
@@ -23,7 +23,7 @@ export const PageControl: React.FC<PageControlProps> = ({
   activePage,
 }) => {
   return (
-    <div className="flex items-center justify-center bg-grey-50 py-2 px-4 rounded-full w-fit">
+    <div className="flex items-center justify-center bg-grey-50 py-2 px-4 rounded-full w-fit h-6">
       {Array.from({ length: totalDots }).map((_, index) => (
         <span
           key={index}

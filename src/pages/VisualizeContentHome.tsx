@@ -6,18 +6,19 @@ import { PageControl } from "../components/common/PageControl/PageControl";
 import { iconList } from "../assets/icons/icon_list";
 import Icon from "../assets/icons/Icon";
 import { Link } from "react-router-dom";
+import Comment from "../components/course/Comment/Comment";
 
 function VisualizeContentHome() {
   return (
-    <div>
+    <div className={"bg-primary-50 h-full py-2"}>
       <h1 className={"font-bodyFont"}>Navbar</h1>
       <div className={"grid gap-y-4 px-8"}>
         <div>
-          <p className={"font-subtitleFont text-left"}>Vista Previa</p>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Vista Previa</p>
           <p>Video</p>
         </div>
         <div className={"grid gap-y-4"}>
-          <p className={"font-subtitleFont text-left"}>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>
             Habilidades que aprenderas
           </p>
           <div className={"flex gap-2"}>
@@ -30,9 +31,10 @@ function VisualizeContentHome() {
           </Link>
         </div>
         <div className={"grid gap-y-4"}>
-          <p className={"font-subtitleFont text-left"}>Requisitos</p>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Requisitos</p>
           <List
             title={"Computer"}
+            icon={iconList.computer}
             details={"100%"}
             show_details={false}
             type={"list"}
@@ -40,12 +42,13 @@ function VisualizeContentHome() {
           <List
             title={"Conexión a internet"}
             details={"Detalles"}
+            icon={iconList.wifi}
             show_details={false}
             type={"list"}
           ></List>
         </div>
-        <div>
-          <p className={"font-subtitleFont text-left"}>Instructor</p>
+        <div className={"grid gap-y-4"}>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Instructor</p>
           <Card
             image={"circle-profile-avatar.png"}
             title={"John Marston"}
@@ -56,8 +59,8 @@ function VisualizeContentHome() {
           ></Card>
         </div>
         <div className={"grid gap-y-4"}>
-          <p className={"font-subtitleFont text-left"}>Proyectos Destacados</p>
-          <div className={"grid gap-y-2 "}>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Proyectos Destacados</p>
+          <div className={"grid gap-y-2"}>
             <Card
               image={
                 "https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg"
@@ -71,11 +74,11 @@ function VisualizeContentHome() {
             </div>
           </div>
         </div>
-        <div>
-          <p className={"font-subtitleFont text-left"}>
+        <div className={"grid gap-y-2"}>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>
             Amigos que hacen este curso
           </p>
-          <div>
+          <div className={"grid gap-y-2"}>
             <div className={"flex gap-4"}>
               <Icon name={iconList.avatarWoman} />
               <Icon name={iconList.avatarManThinking} />
@@ -85,6 +88,14 @@ function VisualizeContentHome() {
               <PageControl totalDots={4} activePage={0} />
             </div>
           </div>
+        </div>
+        <div className={"grid gap-y-2"}>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Comentarios</p>
+          <Comment authorName={"Alan Walker"} content={"Un curso muy entretenido y muy variado en su contenido"} picture={iconList.avatarManThinking}/>
+        </div>
+        <div className={"flex gap-2 pt-4"}>
+          <Button variant={"outlined"}>Volver arriba</Button>
+          <Button variant={"fulfilled"}>Ver más reseñas</Button>
         </div>
       </div>
     </div>

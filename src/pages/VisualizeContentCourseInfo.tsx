@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 function VisualizeContentCourseInfo() {
   return (
-    <div className={"grid bg-primary-50 h-full py-2"}>
+    <div className={"bg-primary-50 h-[100vh]"}>
       <h1 className={"font-bodyFont"}>Navbar</h1>
       <div className={"grid gap-y-4 px-8"}>
         <div>
-          <p className={"font-subtitleFont text-left"}>Vista Previa</p>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>Vista Previa</p>
           <p>Video</p>
         </div>
         <div className={"grid gap-y-4"}>
@@ -21,11 +21,12 @@ function VisualizeContentCourseInfo() {
           <Button variant={"fulfilled"}>Foros de consulta</Button>
         </div>
         <div className={"grid gap-y-4"}>
-          <p className={"text-subtitle2 font-subtitleFont text-left"}>
+          <p className={"font-subtitleFont text-left text-subtitle2 font-semibold"}>
             Unidades
           </p>
-          <Link to={"/unit"}>
-            <div className={"grid gap-y-2 "}>
+
+            <div className={"grid gap-y-2"}>
+              <Link to={"/unit"}>
               <Card
                 image={
                   "https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg"
@@ -34,11 +35,11 @@ function VisualizeContentCourseInfo() {
                 description={"Calculadora básica"}
                 type={"unit/project"}
               ></Card>
+              </Link>
               <div className={"inline-flex justify-center"}>
                 <PageControl totalDots={5} activePage={0} />
               </div>
             </div>
-          </Link>
         </div>
       </div>
     </div>
