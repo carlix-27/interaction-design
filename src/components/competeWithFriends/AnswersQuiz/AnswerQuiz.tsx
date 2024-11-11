@@ -1,0 +1,38 @@
+import React, { ButtonHTMLAttributes } from "react";
+import { cva, VariantProps } from "class-variance-authority";
+
+const answerQuizVariant = cva(
+    [
+        'flex justify-center items-center gap-3 flex-shrink-0', // Layout styles
+        'w-[300px] h-[48px] p-[8px_0]', // Fixed dimensions and padding
+        'text-white text-center', // Text color and alignment
+        'rounded-[24px] shadow-md', // Border radius and shadow
+        'font-roboto text-[16px] font-medium leading-[24px]', // Font settings
+    ],
+    {
+        variants: {
+            variant: {
+                default: 'bg-[#CB6DF1]', // Light purple background
+                press: 'bg-[#860ABA]', // Dark purple background
+
+            },
+        },
+        defaultVariants: {
+            variant: 'default', // Default to dark purple
+        },
+    }
+);
+
+export interface AnswerQuizProps
+    extends ButtonHTMLAttributes<HTMLButtonElement>,
+        VariantProps<typeof answerQuizVariant> {}
+
+const AnswerQuiz = ({ variant, children, ...rest }: AnswerQuizProps) => {
+    return (
+        <button className={answerQuizVariant({ variant })} {...rest}>
+            {children}
+        </button>
+    );
+};
+
+export default AnswerQuiz;
