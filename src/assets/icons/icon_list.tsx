@@ -1,7 +1,6 @@
 export const iconArray = [
   "",
   "arrow-down",
-  "arrow-right",
   "arrow-up",
   "bell",
   "bell-notification",
@@ -31,7 +30,6 @@ export const iconArray = [
 export const iconList = {
   None: "",
   arrowDown: "arrow-down",
-  arrowRight: "arrow-right",
   arrowUp: "arrow-up",
   bell: "bell",
   bellNotification: "bell-notification",

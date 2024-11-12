@@ -16,17 +16,6 @@ export default meta
 
 type ListStories = StoryObj<typeof List>;
 
-export const DropDown: ListStories = {
-    args: {
-        title: 'DropDown',
-        details: '100%',
-        show_details: true,
-        icon:iconList.computer
-    },
-    name: 'DropDown',
-    render: (args) => <List title={args.title} details={args.details} show_details={args.show_details} type='drop-down' icon={args.icon}></List>
-}
-
 export const RequirementList: ListStories = {
     args: {
         title: 'RequirementList',
