@@ -7,7 +7,7 @@ const answerQuizVariant = cva(
         'w-[300px] h-[48px] p-[8px_0]', // Fixed dimensions and padding
         'text-white text-center', // Text color and alignment
         'rounded-[24px] shadow-md', // Border radius and shadow
-        'font-roboto text-[16px] font-medium leading-[24px]', // Font settings
+        'font-bodyFont text-bodybold1 leading-[24px]', // Font settings
     ],
     {
         variants: {

@@ -4,7 +4,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import LoadingSpinner from "./LoadingSpinner";
 
 export default {
-  title: "Components/LoadingSpinner",
+  title: "Loader/LoadingSpinner",
   component: LoadingSpinner,
   argTypes: {
     size: { control: "number" },

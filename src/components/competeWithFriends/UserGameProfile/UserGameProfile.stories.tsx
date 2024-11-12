@@ -4,7 +4,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import UserGameProfile  from './UserGameProfile';
 
 const meta: Meta<typeof UserGameProfile> = {
-    title: 'UserGameProfile',
+    title: 'CompeteWithFriends/UserGameProfile',
     component: UserGameProfile,
     argTypes: {
 

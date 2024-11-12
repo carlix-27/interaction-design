@@ -4,7 +4,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import NavbarBottom, { BottomNavBarProps } from './NavbarBottom';
 
 const meta: Meta<typeof NavbarBottom> = {
-    title: 'Components/NavbarBottom',
+    title: 'Navbar/NavbarBottom',
     component: NavbarBottom,
     argTypes: {
         activeButton: {

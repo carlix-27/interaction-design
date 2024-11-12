@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import NavbarTop, { NavbarTopProps } from './NavbarTop';
 
 const meta: Meta<typeof NavbarTop> = {
-    title: 'Components/NavbarTop',
+    title: 'Navbar/NavbarTop',
     component: NavbarTop,
     argTypes: {
         courseName: { control: 'text' },

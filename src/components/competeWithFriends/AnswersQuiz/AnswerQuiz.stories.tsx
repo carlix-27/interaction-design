@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import AnswerQuiz from './AnswerQuiz';
 
 const meta: Meta<typeof AnswerQuiz> = {
-    title: 'AnswerQuiz',
+    title: 'CompeteWithFriends/AnswerQuiz',
     component: AnswerQuiz,
     argTypes: {
         variant: {

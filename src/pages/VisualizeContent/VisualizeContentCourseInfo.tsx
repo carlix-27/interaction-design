@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "../components/common/Button";
-import Card from "../components/course/Card/Card";
-import { PageControl } from "../components/common/PageControl/PageControl";
+import Button from "../../components/common/Button";
+import Card from "../../components/course/Card/Card";
+import { PageControl } from "../../components/common/PageControl/PageControl";
 import { Link } from "react-router-dom";
-import NavbarTop from "../components/common/NavbarTop/NavbarTop";
-import NavbarBottom from "../components/common/BottomNavBar/NavbarBottom";
+import NavbarTop from "../../components/common/NavbarTop/NavbarTop";
+import NavbarBottom from "../../components/common/NavbarBottom/NavbarBottom";
 
 function VisualizeContentCourseInfo() {
   return (

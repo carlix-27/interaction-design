@@ -1,18 +1,18 @@
 import React from "react";
-import Button from "../components/common/Button";
-import List from "../components/course/List/List";
-import Card from "../components/course/Card/Card";
-import { PageControl } from "../components/common/PageControl/PageControl";
-import { iconList } from "../assets/icons/icon_list";
-import Icon from "../assets/icons/Icon";
+import Button from "../../components/common/Button";
+import List from "../../components/course/List/List";
+import Card from "../../components/course/Card/Card";
+import { PageControl } from "../../components/common/PageControl/PageControl";
+import { iconList } from "../../assets/icons/icon_list";
+import Icon from "../../assets/icons/Icon";
 import { Link } from "react-router-dom";
-import Comment from "../components/course/Comment/Comment";
-import NavbarTop from "../components/common/NavbarTop/NavbarTop";
-import NavbarBottom from "../components/common/BottomNavBar/NavbarBottom";
+import Comment from "../../components/course/Comment/Comment";
+import NavbarTop from "../../components/common/NavbarTop/NavbarTop";
+import NavbarBottom from "../../components/common/NavbarBottom/NavbarBottom";
 
 function VisualizeContentHome() {
   return (
-    <div className={"grid gap-y-8 bg-primary-50 h-full"}>
+    <div className={"grid gap-y-8 bg-primary-50 h-full w-full"}>
       <NavbarTop courseName={"JavaScript"} />
       <div className={"grid gap-y-4 px-8 pb-24"}>
         <div>
@@ -139,7 +139,7 @@ function VisualizeContentHome() {
         </div>
         <div className={"flex gap-2 pt-4"}>
           <Button variant={"outlined"}>Volver arriba</Button>
-          <Button variant={"fulfilled"}>Ver más reseñas</Button>
+          <Button variant={"fulfilled"}>Más reseñas</Button>
         </div>
       </div>
       <NavbarBottom

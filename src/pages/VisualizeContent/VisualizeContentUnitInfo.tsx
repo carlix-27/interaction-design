@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "../components/course/Card/Card";
-import { PageControl } from "../components/common/PageControl/PageControl";
-import NavbarTop from "../components/common/NavbarTop/NavbarTop";
-import NavbarBottom from "../components/common/BottomNavBar/NavbarBottom";
+import Card from "../../components/course/Card/Card";
+import { PageControl } from "../../components/common/PageControl/PageControl";
+import NavbarTop from "../../components/common/NavbarTop/NavbarTop";
+import NavbarBottom from "../../components/common/NavbarBottom/NavbarBottom";
 
 function VisualizeContentUnitInfo() {
   return (

@@ -36,7 +36,7 @@ const UserGameProfile: React.FC<UserGameProfileProps> = ({
         <div className={userGameProfileVariant()}>
             <div className="flex justify-center items-center gap-[24px] p-[10px] flex-1 w-full">
                 <img src="/Avatar (1).png" alt={`${username} avatar`} className="w-[80px] h-[80px] rounded-full shadow-lg" style={{ imageRendering: 'auto', boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.5)' }}/>
-                <h2 className="text-[28px] font-[600] leading-[34px] text-center text-shadow">
+                <h2 className="text-[28px] leading-[34px] text-center text-shadow font-subtitleFont">
                     {username}
                 </h2>
             </div>
@@ -45,19 +45,19 @@ const UserGameProfile: React.FC<UserGameProfileProps> = ({
                     <div>
                         <img src="/Prize (1).png" alt="Medal icon" className="w-8 h-8" />
                     </div>
-                    <span className="font-roboto text-[10px] font-[500]">{achievements}</span>
+                    <span className="font-bodyFont text-caption3">{achievements}</span>
                 </div>
                 <div className="flex flex-col items-center gap-[10px] flex-1 text-center text-shadow">
                     <div>
                         <img src="/Trophy (1).png" alt="Trophy icon" className="w-8 h-8" />
                     </div>
-                    <span className="font-roboto text-[10px] font-[500]">División {division}</span>
+                    <span className="font-bodyFont text-caption3">División {division}</span>
                 </div>
                 <div className="flex flex-col items-center gap-[10px] flex-1 text-center text-shadow">
                     <div>
                         <img src="/conflict (1).png" alt="EXP icon" className="w-8 h-8" />
                     </div>
-                    <span className="font-roboto text-[10px] font-[500]">{totalExp} EXP total</span>
+                    <span className="font-bodyFont text-caption3">{totalExp} EXP total</span>
                 </div>
             </div>
         </div>

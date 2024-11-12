@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import SwordIcon from './SwordIcon';
 
 const meta: Meta<typeof SwordIcon> = {
-    title: 'SwordIcon',
+    title: 'CompeteWithFriends/SwordIcon',
     component: SwordIcon,
     argTypes: {
         color: {

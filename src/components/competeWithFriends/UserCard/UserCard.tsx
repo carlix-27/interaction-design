@@ -40,15 +40,7 @@ const UserCard: React.FC<UserCardProps> = ({ username, color, ...props }) => {
             </div>
 
             {/* Nombre de Usuario */}
-            <div className="flex flex-col justify-center items-start flex-1 text-lg font-semibold text-gray-900" style={{
-                color: '#000',
-                textAlign: 'center',
-                fontFamily: 'Roboto',
-                fontSize: '14px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                lineHeight: '20px'
-            }}>
+            <div className="flex flex-col justify-center items-start flex-1 text-lg font-bodyFont text-bodybold1 text-gray-900">
                 {username}
             </div>
 

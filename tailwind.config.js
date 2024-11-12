@@ -30,6 +30,11 @@ module.exports = {
       },
 
       fontSize: {
+        h1: "48px",
+        h2: "40px",
+        h3: "32px",
+        h4: "28px",
+        h5: "24px",
         subtitle1: "18px",
         subtitle2: "16px",
         body1: "16px",
@@ -62,7 +67,20 @@ module.exports = {
         '.text-shadow': {
           textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
         },
+        '.scrollbar-hide': {
+          /* IE and Edge */
+          '-ms-overflow-style': 'none',
+
+          /* Firefox */
+          'scrollbar-width': 'none',
+
+          /* Safari and Chrome */
+          '&::-webkit-scrollbar': {
+            display: 'none'
+          }}
       })
     }
   ],
 };
+
+

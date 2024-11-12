@@ -90,11 +90,11 @@ const Icon: React.FC<IconProps> = ({ name }) => {
           </svg>
       );
 
-        case 'arrow-left':
-            return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                <path d="M15 6.5L9 12.5L15 18.5" stroke="#131927" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-            </svg>
+    case 'arrow-left':
+      return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+        <path d="M15 6.5L9 12.5L15 18.5" stroke="#131927" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round"/>
+      </svg>
 
     case "arrow-up":
       return (
@@ -510,6 +510,16 @@ const Icon: React.FC<IconProps> = ({ name }) => {
               stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
 
+    case 'search':
+      return <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.166 14.166L17.4993 17.4993" stroke="#212936" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path
+            d="M2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0108 15.8333 12.6801 15.0846 13.887 13.8744C15.0897 12.6685 15.8333 11.0044 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667Z"
+            stroke="#212936" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+
     case "woman_avatar":
       return (
           <img
@@ -583,11 +593,9 @@ const Icon: React.FC<IconProps> = ({ name }) => {
       );
 
 
-
-
-      default:
-            return null;
-    }
+    default:
+      return null;
+  }
 };
 
 export default Icon;
