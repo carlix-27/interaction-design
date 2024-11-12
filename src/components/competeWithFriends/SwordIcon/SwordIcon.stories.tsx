@@ -8,7 +8,7 @@ const meta: Meta<typeof SwordIcon> = {
     argTypes: {
         color: {
             control: 'select',
-            options: ['purple'], // Puedes agregar más opciones en el futuro si añades más variantes
+            options: ['purple'],
         },
     },
 };

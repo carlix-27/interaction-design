@@ -2,7 +2,6 @@
 import React, { HTMLAttributes } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
 
-// Definimos las variantes del componente usando cva
 const userGameProfileVariant = cva([
     'rounded-[20px]',
     'p-4',

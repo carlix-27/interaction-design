@@ -19,18 +19,15 @@ interface SwordIconProps
 const SwordIcon: React.FC<SwordIconProps> = ({ color, ...props }) => {
     return (
         <div
-            className={swordIconVariant({ color })}
-            style={{
-                width: '40px', // Tamaño del círculo
-                height: '40px', // Tamaño del círculo
-                fontSize: '2rem', // Tamaño del ícono
-                boxShadow : '0px 10px 8px rgba(0, 0, 0, 0.3)', // Sombra
-            }}
+            className={`${swordIconVariant({ color })} w-[40px] h-[40px] text-2xl shadow-[0px_10px_8px_rgba(0,_0,_0,_0.3)]`}
             {...props}
         >
-            <span role="img" aria-label="swords" style={{display: 'flex', alignItems:'center', justifyContent: 'center' +
-                    ''}}>
-                <img src="/Battle (1).png" alt="swords" style={{ width: '60%', height: '60%' }} />
+            <span role="img" aria-label="swords" className="flex items-center justify-center w-full h-full">
+                <img
+                    src="/Battle (1).png"
+                    alt="swords"
+                    className="w-[60%] "
+                />
             </span>
         </div>
     );
