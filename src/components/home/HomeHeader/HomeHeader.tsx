@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from "../../../assets/icons/Icon";
 
 export interface HomeHeaderProps {
     name: string;
@@ -23,7 +24,7 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ name = "Martina", avatar }) => 
                 </p>
             </div>
             <div className="flex w-[80px] h-[80px] justify-center items-center">
-                <img src={avatar || 'woman_avatar.png'} alt="Avatar" className="w-[80px] h-[80px] rounded-full shadow-custom-figma" />
+                <Icon name="woman_large_pink_hair"></Icon>
             </div>
         </div>
     );
