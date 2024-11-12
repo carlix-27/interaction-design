@@ -29,7 +29,9 @@ const UserCard: React.FC<UserCardProps> = ({ username, color, ...props }) => {
                 </span>
             </div>
 
+
             <div className="flex flex-col justify-center items-start flex-1 text-lg font-semibold text-gray-900 text-center font-roboto text-[14px] font-medium leading-[20px]">
+
                 {username}
             </div>
 
