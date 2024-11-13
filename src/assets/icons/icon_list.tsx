@@ -25,6 +25,7 @@ export const iconArray = [
   "man_with_dog",
   "wifi",
   "search",
+  "plus_black",
 ];
 
 export const iconList = {
@@ -54,4 +55,5 @@ export const iconList = {
   avatarManWithDog: "man_with_dog",
   wifi: "wifi",
   search: "search",
+  plus_black: "plus_black",
 };
