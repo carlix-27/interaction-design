@@ -23,8 +23,8 @@ export const PageControl: React.FC<PageControlProps> = ({
   activePage,
 }) => {
   return (
-    <div className="flex items-center justify-center bg-grey-50 py-2 px-4 rounded-full w-fit h-6">
-      {Array.from({ length: totalDots }).map((_, index) => (
+    <div className="flex items-center justify-center bg-grey-50 rounded-full w-fit h-[24-px] px-[12px] py-[8px] ">
+      {Array.from({ length: totalDots }).map((_, index) =>(
         <span
           key={index}
           className={dotStyles({ active: index === activePage })}
