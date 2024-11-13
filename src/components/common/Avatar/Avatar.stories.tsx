@@ -4,7 +4,7 @@ import Avatar from '../Avatar/avatar';
 import {iconArray, iconList} from "../../../assets/icons/icon_list";
 
 const meta: Meta<typeof Avatar> = {
-    title: 'Common/Avatar',
+    title: 'Components/Avatar',
     component: Avatar,
     argTypes:{
         iconName: {control: "select", options: iconArray},

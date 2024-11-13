@@ -4,7 +4,7 @@ import Card from "./Card";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Card> = {
-  title: "Card",
+  title: "Course/Card",
   component: Card,
 };
 

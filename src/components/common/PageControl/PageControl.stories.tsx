@@ -3,7 +3,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { PageControl } from "./PageControl";
 
 const meta: Meta<typeof PageControl> = {
-  title: "PageControl",
+  title: "Components/PageControl",
   component: PageControl,
   argTypes: {
     totalDots: { control: { type: "number", min: 2, max: 4 } },

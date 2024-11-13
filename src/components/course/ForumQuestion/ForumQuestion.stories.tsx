@@ -5,7 +5,7 @@ import { Meta, StoryObj } from "@storybook/react";
 
 // Setting up the Meta configuration
 const meta: Meta<typeof ForumQuestion> = {
-    title: "ForumQuestion", // You can organize it under a 'Forum' section in Storybook
+    title: "Course/ForumQuestion", // You can organize it under a 'Forum' section in Storybook
     component: ForumQuestion,     // Register the ForumQuestion component
 }
 

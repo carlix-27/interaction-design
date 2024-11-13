@@ -4,7 +4,7 @@ import Comment from "./Comment";
 import {iconArray, iconList} from "../../../assets/icons/icon_list";
 
 const meta: Meta<typeof Comment> = {
-    title: 'Comment',
+    title: 'Course/Comment',
     component: Comment,
     argTypes: {
         authorName: { control: 'text' },

@@ -54,15 +54,11 @@ function VisualizeContentHome() {
             title={"Computer"}
             icon={iconList.computer}
             details={"100%"}
-            show_details={false}
-            type={"list"}
           ></List>
           <List
             title={"Conexión a internet"}
             details={"Detalles"}
             icon={iconList.wifi}
-            show_details={false}
-            type={"list"}
           ></List>
         </div>
         <div className={"grid gap-y-4"}>
