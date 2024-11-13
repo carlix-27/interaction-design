@@ -2,7 +2,7 @@ import React, {ButtonHTMLAttributes} from "react";
 import {cva, VariantProps} from "class-variance-authority";
 
 
-const buttonVariant = cva(['w-full sm:w-fit', 'rounded-lg'], {
+const buttonVariant = cva(['w-full sm:w-fit', 'rounded-2xl'], {
     variants:{
         variant:{
             fulfilled:[
