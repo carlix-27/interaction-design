@@ -24,7 +24,9 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ name = "Martina", avatar }) => 
                 </p>
             </div>
             <div className="flex w-[80px] h-[80px] justify-center items-center">
-                <Icon name="woman_large_pink_hair"></Icon>
+                <div className="w-[80px] h-[80px] rounded-full shadow-custom-figma">
+                    <Icon name='woman_large_pink_hair'></Icon>
+                </div>
             </div>
         </div>
     );
