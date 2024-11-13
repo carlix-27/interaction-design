@@ -18,10 +18,11 @@ interface AvatarProps {
 }
 
 
-const Avatar: React.FC<AvatarProps> = ({size , iconName}) => {
+
+const Avatar: React.FC<AvatarProps> = ({size , iconName }) => {
     return (
-        <div className={`relative flex items-center justify-center ${sizeClasses[size]}`}>
-                <Icon name={iconName} ></Icon>
+        <div className={`relative flex flex-col items-center justify-center ${sizeClasses[size]}`}>
+            <Icon name={iconName} ></Icon>
         </div>
 
     )};

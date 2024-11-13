@@ -8,6 +8,7 @@ const meta: Meta<typeof Avatar> = {
     component: Avatar,
     argTypes:{
         iconName: {control: "select", options: iconArray},
+        size:{control: false}
     }
 }
 
@@ -38,7 +39,7 @@ export const AllAvatars: AvatarStories = {
     name: 'AllAvatars',
     render: (args) => {
         return (
-                <div className="flex flex-row gap-6">
+                <div className="flex flex-row gap-10">
                     {Object.keys(sizeClasses).reverse().map((size, index) => (
                         <div
                             key={size}
