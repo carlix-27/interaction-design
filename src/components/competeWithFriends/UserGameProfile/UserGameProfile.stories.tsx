@@ -10,7 +10,7 @@ const meta: Meta<typeof UserGameProfile> = {
 
         username: {
             control: 'text',
-            defaultValue: 'Anilamejor',
+            defaultValue: 'Martina',
         },
         achievements: {
             control: 'object',
@@ -34,7 +34,7 @@ type Story = StoryObj<typeof UserGameProfile>;
 export const Default: Story = {
     args: {
 
-        username: 'Ana Paola',
+        username: 'Martina',
         achievements: '2 veces Top 10',
         division: 'Oro',
         totalExp: 10500,

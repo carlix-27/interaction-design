@@ -35,7 +35,7 @@ const UserGameProfile: React.FC<UserGameProfileProps> = ({
     return (
         <div className={userGameProfileVariant()}>
             <div className="flex mr-8 items-center flex-1 p-2">
-                    <Icon name='woman_heart_sign'></Icon>
+                    <Icon name='woman_large_pink_hair'></Icon>
                 <div className="ml-8 text-3xl text-shadow fontFamily-subtitleFont font-semibold whitespace-nowrap">
                     {username}
                 </div>
