@@ -7,7 +7,7 @@ const meta: Meta<typeof UserCard> = {
     argTypes: {
         username: {
             control: 'text',
-            defaultValue: 'Carla A.',
+            defaultValue: 'Lucia Mendez',
         },
     },
 };
@@ -18,6 +18,7 @@ type Story = StoryObj<typeof UserCard>;
 
 export const Default: Story = {
     args: {
-        username: 'Carla A.',
+        username: 'Lucia Mendez.',
+        isWaiting: false
     },
 };
