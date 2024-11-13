@@ -19,7 +19,7 @@ const pillVariant = cva(['flex fontSize-buttonText fontFamily-buttonFont justify
             ]
         },
         size:{
-            medium: ["w-32 h-9 text-base"],
+            medium: ["w-[120px] h-[35px] text-base"],
         }
     },
     defaultVariants:{
