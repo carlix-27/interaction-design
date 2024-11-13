@@ -1,6 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
 import SwordIcon from '../SwordIcon/SwordIcon';
+import Icon from "../../../assets/icons/Icon";
 
 const userCardVariant = cva('flex items-center p-4 bg-gray-50 shadow-md h-[81px] w-[300px] rounded-[16px] drop-shadow-lg', {
     variants: {
@@ -24,9 +25,7 @@ const UserCard: React.FC<UserCardProps> = ({ username, color, ...props }) => {
             {...props}
         >
             <div className="flex items-center justify-center w-[60px] h-[82.286px] flex-shrink-0 mr-4">
-                <span role="img" aria-label="profile" className="text-2xl text-pink-500">
-                    <img src="/woman avatar (2).png" alt="profile" className="w-full h-full" />
-                </span>
+                <Icon name='woman_avatar'></Icon>
             </div>
 
 
@@ -41,3 +40,4 @@ const UserCard: React.FC<UserCardProps> = ({ username, color, ...props }) => {
 };
 
 export default UserCard;
+

@@ -518,6 +518,30 @@ const Icon: React.FC<IconProps> = ({ name }) => {
           />
       );
 
+    case "prize":
+      return (
+          <img
+              src="/Prize.svg"
+              alt="Price"
+          />
+      );
+
+    case "trophy":
+      return (
+          <img
+              src="/Trophy.svg"
+              alt="Trophy"
+          />
+      );
+
+    case "conflict":
+      return (
+          <img
+              src="/conflict.svg"
+              alt="Conflict"
+          />
+      );
+
     case "man_thinking":
       return (
           <img
@@ -581,6 +605,12 @@ const Icon: React.FC<IconProps> = ({ name }) => {
           />
       );
 
+    case "battle":
+      return (
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="20" fill="#65078B"/>
+          </svg>
+      );
 
     default:
       return null;

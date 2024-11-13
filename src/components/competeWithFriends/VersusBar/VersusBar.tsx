@@ -1,5 +1,6 @@
 import React, { HTMLAttributes } from "react";
 import { cva, VariantProps } from "class-variance-authority";
+import Icon from "../../../assets/icons/Icon";
 
 const versusBarVariant = cva([
     "flex",
@@ -21,11 +22,9 @@ const VersusBar: React.FC<VersusBarProps> = ({ name1, name2 }) => {
         <div className={versusBarVariant()}>
             <div className="flex justify-between items-center gap-6 flex-1">
                 <div className="flex items-center gap-4 flex-1 text-grey-900">
-                    <img
-                        src="/Avatar (1).png"
-                        alt="Avatar1"
-                        className="w-10 h-10 rounded-full"
-                    />
+
+                    <Icon name='woman_avatar'></Icon>
+
                     <span className="font-bodyFont text-b2_body">
                         {name1}
                     </span>
@@ -41,11 +40,8 @@ const VersusBar: React.FC<VersusBarProps> = ({ name1, name2 }) => {
                         {name2}
                     </span>
 
-                    <img
-                        src="/Avatar (2).png"
-                        alt="Avatar2"
-                        className="w-10 h-10 rounded-full"
-                    />
+                    <Icon name='woman_heart_sign'></Icon>
+
                 </div>
             </div>
         </div>
