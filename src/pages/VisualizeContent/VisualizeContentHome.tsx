@@ -4,7 +4,6 @@ import List from "../../components/course/List/List";
 import Card from "../../components/course/Card/Card";
 import { PageControl } from "../../components/common/PageControl/PageControl";
 import { iconList } from "../../assets/icons/icon_list";
-import Icon from "../../assets/icons/Icon";
 import { Link } from "react-router-dom";
 import Comment from "../../components/course/Comment/Comment";
 import NavbarTop from "../../components/common/NavbarTop/NavbarTop";
