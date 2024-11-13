@@ -20,10 +20,9 @@ export const RequirementList: ListStories = {
     args: {
         title: 'RequirementList',
         details: 'Detalles',
-        show_details: false,
         icon:iconList.computer
     },
     name: 'RequirementList',
-    render: (args) => <List title={args.title} details={args.details} show_details={args.show_details} type='list' icon={args.icon}></List>
+    render: (args) => <List title={args.title} details={args.details} icon={args.icon}></List>
 }
 
