@@ -18,7 +18,7 @@ type ListStories = StoryObj<typeof List>;
 
 export const RequirementList: ListStories = {
     args: {
-        title: 'RequirementList',
+        title: 'Computadora',
         details: 'Detalles',
         icon:iconList.computer
     },
