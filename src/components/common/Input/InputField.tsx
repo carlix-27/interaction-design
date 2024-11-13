@@ -17,19 +17,19 @@ const InputField: React.FC<InputFieldProps> = ({
   onChange,
 }) => {
   return (
-    <div className="flex flex-col space-y-1">
+    <div className="flex flex-col space-y-1 ">
       {label ? (
         <label className="text-gray-700 font-medium">{label}</label>
       ) : (
         <></>
       )}
-      <div className="flex items-center px-3 py-2 bg-gray-50 rounded-lg border border-gray-300">
+      <div className="flex items-center px-3 py-2 bg-gray-50 rounded-lg border border-gray-300 focus-within:bg-primary-50 focus-within:border-primary-500">
         {leftIcon ? <Icon name={leftIcon} /> : <></>}
         <input
           type="text"
           placeholder={placeholder}
           onChange={(e) => onChange(e.target.value)}
-          className="flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-500 pl-2"
+          className="flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-500 pl-2 focus:bg-primary-50"
         />
         {rightIcon ? <Icon name={rightIcon} /> : <></>}
       </div>

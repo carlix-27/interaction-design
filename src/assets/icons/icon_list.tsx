@@ -23,8 +23,8 @@ export const iconArray = [
   "woman_heart_sign",
   "man_thumb_up",
   "man_with_dog",
-    'wifi',
-    'search'
+  "wifi",
+  "search",
 ];
 
 export const iconList = {
@@ -52,6 +52,6 @@ export const iconList = {
   avatarWomanHeartSign: "woman_heart_sign",
   avatarManThumbUp: "man_thumb_up",
   avatarManWithDog: "man_with_dog",
-  wifi:'wifi',
-  search:'search'
+  wifi: "wifi",
+  search: "search",
 };
