@@ -2,16 +2,13 @@ import React from "react";
 
 export interface ProgressBarProps {
   progress: number; // expects a percentage value (0-100)
-  type: "default" | "rounded-top";
 }
 
-const ProgressBar: React.FC<ProgressBarProps> = ({ progress, type }) => {
+const ProgressBar: React.FC<ProgressBarProps> = ({ progress}) => {
   return (
     <div
       className={
-        type === "rounded-top"
-          ? "w-full bg-grey-50 rounded-b-lg h-2 overflow-hidden"
-          : "w-full bg-grey-50 rounded-full h-2 overflow-hidden"
+          "w-full bg-grey-50 rounded-full h-2 overflow-hidden"
       }
     >
       <div
