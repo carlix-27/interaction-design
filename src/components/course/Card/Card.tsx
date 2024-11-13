@@ -5,7 +5,8 @@ interface CardProps {
   title: string;
   description: string;
   altText?: string;
-  type?: "unit/project" | "instructor";
+  type?: "unit/project" | "instructor" | "question";
+  status?: boolean;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -13,10 +14,10 @@ const Card: React.FC<CardProps> = ({
   title,
   description,
   altText = "Image",
-  type,
+  type, status,
 }) => {
   return (
-    <div className="flex flex-row items-center p-2 bg-grey-50 rounded-2xl shadow-md max-w-sm h-full">
+    <div className="flex flex-row items-center bg-grey-50 rounded-2xl shadow-md max-w-sm h-[120px]">
       <img
         src={image}
         alt={altText}
@@ -30,9 +31,17 @@ const Card: React.FC<CardProps> = ({
         <p className="text-xl fontFamily-subtitleFont fontSize-subtitle2 font-semibold text-gray-900">
           {title}
         </p>
-        <p className="text-gray-500 fontFamily-captionFont fontSize-body2">
-          {description}
-        </p>
+        <p className="text-gray-500 font-captionFont text-body2">{description}</p>
+
+          {type === "question" && (
+              <p
+                  className={`font-semibold ${
+                      status ? "text-blue-500" : "text-red-500"
+                  }`}
+              >
+                  {status ? "Resuelto" : "No Resuelto"}
+              </p>
+          )}
       </div>
     </div>
   );
