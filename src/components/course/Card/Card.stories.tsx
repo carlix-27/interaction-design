@@ -6,6 +6,15 @@ import { Meta, StoryObj } from "@storybook/react";
 const meta: Meta<typeof Card> = {
   title: "Course/Card",
   component: Card,
+    argTypes:{
+      image: {control: false},
+      altText: {control: false},
+      type: {control: false},
+        status: {
+            control: "boolean",
+            if: { arg: "type", eq: "question" }, // Control visible solo si "type" es "question"
+        },
+    }
 };
 
 export default meta;
@@ -53,3 +62,24 @@ export const UnitCard: CardStories = {
     ></Card>
   ),
 };
+
+export const QuestionCard: CardStories = {
+    name: "questionCard",
+    args: {
+        type:'question',
+        status: true,
+    },
+    render: (args) => (
+        <Card
+            image={
+                "https://upload.wikimedia.org/wikipedia/commons/a/a4/JavaScript_code.png"
+            }
+            title={''}
+            description={"¿Qué diferencia hay entre var, let, y const en JavaScript?"}
+            type={args.type}
+            status={args.status}
+        ></Card>
+    ),
+};
+
+
