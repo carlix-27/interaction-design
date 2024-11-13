@@ -41,7 +41,7 @@ const CollapsibleMenu: React.FC<CollapsibleMenuProps> = ({ title, items }) => {
             </span>
           </div>
         </div>
-        <ProgressBar progress={averageProgress} type={"default"} />
+        <ProgressBar progress={averageProgress} />
       </div>
 
       {isOpen && (
