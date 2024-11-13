@@ -24,7 +24,7 @@ const VersusBar: React.FC<VersusBarProps> = ({ name1, name2 }) => {
 
                     <Icon name='woman_large_pink_hair'></Icon>
 
-                    <span className="flex font-bodyFont text-b2_body font-semibold whitespace-nowrap">
+                    <span className="flex font-bodyFont text-bodybold1 font-semibold whitespace-nowrap">
                         {name1}
                     </span>
                 </div>
