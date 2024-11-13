@@ -23,7 +23,7 @@ type Story = StoryObj<typeof VersusBar>;
 
 export const Default: Story = {
     args: {
-        name1: 'Ana P.',
+        name1: 'Martina',
         name2: 'Juan',
     },
 };
