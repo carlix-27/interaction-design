@@ -5,7 +5,7 @@ import Icon from "../../../assets/icons/Icon";
 
 const userGameProfileVariant = cva([
     'rounded-[20px]',
-    'p-4',
+    'p-6',
     'flex',
     'flex-col',
     'justify-center',
@@ -15,7 +15,7 @@ const userGameProfileVariant = cva([
     'from-[#A80CE8]',
     'to-[#00D4FF]',
     'w-[342px]',
-    'h-[200px]',
+    'h-[220px]',
     'text-white'
 ]);
 
@@ -34,11 +34,11 @@ const UserGameProfile: React.FC<UserGameProfileProps> = ({
                                                          }) => {
     return (
         <div className={userGameProfileVariant()}>
-            <div className="flex justify-center items-center gap-[24px] p-[10px] flex-1 w-full">
-                <Icon name='woman_heart_sign'></Icon>
-                <h2 className="text-[28px] leading-[34px] text-center text-shadow font-subtitleFont">
+            <div className="flex mr-8 items-center flex-1 p-2">
+                    <Icon name='woman_heart_sign'></Icon>
+                <div className="ml-8 text-3xl text-shadow fontFamily-subtitleFont font-semibold whitespace-nowrap">
                     {username}
-                </h2>
+                </div>
             </div>
             <div className="flex p-0 px-[16px] items-start flex-1 w-full">
                 <div className="flex flex-col items-center gap-[10px] flex-1 text-center text-shadow">
