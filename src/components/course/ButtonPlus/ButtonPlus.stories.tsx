@@ -3,7 +3,7 @@ import ButtonPlus from "./ButtonPlus";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof ButtonPlus> = {
-    title: "ButtonPlus",
+    title: "Course/ButtonPlus",
     component: ButtonPlus,
     argTypes: {
         onClick: { action: 'clicked' },
