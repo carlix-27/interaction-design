@@ -4,7 +4,7 @@ import VideoThumbnail from "./video";
 
 
 const meta: Meta<typeof VideoThumbnail> = {
-    title: "Video",
+    title: "Course/Video",
     component: VideoThumbnail,
 }
 
