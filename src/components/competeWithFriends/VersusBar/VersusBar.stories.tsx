@@ -8,7 +8,7 @@ const meta: Meta<typeof VersusBar>={
     argTypes:{
         name1: {
             control: 'text',
-            defaultValue: 'Ana P.',
+            defaultValue: 'Martina',
         },
         name2: {
             control: 'text',
