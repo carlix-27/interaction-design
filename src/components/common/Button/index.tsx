@@ -17,9 +17,6 @@ const buttonVariant = cva(['w-full sm:w-fit', 'rounded-2xl'], {
             active: [
                 'active: bg-primary-100 text-primary-500 border border-primary-100',
             ],
-            ghost:[
-                'bg-transparent text-primary-500',
-            ],
             disabled:[
                 'disabled: bg-grey-50 text-grey-400 border border-grey-50',
             ]
