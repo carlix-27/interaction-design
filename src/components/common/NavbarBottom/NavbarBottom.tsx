@@ -15,7 +15,7 @@ const NavbarBottom: React.FC<BottomNavBarProps> = ({
     "flex flex-col items-center flex-1 justify-center relative";
 
   return (
-    <div className="flex w-[390px] h-[70px] bg-[#F9FAFB] justify-center items-center fixed bottom-0 z-50 w-full">
+    <div className="flex w-[390px] h-[70px] bg-[#F9FAFB] justify-center items-center fixed bottom-0 z-50">
       <div
         className={`${buttonClasses} h-full`}
         onClick={() => onButtonClick("home")}

@@ -21,17 +21,14 @@ function VisualizeContentUnitInfo() {
             <div className={"grid gap-y-2"}>
               <Card
                 image={
-                  "https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg"
+                  "https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-1024x768.jpg"
                 }
-                title={"Unidad 1"}
+                title={"Introducción a JavaScript"}
                 description={
-                  "En esta unidad comenzarás tus primeros pasos en Javascript. Profundizarás en tus habilidades de forma tal que llegarás a conocer las bases de la programación en Javascript."
+                  "Explora los fundamentos de JavaScript, el lenguaje de la web. Esta unidad abarca conceptos clave como variables, tipos de datos y sintaxis básica, estableciendo una base sólida. Al final, podrás escribir tus primeras líneas de código y entender cómo JavaScript aporta dinamismo a los sitios web."
                 }
                 type={"unit/project"}
               ></Card>
-              <div className={"inline-flex justify-center"}>
-                <PageControl totalDots={5} activePage={0} />
-              </div>
             </div>
           </div>
           <div className={"grid gap-y-4"}>
@@ -45,11 +42,11 @@ function VisualizeContentUnitInfo() {
             <div className={"grid gap-y-4"}>
               <Card
                 image={
-                  "https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg"
+                  "https://thumbs.dreamstime.com/b/hello-world-javascript-programming-language-hello-world-code-hello-world-code-written-javascript-programming-language-syntax-248663704.jpg"
                 }
-                title={"Proyecto 1"}
+                title={"Saludo Interactivo"}
                 description={
-                  "Calculadora básica. En base a variables, tipos de datos y operadores"
+                  "Crea una página web que salude a los usuarios por su nombre, utilizando variables y manejo básico de entradas en JavaScript"
                 }
                 type={"unit/project"}
               ></Card>
@@ -57,15 +54,17 @@ function VisualizeContentUnitInfo() {
                 image={
                   "https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg"
                 }
-                title={"Proyecto 2"}
-                description={"Juego de adivinanza de números. "}
+                title={"Calculadora Simple"}
+                description={
+                  "Construye una calculadora para operaciones aritméticas básicas, practicando funciones de JavaScript y manejo de eventos."
+                }
                 type={"unit/project"}
               ></Card>
             </div>
           </div>
         </div>
         <NavbarBottom
-          activeButton={"home"}
+          activeButton={"list"}
           onButtonClick={() => console.log("Test")}
         />
       </div>

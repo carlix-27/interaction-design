@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({
   type,
 }) => {
   return (
-    <div className="flex flex-row items-center p-2 bg-grey-50 rounded-2xl shadow-md max-w-sm max-h-fit">
+    <div className="flex flex-row items-center p-2 bg-grey-50 rounded-2xl shadow-md max-w-sm h-full">
       <img
         src={image}
         alt={altText}
@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({
         <p className="text-xl fontFamily-subtitleFont fontSize-subtitle2 font-semibold text-gray-900">
           {title}
         </p>
-        <p className="text-gray-500 font-captionFont text-body2">
+        <p className="text-gray-500 fontFamily-captionFont fontSize-body2">
           {description}
         </p>
       </div>

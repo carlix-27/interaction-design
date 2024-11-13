@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../../../assets/icons/Icon";
+import * as child_process from "node:child_process";
 
 export interface InputFieldProps {
   label?: string;
@@ -7,6 +8,7 @@ export interface InputFieldProps {
   leftIcon?: string; // Left icon component
   rightIcon?: string; // Right icon component
   onChange: (value: string) => void;
+  children?: React.ReactNode;
 }
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -15,6 +17,7 @@ const InputField: React.FC<InputFieldProps> = ({
   leftIcon,
   rightIcon,
   onChange,
+  children,
 }) => {
   return (
     <div className="flex flex-col space-y-1 ">

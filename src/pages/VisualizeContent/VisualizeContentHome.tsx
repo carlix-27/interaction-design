@@ -9,26 +9,32 @@ import { Link } from "react-router-dom";
 import Comment from "../../components/course/Comment/Comment";
 import NavbarTop from "../../components/common/NavbarTop/NavbarTop";
 import NavbarBottom from "../../components/common/NavbarBottom/NavbarBottom";
+import Video from "../../components/course/Video/video";
+import User from "../../components/common/User/user";
 
 function VisualizeContentHome() {
   return (
     <div className={"grid gap-y-8 bg-primary-50 h-full w-full"}>
       <NavbarTop courseName={"JavaScript"} />
-      <div className={"grid gap-y-4 px-8 pb-24"}>
-        <div>
+      <div className={"grid gap-y-4 px-6 pb-24"}>
+        <div className={"grid gap-y-4"}>
           <p
             className={
-              "font-subtitleFont text-left text-subtitle2 font-semibold"
+              "fontFamily-subtitleFont text-left text-subtitle2 font-semibold"
             }
           >
             Vista Previa
           </p>
-          <p>Video</p>
+          <Video
+            backgroundImage={
+              "https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/646f78e97936bca6f5b4933c_javascript-que-es-para-que-sirve.jpg"
+            }
+          />
         </div>
-        <div className={"grid gap-y-4"}>
+        <div className={"grid gap-y-6"}>
           <p
             className={
-              "font-subtitleFont text-left text-subtitle2 font-semibold"
+              "fontFamily-subtitleFont text-left text-subtitle2 font-semibold"
             }
           >
             Habilidades que aprenderas
@@ -45,13 +51,13 @@ function VisualizeContentHome() {
         <div className={"grid gap-y-4"}>
           <p
             className={
-              "font-subtitleFont text-left text-subtitle2 font-semibold"
+              "fontFamily-subtitleFont text-left text-subtitle2 font-semibold"
             }
           >
             Requisitos
           </p>
           <List
-            title={"Computer"}
+            title={"Computadora"}
             icon={iconList.computer}
             details={"100%"}
           ></List>
@@ -64,7 +70,7 @@ function VisualizeContentHome() {
         <div className={"grid gap-y-4"}>
           <p
             className={
-              "font-subtitleFont text-left text-subtitle2 font-semibold"
+              "fontFamily-subtitleFont text-left text-subtitle2 font-semibold"
             }
           >
             Instructor
@@ -81,7 +87,7 @@ function VisualizeContentHome() {
         <div className={"grid gap-y-4"}>
           <p
             className={
-              "font-subtitleFont text-left text-subtitle2 font-semibold"
+              "fontFamily-subtitleFont text-left text-subtitle2 font-semibold"
             }
           >
             Proyectos Destacados
@@ -89,10 +95,12 @@ function VisualizeContentHome() {
           <div className={"grid gap-y-2"}>
             <Card
               image={
-                "https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg"
+                "https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-1024x768.jpg"
               }
-              title={"Proyecto 1"}
-              description={"Calculadora básica"}
+              title={"Saludo Interactivo"}
+              description={
+                "Crea una página web que salude a los usuarios por su nombre, utilizando variables y manejo básico de entradas en JavaScript"
+              }
               type={"unit/project"}
             ></Card>
             <div className={"inline-flex justify-center"}>
@@ -103,16 +111,22 @@ function VisualizeContentHome() {
         <div className={"grid gap-y-2"}>
           <p
             className={
-              "font-subtitleFont text-left text-subtitle2 font-semibold"
+              "fontFamily-subtitleFont text-left text-subtitle2 font-semibold"
             }
           >
             Amigos que hacen este curso
           </p>
-          <div className={"grid gap-y-2"}>
-            <div className={"flex gap-4"}>
-              <Icon name={iconList.avatarWoman} />
-              <Icon name={iconList.avatarManThinking} />
-              <Icon name={iconList.avatarWomanHeartSign} />
+          <div className={"grid gap-y-2 px-8"}>
+            <div className={"flex gap-12"}>
+              <User name={"Juan Lopez"} iconName={iconList.avatarManThinking} />
+              <User
+                name={"Ana Paola"}
+                iconName={iconList.avatarWomanHeartSign}
+              />
+              <User
+                name={"Pedro Suarez"}
+                iconName={iconList.avatarManWithDog}
+              />
             </div>
             <div className={"inline-flex justify-center"}>
               <PageControl totalDots={4} activePage={0} />
@@ -139,7 +153,7 @@ function VisualizeContentHome() {
         </div>
       </div>
       <NavbarBottom
-        activeButton={"home"}
+        activeButton={"list"}
         onButtonClick={() => console.log("Test")}
       />
     </div>

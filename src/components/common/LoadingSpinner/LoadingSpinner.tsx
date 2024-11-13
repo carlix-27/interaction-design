@@ -11,7 +11,7 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
   color = "purple-500",
 }) => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center">
       <div className="flex items-center space-x-2">
         {[...Array(1)].map((_, index) => (
           <div
