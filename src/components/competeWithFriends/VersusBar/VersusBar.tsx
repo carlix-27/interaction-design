@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react";
-import { cva, VariantProps } from "class-variance-authority";
+import { cva } from "class-variance-authority";
 import Icon from "../../../assets/icons/Icon";
 
 const versusBarVariant = cva([

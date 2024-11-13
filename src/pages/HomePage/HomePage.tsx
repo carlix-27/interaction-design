@@ -4,13 +4,12 @@ import InputField from "../../components/common/Input/InputField";
 import Pill from "../../components/common/Pildora/Pill";
 import CourseCard from "../../components/home/CourseCard/CourseCard";
 import {iconList} from "../../assets/icons/icon_list";
+import HomeHeader from "../../components/home/HomeHeader/HomeHeader";
 
 function HomePage() {
     return (
-        <div className={"bg-primary-50 h-[100vh] p-2"}>
-            <div>
-                <p>Hola, X.</p>
-            </div>
+        <div className={"bg-primary-50 h-[100vh]"}>
+            <HomeHeader name="Martina"/>
             <div className={"grid gap-y-2 px-2"}>
                 <div className={'grid gap-y-2 p-2'}>
                     <div className={'px-4 py-2'}>
