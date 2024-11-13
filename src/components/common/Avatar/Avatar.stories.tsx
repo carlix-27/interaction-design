@@ -8,19 +8,21 @@ const meta: Meta<typeof Avatar> = {
     component: Avatar,
     argTypes:{
         iconName: {control: "select", options: iconArray},
+        size:{control: false}
     }
 }
 
 export default meta
 
 
+
 const sizeClasses = {
-    xs: 'w-32 h-32',
-    sm: 'w-40 h-40',
-    md: 'w-48 h-48',
-    lg: 'w-56 h-56',
-    xl: 'w-64 h-64',
-    xxl: 'w-80 h-80'
+    xs: 'w-[32px] h-[32px]',
+    sm: 'w-[40px] h-[40px]',
+    md: 'w-[48px] h-[48px]',
+    lg: 'w-[56px] h-[56px]',
+    xl: 'w-[64px] h-[64px]',
+    xxl: 'w-[80px h-[80px]'
 }
 
 
@@ -37,7 +39,7 @@ export const AllAvatars: AvatarStories = {
     name: 'AllAvatars',
     render: (args) => {
         return (
-                <div className="flex flex-row gap-6">
+                <div className="flex flex-row gap-10">
                     {Object.keys(sizeClasses).reverse().map((size, index) => (
                         <div
                             key={size}

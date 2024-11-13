@@ -12,7 +12,6 @@ const meta: Meta<typeof Button> = {
         "focus",
         "outlined",
         "active",
-        "ghost",
         "disabled",
       ],
       control: { type: "select" },
@@ -30,10 +29,6 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-// export const Default: Story = {
-//     name: 'Default',
-//     render: (args) => <Button {...args}>Button</Button>
-// }
 
 export const Fulfilled: Story = {
   name: "Fulfilled",
@@ -71,14 +66,6 @@ export const Active: Story = {
   ),
 };
 
-export const Ghost: Story = {
-  name: "Ghost",
-  render: (args) => (
-    <Button variant={"ghost"} {...args}>
-      Button
-    </Button>
-  ),
-};
 
 export const Disabled: Story = {
   name: "Disabled",

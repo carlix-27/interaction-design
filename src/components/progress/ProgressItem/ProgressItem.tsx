@@ -13,7 +13,7 @@ const ProgressItem: React.FC<ProgressItemProps> = ({
   percentage,
 }) => {
   return (
-    <div className="flex items-center justify-between p-4 bg-gray-100 rounded-lg w-full">
+    <div className="flex items-center justify-between p-4 bg-gray-100 rounded-[16px] w-[342px] h-[42px]">
       <div className="flex items-center space-x-2">
         <Icon name={"medal-" + medalType} />
         <span className="text-gray-800 font-medium">{name}</span>

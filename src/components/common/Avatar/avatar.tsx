@@ -3,12 +3,12 @@ import Icon from "../../../assets/icons/Icon";
 
 
 const sizeClasses = {
-    xs: 'w-32 h-32',
-    sm: 'w-40 h-40',
-    md: 'w-48 h-48',
-    lg: 'w-56 h-56',
-    xl: 'w-64 h-64',
-    xxl: 'w-80 h-80'
+    xs: 'w-[32px] h-[32px]',
+    sm: 'w-[40px] h-[40px]',
+    md: 'w-[48px] h-[48px]',
+    lg: 'w-[56px] h-[56px]',
+    xl: 'w-[64px] h-[64px]',
+    xxl: 'w-[80px h-[80px]'
 }
 
 
@@ -18,10 +18,11 @@ interface AvatarProps {
 }
 
 
-const Avatar: React.FC<AvatarProps> = ({size , iconName}) => {
+
+const Avatar: React.FC<AvatarProps> = ({size , iconName }) => {
     return (
-        <div className={`relative flex items-center justify-center ${sizeClasses[size]}`}>
-                <Icon name={iconName} ></Icon>
+        <div className={`relative flex flex-col items-center justify-center ${sizeClasses[size]}`}>
+            <Icon name={iconName} ></Icon>
         </div>
 
     )};
