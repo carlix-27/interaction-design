@@ -4,7 +4,7 @@ import InputField, { InputFieldProps } from "./InputField";
 import { iconArray, iconList } from "../../../assets/icons/icon_list";
 
 export default {
-  title: "InputField",
+  title: "Input/InputField",
   component: InputField,
   argTypes: {
     leftIcon: { control: "select", options: iconArray },

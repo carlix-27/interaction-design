@@ -27,7 +27,7 @@ type Story = StoryObj<typeof QuestionQuiz>;
 
 export const Default: Story = {
     args: {
-        question: '¿Cuál es la capital de España?',
+        question: 'Cuál es la forma correcta de declarar una variable en javaScript?',
         currentQuestion: 3,
         totalQuestions: 10,
     },
