@@ -5,7 +5,7 @@ import {iconArray, iconList} from "../../../assets/icons/icon_list";
 
 
 const meta: Meta<typeof List> = {
-    title: "List",
+    title: "Course/List",
     component: List,
     argTypes: {
         icon: { control: "select", options: iconArray },
