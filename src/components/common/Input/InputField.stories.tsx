@@ -20,6 +20,6 @@ export const Default = Template.bind({});
 Default.args = {
   label: "",
   placeholder: "Placeholder text",
-  leftIcon: iconList.plus,
+  leftIcon: iconList.plus_black,
   rightIcon: iconList.send,
 };
