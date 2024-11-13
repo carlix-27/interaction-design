@@ -10,7 +10,7 @@ interface CommentProps {
 
 const Comment: React.FC<CommentProps> = ({ authorName, content, isOnline = false, picture }) => {
     return (
-        <div className="comment-container bg-grey-50 p-4 rounded-3xl shadow-md flex items-center">
+        <div className="comment-container bg-grey-50 px-4 py-2 rounded-3xl shadow-md flex items-center w-2/4">
             <div className="relative mr-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden" style={{backgroundColor: '#3f51b5'}}>
                     <Icon name={picture} />

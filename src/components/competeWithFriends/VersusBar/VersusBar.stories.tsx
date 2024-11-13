@@ -8,11 +8,11 @@ const meta: Meta<typeof VersusBar>={
     argTypes:{
         name1: {
             control: 'text',
-            defaultValue: 'Juan',
+            defaultValue: 'Ana P.',
         },
         name2: {
             control: 'text',
-            defaultValue: 'Pedro',
+            defaultValue: 'Juan',
         }
     },
 };
@@ -23,8 +23,8 @@ type Story = StoryObj<typeof VersusBar>;
 
 export const Default: Story = {
     args: {
-        name1: 'Juan',
-        name2: 'Pedro',
+        name1: 'Ana P.',
+        name2: 'Juan',
     },
 };
 

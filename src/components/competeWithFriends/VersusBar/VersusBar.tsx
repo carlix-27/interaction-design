@@ -1,14 +1,14 @@
 import React, { HTMLAttributes } from "react";
 import { cva, VariantProps } from "class-variance-authority";
+import Icon from "../../../assets/icons/Icon";
 
 const versusBarVariant = cva([
     "flex",
     "w-[390px]",
-    "h-[73px]",
+    "h-[75px]",
     "px-10",
     "justify-center",
     "items-center",
-    "bg-primary-50"
 ]);
 
 interface VersusBarProps extends Omit<HTMLAttributes<HTMLDivElement>, "any"> {
@@ -21,31 +21,26 @@ const VersusBar: React.FC<VersusBarProps> = ({ name1, name2 }) => {
         <div className={versusBarVariant()}>
             <div className="flex justify-between items-center gap-6 flex-1">
                 <div className="flex items-center gap-4 flex-1 text-grey-900">
-                    <img
-                        src="/Avatar (1).png"
-                        alt="Avatar1"
-                        className="w-10 h-10 rounded-full"
-                    />
-                    <span className="font-bodyFont text-b2_body">
+
+                    <Icon name='woman_heart_sign'></Icon>
+
+                    <span className="flex font-bodyFont text-b2_body font-semibold whitespace-nowrap">
                         {name1}
                     </span>
                 </div>
 
-                <span className="text-primary-500 text-center font-bodyFont text-c3_caption font-semibold">
-                    vs
+                <span className="flex text-primary-500 text-center font-bodyFont text-bodybold1 font-semibold ml-2">
+                    VS
                 </span>
 
 
                 <div className="flex items-center gap-4 flex-1 text-grey-900 justify-end">
-                    <span className="font-bodyFont text-b2_body">
+                    <span className=" font-bodyFont text-bodybold1 font-semibold whitespace-nowrap">
                         {name2}
                     </span>
 
-                    <img
-                        src="/Avatar (2).png"
-                        alt="Avatar2"
-                        className="w-10 h-10 rounded-full"
-                    />
+                    <Icon name='man_with_dog'></Icon>
+
                 </div>
             </div>
         </div>

@@ -34,7 +34,7 @@ type Story = StoryObj<typeof UserGameProfile>;
 export const Default: Story = {
     args: {
 
-        username: 'Anilamejor',
+        username: 'Ana Paola',
         achievements: '2 veces Top 10',
         division: 'Oro',
         totalExp: 10500,
