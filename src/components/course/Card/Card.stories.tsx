@@ -6,19 +6,19 @@ import { Meta, StoryObj } from "@storybook/react";
 const meta: Meta<typeof Card> = {
   title: "Course/Card",
   component: Card,
-    argTypes:{
-      title:{
-          control: "text",
-          if: {arg: "type", neq:"question"}
-      },
-      image: {control: false},
-      altText: {control: false},
-      type: {control: false},
-      status: {
-            control: "boolean",
-            if: { arg: "type", eq: "question" },
-      },
-    }
+  argTypes: {
+    title: {
+      control: "text",
+      if: { arg: "type", neq: "question" },
+    },
+    image: { control: false },
+    altText: { control: false },
+    type: { control: false },
+    status: {
+      control: "boolean",
+      if: { arg: "type", eq: "question" },
+    },
+  },
 };
 
 export default meta;
@@ -27,9 +27,9 @@ type CardStories = StoryObj<typeof Card>;
 
 export const InstructorCard: CardStories = {
   name: "InstructorCard",
-    args:{
-      type:'instructor',
-    },
+  args: {
+    type: "instructor",
+  },
   render: (args) => (
     <Card
       image={"circle-profile-avatar.png"}
@@ -61,7 +61,7 @@ export const UnitCard: CardStories = {
   render: (args) => (
     <Card
       image={
-        "https://upload.wikimedia.org/wikipedia/commons/a/a4/JavaScript_code.png"
+        "https://thumbs.dreamstime.com/z/vertical-shot-screen-html-javascript-source-code-web-page-development-data-196508345.jpg"
       }
       title={"Unidad 1"}
       description={"En esta unidad comenzarás tus primeros pasos en Javascript"}
@@ -71,22 +71,20 @@ export const UnitCard: CardStories = {
 };
 
 export const QuestionCard: CardStories = {
-    name: "questionCard",
-    args: {
-        type:'question',
-        status: true,
-    },
-    render: (args) => (
-        <Card
-            image={
-                "https://upload.wikimedia.org/wikipedia/commons/a/a4/JavaScript_code.png"
-            }
-            title={args.title}
-            description={"¿Qué diferencia hay entre var, let, y const en JavaScript?"}
-            type={args.type}
-            status={args.status}
-        ></Card>
-    ),
+  name: "questionCard",
+  args: {
+    type: "question",
+    status: true,
+  },
+  render: (args) => (
+    <Card
+      image={
+        "https://thumbs.dreamstime.com/z/vertical-shot-screen-html-javascript-source-code-web-page-development-data-196508345.jpg"
+      }
+      title={args.title}
+      description={"¿Qué diferencia hay entre var, let, y const en JavaScript?"}
+      type={args.type}
+      status={args.status}
+    ></Card>
+  ),
 };
-
-

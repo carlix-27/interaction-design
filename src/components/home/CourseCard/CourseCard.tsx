@@ -12,13 +12,9 @@ const cardVariant = cva(
           "shadow-[0px_6px_14px_-6px_rgba(19,25,39,0.12),_0px_10px_32px_-4px_rgba(19,25,39,0.10)]",
         ],
       },
-      size: {
-        medium: ["w-[120px] h-[142px]"],
-      },
     },
     defaultVariants: {
       shadow: "default",
-      size: "medium",
     },
   },
 );
@@ -34,17 +30,16 @@ export interface CourseCardProps
 const CourseCard: React.FC<CourseCardProps> = ({
   title,
   description,
-  size,
   image,
   shadow,
   ...rest
 }) => {
   return (
-    <div className={cardVariant({ size, shadow })} {...rest}>
-      <div className="h-[142px] w-full overflow-hidden rounded-t-[16px]">
+    <div className={`${cardVariant({ shadow })} w-[120px] h-[152px]`} {...rest}>
+      <div className="h-[86px] w-[142px] overflow-hidden rounded-t-[16px]">
         <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
-      <div className="text-center min-h-[40px] flex flex-col py-2 px-4 justify-center items-center self-stretch">
+      <div className="text-center min-h-[56px] flex flex-col py-[16px] px-[8px] justify-center items-center self-stretch">
         <h3 className="text-gray-950 text-b2_bodyBold font-semibold">
           {title}
         </h3>
