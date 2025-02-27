@@ -44,7 +44,7 @@ export const InstructorCard: CardStories = {
 
 export const ProjectCard: CardStories = {
   name: "ProjectCard",
-  render: (args) => (
+  render: () => (
     <Card
       image={
         "https://img.freepik.com/vector-gratis/calculadora-vector-dibujos-animados-flotante-icono-ilustracion-educacion-icono-objeto-vector-plano-aislado_138676-10322.jpg"
@@ -58,7 +58,7 @@ export const ProjectCard: CardStories = {
 
 export const UnitCard: CardStories = {
   name: "UnitCard",
-  render: (args) => (
+  render: () => (
     <Card
       image={
         "https://thumbs.dreamstime.com/z/vertical-shot-screen-html-javascript-source-code-web-page-development-data-196508345.jpg"
