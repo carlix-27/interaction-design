@@ -13,6 +13,7 @@ const challengeZoneVariant = cva([
     "text-center",
 ]);
 
+
 interface ChallengeZonePopupProps extends HTMLAttributes<HTMLDivElement> {
     onAccept: () => void;
     onHide: () => void;
