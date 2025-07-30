@@ -8,7 +8,6 @@ export default {
 
 export const Default = () => <UnitDetails/>;
 
-// Ejemplo con props personalizados (ajusta según la interfaz real)
 export const CustomProps = () => (
     <UnitDetails/>
 );
