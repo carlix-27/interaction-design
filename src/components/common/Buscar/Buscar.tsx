@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface BuscarProps {
     placeholder?: string;
@@ -82,11 +82,11 @@ export const Buscar: React.FC<BuscarProps> = ({
                 type="text"
                 placeholder={getPlaceholderText()}
                 value={value}
-                onChange={(e) => onChange?.(e.target.value)}
+                onChange={e => onChange?.(e.target.value)}
                 style={{
-                    border: 'none',
-                    outline: 'none',
-                    backgroundColor: 'transparent',
+                    border: "none",
+                    outline: "none",
+                    backgroundColor: "transparent",
                     flex: 1,
                     color: getTextColor(),
                     fontFamily: 'Roboto',

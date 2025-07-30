@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import Head from './Head';
+import type { Meta, StoryObj } from "@storybook/react";
+import Head from "./Head";
 
 const meta: Meta<typeof Head> = {
-    title: 'Common/Head',
+    title: "Common/Head",
     component: Head,
     parameters: {
         backgrounds: {

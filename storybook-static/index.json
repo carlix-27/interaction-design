@@ -1,0 +1,662 @@
+{
+    "v": 5,
+    "entries": {
+        "visualizecontent-comment--default": {
+            "type": "story",
+            "id": "visualizecontent-comment--default",
+            "name": "Default",
+            "title": "VisualizeContent/Comment",
+            "importPath": "./src/components/VisualizeContent/comment/Comment.stories.tsx",
+            "componentPath": "./src/components/VisualizeContent/comment/Comment.tsx",
+            "tags": ["dev", "test"]
+        },
+        "visualizecontent-comment--expanded": {
+            "type": "story",
+            "id": "visualizecontent-comment--expanded",
+            "name": "Expanded",
+            "title": "VisualizeContent/Comment",
+            "importPath": "./src/components/VisualizeContent/comment/Comment.stories.tsx",
+            "componentPath": "./src/components/VisualizeContent/comment/Comment.tsx",
+            "tags": ["dev", "test"]
+        },
+        "visualizecontent-instructorcard--default": {
+            "type": "story",
+            "id": "visualizecontent-instructorcard--default",
+            "name": "Default",
+            "title": "VisualizeContent/InstructorCard",
+            "importPath": "./src/components/VisualizeContent/instructor/InstructorCard.stories.tsx",
+            "componentPath": "./src/components/VisualizeContent/instructor/InstructorCard.tsx",
+            "tags": ["dev", "test"]
+        },
+        "visualizecontent-profile--default": {
+            "type": "story",
+            "id": "visualizecontent-profile--default",
+            "name": "Default",
+            "title": "VisualizeContent/Profile",
+            "importPath": "./src/components/VisualizeContent/profile/Profile.stories.tsx",
+            "componentPath": "./src/components/VisualizeContent/profile/Profile.tsx",
+            "tags": ["dev", "test"]
+        },
+        "visualizecontent-rating--default": {
+            "type": "story",
+            "id": "visualizecontent-rating--default",
+            "name": "Default",
+            "title": "VisualizeContent/Rating",
+            "importPath": "./src/components/VisualizeContent/rating/Rating.stories.tsx",
+            "componentPath": "./src/components/VisualizeContent/rating/Rating.tsx",
+            "tags": ["dev", "test"]
+        },
+        "visualizecontent-user--default": {
+            "type": "story",
+            "id": "visualizecontent-user--default",
+            "name": "Default",
+            "title": "VisualizeContent/User",
+            "importPath": "./src/components/VisualizeContent/user/User.stories.tsx",
+            "componentPath": "./src/components/VisualizeContent/user/User.tsx",
+            "tags": ["dev", "test"]
+        },
+        "components-avatar--all-avatars": {
+            "type": "story",
+            "id": "components-avatar--all-avatars",
+            "name": "AllAvatars",
+            "title": "Components/Avatar",
+            "importPath": "./src/components/common/Avatar/Avatar.stories.tsx",
+            "componentPath": "./src/components/common/Avatar/avatar.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-buscar--default": {
+            "type": "story",
+            "id": "componentes-buscar--default",
+            "name": "Default",
+            "title": "Componentes/Buscar",
+            "importPath": "./src/components/common/Buscar/Buscar.stories.tsx",
+            "componentPath": "./src/components/common/Buscar/Buscar.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-buscar--con-valor": {
+            "type": "story",
+            "id": "componentes-buscar--con-valor",
+            "name": "Con Valor",
+            "title": "Componentes/Buscar",
+            "importPath": "./src/components/common/Buscar/Buscar.stories.tsx",
+            "componentPath": "./src/components/common/Buscar/Buscar.tsx",
+            "tags": ["dev", "test"]
+        },
+        "components-button--docs": {
+            "id": "components-button--docs",
+            "title": "Components/Button",
+            "name": "Docs",
+            "importPath": "./src/components/common/Button/Button.stories.tsx",
+            "type": "docs",
+            "tags": ["dev", "test", "autodocs"],
+            "storiesImports": []
+        },
+        "components-button--fulfilled": {
+            "type": "story",
+            "id": "components-button--fulfilled",
+            "name": "Fulfilled",
+            "title": "Components/Button",
+            "importPath": "./src/components/common/Button/Button.stories.tsx",
+            "componentPath": "./src/components/common/Button/index.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "components-button--focus": {
+            "type": "story",
+            "id": "components-button--focus",
+            "name": "Focus",
+            "title": "Components/Button",
+            "importPath": "./src/components/common/Button/Button.stories.tsx",
+            "componentPath": "./src/components/common/Button/index.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "components-button--outlined": {
+            "type": "story",
+            "id": "components-button--outlined",
+            "name": "Outlined",
+            "title": "Components/Button",
+            "importPath": "./src/components/common/Button/Button.stories.tsx",
+            "componentPath": "./src/components/common/Button/index.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "components-button--active": {
+            "type": "story",
+            "id": "components-button--active",
+            "name": "Active",
+            "title": "Components/Button",
+            "importPath": "./src/components/common/Button/Button.stories.tsx",
+            "componentPath": "./src/components/common/Button/index.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "components-button--disabled": {
+            "type": "story",
+            "id": "components-button--disabled",
+            "name": "Disabled",
+            "title": "Components/Button",
+            "importPath": "./src/components/common/Button/Button.stories.tsx",
+            "componentPath": "./src/components/common/Button/index.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "componentes-cardforo--default": {
+            "type": "story",
+            "id": "componentes-cardforo--default",
+            "name": "Default",
+            "title": "Componentes/CardForo",
+            "importPath": "./src/components/common/CardForo/CardForo.stories.tsx",
+            "componentPath": "./src/components/common/CardForo/CardForo.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-cardforo--sin-acción": {
+            "type": "story",
+            "id": "componentes-cardforo--sin-acción",
+            "name": "Sin Acción",
+            "title": "Componentes/CardForo",
+            "importPath": "./src/components/common/CardForo/CardForo.stories.tsx",
+            "componentPath": "./src/components/common/CardForo/CardForo.tsx",
+            "tags": ["dev", "test"]
+        },
+        "common-comment--docs": {
+            "id": "common-comment--docs",
+            "title": "Common/Comment",
+            "name": "Docs",
+            "importPath": "./src/components/common/Comment/Comment.stories.tsx",
+            "type": "docs",
+            "tags": ["dev", "test", "autodocs"],
+            "storiesImports": []
+        },
+        "common-comment--default": {
+            "type": "story",
+            "id": "common-comment--default",
+            "name": "Default",
+            "title": "Common/Comment",
+            "importPath": "./src/components/common/Comment/Comment.stories.tsx",
+            "componentPath": "./src/components/common/Comment/Comment.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "common-comment--sin-comentario": {
+            "type": "story",
+            "id": "common-comment--sin-comentario",
+            "name": "Sin Comentario",
+            "title": "Common/Comment",
+            "importPath": "./src/components/common/Comment/Comment.stories.tsx",
+            "componentPath": "./src/components/common/Comment/Comment.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "common-comment--con-comentario-largo": {
+            "type": "story",
+            "id": "common-comment--con-comentario-largo",
+            "name": "Con Comentario Largo",
+            "title": "Common/Comment",
+            "importPath": "./src/components/common/Comment/Comment.stories.tsx",
+            "componentPath": "./src/components/common/Comment/Comment.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "common-head--default": {
+            "type": "story",
+            "id": "common-head--default",
+            "name": "Default",
+            "title": "Common/Head",
+            "importPath": "./src/components/common/Head/Head.stories.tsx",
+            "componentPath": "./src/components/common/Head/Head.tsx",
+            "tags": ["dev", "test"]
+        },
+        "input-inputfield--default": {
+            "type": "story",
+            "id": "input-inputfield--default",
+            "name": "Default",
+            "title": "Input/InputField",
+            "importPath": "./src/components/common/Input/InputField.stories.tsx",
+            "componentPath": "./src/components/common/Input/InputField.tsx",
+            "tags": ["dev", "test"]
+        },
+        "loader-loadingspinner--default": {
+            "type": "story",
+            "id": "loader-loadingspinner--default",
+            "name": "Default",
+            "title": "Loader/LoadingSpinner",
+            "importPath": "./src/components/common/LoadingSpinner/LoadingSpinner.stories.tsx",
+            "componentPath": "./src/components/common/LoadingSpinner/LoadingSpinner.tsx",
+            "tags": ["dev", "test"]
+        },
+        "loader-loadingspinner--large-spinner": {
+            "type": "story",
+            "id": "loader-loadingspinner--large-spinner",
+            "name": "Large Spinner",
+            "title": "Loader/LoadingSpinner",
+            "importPath": "./src/components/common/LoadingSpinner/LoadingSpinner.stories.tsx",
+            "componentPath": "./src/components/common/LoadingSpinner/LoadingSpinner.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-mensaje--default": {
+            "type": "story",
+            "id": "componentes-mensaje--default",
+            "name": "Default",
+            "title": "Componentes/Mensaje",
+            "importPath": "./src/components/common/Mensaje/Mensaje.stories.tsx",
+            "componentPath": "./src/components/common/Mensaje/Mensaje.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-mensaje--online": {
+            "type": "story",
+            "id": "componentes-mensaje--online",
+            "name": "Online",
+            "title": "Componentes/Mensaje",
+            "importPath": "./src/components/common/Mensaje/Mensaje.stories.tsx",
+            "componentPath": "./src/components/common/Mensaje/Mensaje.tsx",
+            "tags": ["dev", "test"]
+        },
+        "navbar-navbarbottom--home-active": {
+            "type": "story",
+            "id": "navbar-navbarbottom--home-active",
+            "name": "Home Active",
+            "title": "Navbar/NavbarBottom",
+            "importPath": "./src/components/common/NavbarBottom/NavbarBottom.stories.tsx",
+            "componentPath": "./src/components/common/NavbarBottom/NavbarBottom.tsx",
+            "tags": ["dev", "test"]
+        },
+        "navbar-navbarbottom--list-active": {
+            "type": "story",
+            "id": "navbar-navbarbottom--list-active",
+            "name": "List Active",
+            "title": "Navbar/NavbarBottom",
+            "importPath": "./src/components/common/NavbarBottom/NavbarBottom.stories.tsx",
+            "componentPath": "./src/components/common/NavbarBottom/NavbarBottom.tsx",
+            "tags": ["dev", "test"]
+        },
+        "navbar-navbarbottom--user-active": {
+            "type": "story",
+            "id": "navbar-navbarbottom--user-active",
+            "name": "User Active",
+            "title": "Navbar/NavbarBottom",
+            "importPath": "./src/components/common/NavbarBottom/NavbarBottom.stories.tsx",
+            "componentPath": "./src/components/common/NavbarBottom/NavbarBottom.tsx",
+            "tags": ["dev", "test"]
+        },
+        "navbar-navbartop--no-notifications": {
+            "type": "story",
+            "id": "navbar-navbartop--no-notifications",
+            "name": "No Notifications",
+            "title": "Navbar/NavbarTop",
+            "importPath": "./src/components/common/NavbarTop/NavbarTop.stories.tsx",
+            "componentPath": "./src/components/common/NavbarTop/NavbarTop.tsx",
+            "tags": ["dev", "test"]
+        },
+        "navbar-navbartop--with-notifications": {
+            "type": "story",
+            "id": "navbar-navbartop--with-notifications",
+            "name": "With Notifications",
+            "title": "Navbar/NavbarTop",
+            "importPath": "./src/components/common/NavbarTop/NavbarTop.stories.tsx",
+            "componentPath": "./src/components/common/NavbarTop/NavbarTop.tsx",
+            "tags": ["dev", "test"]
+        },
+        "components-pagecontrol--default": {
+            "type": "story",
+            "id": "components-pagecontrol--default",
+            "name": "Default",
+            "title": "Components/PageControl",
+            "importPath": "./src/components/common/PageControl/PageControl.stories.tsx",
+            "componentPath": "./src/components/common/PageControl/PageControl.tsx",
+            "tags": ["dev", "test"]
+        },
+        "components-pill--default": {
+            "type": "story",
+            "id": "components-pill--default",
+            "name": "Default",
+            "title": "Components/Pill",
+            "importPath": "./src/components/common/Pildora/Pill.stories.tsx",
+            "componentPath": "./src/components/common/Pildora/Pill.tsx",
+            "tags": ["dev", "test"]
+        },
+        "components-pill--selected": {
+            "type": "story",
+            "id": "components-pill--selected",
+            "name": "Selected",
+            "title": "Components/Pill",
+            "importPath": "./src/components/common/Pildora/Pill.stories.tsx",
+            "componentPath": "./src/components/common/Pildora/Pill.tsx",
+            "tags": ["dev", "test"]
+        },
+        "components-pill--disabled": {
+            "type": "story",
+            "id": "components-pill--disabled",
+            "name": "Disabled",
+            "title": "Components/Pill",
+            "importPath": "./src/components/common/Pildora/Pill.stories.tsx",
+            "componentPath": "./src/components/common/Pildora/Pill.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-rating--basico": {
+            "type": "story",
+            "id": "componentes-rating--basico",
+            "name": "Basico",
+            "title": "Componentes/Rating",
+            "importPath": "./src/components/common/Rating/Rating.stories.tsx",
+            "componentPath": "./src/components/common/Rating/Rating.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-rating--bajo": {
+            "type": "story",
+            "id": "componentes-rating--bajo",
+            "name": "Bajo",
+            "title": "Componentes/Rating",
+            "importPath": "./src/components/common/Rating/Rating.stories.tsx",
+            "componentPath": "./src/components/common/Rating/Rating.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-rating--perfecto": {
+            "type": "story",
+            "id": "componentes-rating--perfecto",
+            "name": "Perfecto",
+            "title": "Componentes/Rating",
+            "importPath": "./src/components/common/Rating/Rating.stories.tsx",
+            "componentPath": "./src/components/common/Rating/Rating.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-rating--sin-puntaje": {
+            "type": "story",
+            "id": "componentes-rating--sin-puntaje",
+            "name": "Sin Puntaje",
+            "title": "Componentes/Rating",
+            "importPath": "./src/components/common/Rating/Rating.stories.tsx",
+            "componentPath": "./src/components/common/Rating/Rating.tsx",
+            "tags": ["dev", "test"]
+        },
+        "common-startcourse--docs": {
+            "id": "common-startcourse--docs",
+            "title": "Common/StartCourse",
+            "name": "Docs",
+            "importPath": "./src/components/common/StartCourse/StartCourse.stories.tsx",
+            "type": "docs",
+            "tags": ["dev", "test", "autodocs"],
+            "storiesImports": []
+        },
+        "common-startcourse--default": {
+            "type": "story",
+            "id": "common-startcourse--default",
+            "name": "Default",
+            "title": "Common/StartCourse",
+            "importPath": "./src/components/common/StartCourse/StartCourse.stories.tsx",
+            "componentPath": "./src/components/common/StartCourse/StartCourse.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "common-startcourse--disabled": {
+            "type": "story",
+            "id": "common-startcourse--disabled",
+            "name": "Disabled",
+            "title": "Common/StartCourse",
+            "importPath": "./src/components/common/StartCourse/StartCourse.stories.tsx",
+            "componentPath": "./src/components/common/StartCourse/StartCourse.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "common-startcourse--custom-class": {
+            "type": "story",
+            "id": "common-startcourse--custom-class",
+            "name": "Custom Class",
+            "title": "Common/StartCourse",
+            "importPath": "./src/components/common/StartCourse/StartCourse.stories.tsx",
+            "componentPath": "./src/components/common/StartCourse/StartCourse.tsx",
+            "tags": ["dev", "test", "autodocs"]
+        },
+        "components-user--user-avatar": {
+            "type": "story",
+            "id": "components-user--user-avatar",
+            "name": "AllAvatars",
+            "title": "Components/User",
+            "importPath": "./src/components/common/User/User.stories.tsx",
+            "componentPath": "./src/components/common/User/user.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-userversionfinal--basico": {
+            "type": "story",
+            "id": "componentes-userversionfinal--basico",
+            "name": "Basico",
+            "title": "Componentes/UserVersionFinal",
+            "importPath": "./src/components/common/UserVersionFinal/UserVersionFinal.stories.tsx",
+            "componentPath": "./src/components/common/UserVersionFinal/UserVersionFinal.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-userversionfinal--sin-rating": {
+            "type": "story",
+            "id": "componentes-userversionfinal--sin-rating",
+            "name": "Sin Rating",
+            "title": "Componentes/UserVersionFinal",
+            "importPath": "./src/components/common/UserVersionFinal/UserVersionFinal.stories.tsx",
+            "componentPath": "./src/components/common/UserVersionFinal/UserVersionFinal.tsx",
+            "tags": ["dev", "test"]
+        },
+        "componentes-userversionfinal--perfecto": {
+            "type": "story",
+            "id": "componentes-userversionfinal--perfecto",
+            "name": "Perfecto",
+            "title": "Componentes/UserVersionFinal",
+            "importPath": "./src/components/common/UserVersionFinal/UserVersionFinal.stories.tsx",
+            "componentPath": "./src/components/common/UserVersionFinal/UserVersionFinal.tsx",
+            "tags": ["dev", "test"]
+        },
+        "competewithfriends-answerquiz--default": {
+            "type": "story",
+            "id": "competewithfriends-answerquiz--default",
+            "name": "Default",
+            "title": "CompeteWithFriends/AnswerQuiz",
+            "importPath": "./src/components/competeWithFriends/AnswersQuiz/AnswerQuiz.stories.tsx",
+            "componentPath": "./src/components/competeWithFriends/AnswersQuiz/AnswerQuiz.tsx",
+            "tags": ["dev", "test"]
+        },
+        "competewithfriends-answerquiz--press": {
+            "type": "story",
+            "id": "competewithfriends-answerquiz--press",
+            "name": "Press",
+            "title": "CompeteWithFriends/AnswerQuiz",
+            "importPath": "./src/components/competeWithFriends/AnswersQuiz/AnswerQuiz.stories.tsx",
+            "componentPath": "./src/components/competeWithFriends/AnswersQuiz/AnswerQuiz.tsx",
+            "tags": ["dev", "test"]
+        },
+        "competewithfriends-popup--default": {
+            "type": "story",
+            "id": "competewithfriends-popup--default",
+            "name": "Default",
+            "title": "CompeteWithFriends/Popup",
+            "importPath": "./src/components/competeWithFriends/PopUp/Popup.stories.tsx",
+            "componentPath": "./src/components/competeWithFriends/PopUp/Popup.tsx",
+            "tags": ["dev", "test"]
+        },
+        "competewithfriends-questionquiz--default": {
+            "type": "story",
+            "id": "competewithfriends-questionquiz--default",
+            "name": "Default",
+            "title": "CompeteWithFriends/QuestionQuiz",
+            "importPath": "./src/components/competeWithFriends/QuestionQuiz/QuestionQuiz.stories.tsx",
+            "componentPath": "./src/components/competeWithFriends/QuestionQuiz/QuestionQuiz.tsx",
+            "tags": ["dev", "test"]
+        },
+        "competewithfriends-swordicon--default": {
+            "type": "story",
+            "id": "competewithfriends-swordicon--default",
+            "name": "Default",
+            "title": "CompeteWithFriends/SwordIcon",
+            "importPath": "./src/components/competeWithFriends/SwordIcon/SwordIcon.stories.tsx",
+            "componentPath": "./src/components/competeWithFriends/SwordIcon/SwordIcon.tsx",
+            "tags": ["dev", "test"]
+        },
+        "competewithfriends-usercard--default": {
+            "type": "story",
+            "id": "competewithfriends-usercard--default",
+            "name": "Default",
+            "title": "CompeteWithFriends/UserCard",
+            "importPath": "./src/components/competeWithFriends/UserCard/UserCard.stories.tsx",
+            "componentPath": "./src/components/competeWithFriends/UserCard/UserCard.tsx",
+            "tags": ["dev", "test"]
+        },
+        "competewithfriends-usergameprofile--default": {
+            "type": "story",
+            "id": "competewithfriends-usergameprofile--default",
+            "name": "Default",
+            "title": "CompeteWithFriends/UserGameProfile",
+            "importPath": "./src/components/competeWithFriends/UserGameProfile/UserGameProfile.stories.tsx",
+            "componentPath": "./src/components/competeWithFriends/UserGameProfile/UserGameProfile.tsx",
+            "tags": ["dev", "test"]
+        },
+        "competewithfriends-versusbar--default": {
+            "type": "story",
+            "id": "competewithfriends-versusbar--default",
+            "name": "Default",
+            "title": "CompeteWithFriends/VersusBar",
+            "importPath": "./src/components/competeWithFriends/VersusBar/VersusBar.stories.tsx",
+            "componentPath": "./src/components/competeWithFriends/VersusBar/VersusBar.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-buttonplus--rounded-square-button": {
+            "type": "story",
+            "id": "course-buttonplus--rounded-square-button",
+            "name": "RoundedSquareButton",
+            "title": "Course/ButtonPlus",
+            "importPath": "./src/components/course/ButtonPlus/ButtonPlus.stories.tsx",
+            "componentPath": "./src/components/course/ButtonPlus/ButtonPlus.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-card--instructor-card": {
+            "type": "story",
+            "id": "course-card--instructor-card",
+            "name": "InstructorCard",
+            "title": "Course/Card",
+            "importPath": "./src/components/course/Card/Card.stories.tsx",
+            "componentPath": "./src/components/course/Card/Card.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-card--project-card": {
+            "type": "story",
+            "id": "course-card--project-card",
+            "name": "ProjectCard",
+            "title": "Course/Card",
+            "importPath": "./src/components/course/Card/Card.stories.tsx",
+            "componentPath": "./src/components/course/Card/Card.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-card--unit-card": {
+            "type": "story",
+            "id": "course-card--unit-card",
+            "name": "UnitCard",
+            "title": "Course/Card",
+            "importPath": "./src/components/course/Card/Card.stories.tsx",
+            "componentPath": "./src/components/course/Card/Card.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-card--question-card": {
+            "type": "story",
+            "id": "course-card--question-card",
+            "name": "questionCard",
+            "title": "Course/Card",
+            "importPath": "./src/components/course/Card/Card.stories.tsx",
+            "componentPath": "./src/components/course/Card/Card.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-comment--active-comment": {
+            "type": "story",
+            "id": "course-comment--active-comment",
+            "name": "ActiveComment",
+            "title": "Course/Comment",
+            "importPath": "./src/components/course/Comment/Comment.stories.tsx",
+            "componentPath": "./src/components/course/Comment/Comment.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-forumquestion--default-forum-question": {
+            "type": "story",
+            "id": "course-forumquestion--default-forum-question",
+            "name": "DefaultForumQuestion",
+            "title": "Course/ForumQuestion",
+            "importPath": "./src/components/course/ForumQuestion/ForumQuestion.stories.tsx",
+            "componentPath": "./src/components/course/ForumQuestion/ForumQuestion.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-list--requirement-list": {
+            "type": "story",
+            "id": "course-list--requirement-list",
+            "name": "RequirementList",
+            "title": "Course/List",
+            "importPath": "./src/components/course/List/List.stories.tsx",
+            "componentPath": "./src/components/course/List/List.tsx",
+            "tags": ["dev", "test"]
+        },
+        "course-video--video": {
+            "type": "story",
+            "id": "course-video--video",
+            "name": "video",
+            "title": "Course/Video",
+            "importPath": "./src/components/course/Video/video.stories.tsx",
+            "componentPath": "./src/components/course/Video/video.tsx",
+            "tags": ["dev", "test"]
+        },
+        "home-coursecard--default": {
+            "type": "story",
+            "id": "home-coursecard--default",
+            "name": "Default",
+            "title": "Home/CourseCard",
+            "importPath": "./src/components/home/CourseCard/CourseCard.stories.tsx",
+            "componentPath": "./src/components/home/CourseCard/CourseCard.tsx",
+            "tags": ["dev", "test"]
+        },
+        "home-homeheader--default": {
+            "type": "story",
+            "id": "home-homeheader--default",
+            "name": "Default",
+            "title": "Home/HomeHeader",
+            "importPath": "./src/components/home/HomeHeader/HomeHeader.stories.tsx",
+            "componentPath": "./src/components/home/HomeHeader/HomeHeader.tsx",
+            "tags": ["dev", "test"]
+        },
+        "progress-collapsiblemenu--default": {
+            "type": "story",
+            "id": "progress-collapsiblemenu--default",
+            "name": "Default",
+            "title": "Progress/CollapsibleMenu",
+            "importPath": "./src/components/progress/CollapsibleMenu/CollapsibleMenu.stories.tsx",
+            "componentPath": "./src/components/progress/CollapsibleMenu/CollapsibleMenu.tsx",
+            "tags": ["dev", "test"]
+        },
+        "progress-collapsiblemenu--partial-progress": {
+            "type": "story",
+            "id": "progress-collapsiblemenu--partial-progress",
+            "name": "Partial Progress",
+            "title": "Progress/CollapsibleMenu",
+            "importPath": "./src/components/progress/CollapsibleMenu/CollapsibleMenu.stories.tsx",
+            "componentPath": "./src/components/progress/CollapsibleMenu/CollapsibleMenu.tsx",
+            "tags": ["dev", "test"]
+        },
+        "progress-collapsiblemenu--mixed-progress": {
+            "type": "story",
+            "id": "progress-collapsiblemenu--mixed-progress",
+            "name": "Mixed Progress",
+            "title": "Progress/CollapsibleMenu",
+            "importPath": "./src/components/progress/CollapsibleMenu/CollapsibleMenu.stories.tsx",
+            "componentPath": "./src/components/progress/CollapsibleMenu/CollapsibleMenu.tsx",
+            "tags": ["dev", "test"]
+        },
+        "progress-progressbar--default": {
+            "type": "story",
+            "id": "progress-progressbar--default",
+            "name": "Default",
+            "title": "Progress/ProgressBar",
+            "importPath": "./src/components/progress/ProgressBar/ProgressBar.stories.tsx",
+            "componentPath": "./src/components/progress/ProgressBar/ProgressBar.tsx",
+            "tags": ["dev", "test"]
+        },
+        "progress-progressitem--default": {
+            "type": "story",
+            "id": "progress-progressitem--default",
+            "name": "Default",
+            "title": "Progress/ProgressItem",
+            "importPath": "./src/components/progress/ProgressItem/ProgressItem.stories.tsx",
+            "componentPath": "./src/components/progress/ProgressItem/ProgressItem.tsx",
+            "tags": ["dev", "test"]
+        },
+        "progress-progressitem--silver-medal": {
+            "type": "story",
+            "id": "progress-progressitem--silver-medal",
+            "name": "Silver Medal",
+            "title": "Progress/ProgressItem",
+            "importPath": "./src/components/progress/ProgressItem/ProgressItem.stories.tsx",
+            "componentPath": "./src/components/progress/ProgressItem/ProgressItem.tsx",
+            "tags": ["dev", "test"]
+        }
+    }
+}

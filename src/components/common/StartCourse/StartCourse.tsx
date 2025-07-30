@@ -28,14 +28,14 @@ export default function StartCourse({ onClick, className = '', disabled = false,
             disabled={disabled}
             onMouseEnter={e => {
                 if (!disabled) {
-                    e.currentTarget.style.background = '#6B0899';
-                    e.currentTarget.style.borderColor = '#6B0899';
+                    e.currentTarget.style.background = "#6B0899";
+                    e.currentTarget.style.borderColor = "#6B0899";
                 }
             }}
             onMouseLeave={e => {
                 if (!disabled) {
-                    e.currentTarget.style.background = '#860ABA';
-                    e.currentTarget.style.borderColor = '#860ABA';
+                    e.currentTarget.style.background = "#860ABA";
+                    e.currentTarget.style.borderColor = "#860ABA";
                 }
             }}
         >

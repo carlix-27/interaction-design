@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import StartCourse from './StartCourse';
+import type { Meta, StoryObj } from "@storybook/react";
+import StartCourse from "./StartCourse";
 
 const meta: Meta<typeof StartCourse> = {
-    title: 'Common/StartCourse',
+    title: "Common/StartCourse",
     component: StartCourse,
     argTypes: {
         text: {

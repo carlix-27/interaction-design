@@ -146,18 +146,18 @@ const Card: React.FC<CardProps> = ({
           {description}
         </p>
 
-        {type === "question" && (
-          <p
-            className={`font-semibold ${
-              status ? "text-blue-500" : "text-red-500"
-            }`}
-          >
-            {status ? "Resuelto" : "No Resuelto"}
-          </p>
-        )}
-      </div>
-    </div>
-  );
+                {type === "question" && (
+                    <p
+                        className={`font-semibold ${
+                            status ? "text-blue-500" : "text-red-500"
+                        }`}
+                    >
+                        {status ? "Resuelto" : "No Resuelto"}
+                    </p>
+                )}
+            </div>
+        </div>
+    );
 };
 
 export default Card;

@@ -1,5 +1,5 @@
-import React, { HTMLAttributes } from 'react';
-import { cva, VariantProps } from 'class-variance-authority';
+import React, { HTMLAttributes } from "react";
+import { cva, VariantProps } from "class-variance-authority";
 
 const challengeZoneVariant = cva([
     "rounded-lg",
@@ -13,7 +13,6 @@ const challengeZoneVariant = cva([
     "text-center",
 ]);
 
-
 interface ChallengeZonePopupProps extends HTMLAttributes<HTMLDivElement> {
     onAccept: () => void;
     onHide: () => void;
@@ -22,25 +21,24 @@ interface ChallengeZonePopupProps extends HTMLAttributes<HTMLDivElement> {
 const Popup: React.FC<ChallengeZonePopupProps> = ({ onAccept, onHide }) => {
     return (
         <div className={challengeZoneVariant()}>
-            <h2 className="text-lg font-semibold text-black mb-2">Juegos</h2>
-            <p className="text-sm text-gray-600 mb-4">
-                ¡Bienvenido a la Zona de Desafíos! Desafía jugadores, compite en juegos y escala en el ranking. ¡Es tu
-                momento de brillar!
+            <h2 className="mb-2 text-lg font-semibold text-black">Juegos</h2>
+            <p className="mb-4 text-sm text-gray-600">
+                ¡Bienvenido a la Zona de Desafíos! Desafía jugadores, compite en
+                juegos y escala en el ranking. ¡Es tu momento de brillar!
             </p>
             <button
-                className="bg-purple-500 text-white py-2 px-4 rounded-lg w-full mb-2 font-semibold hover:bg-purple-600 transition-colors"
+                className="mb-2 w-full rounded-lg bg-purple-500 px-4 py-2 font-semibold text-white transition-colors hover:bg-purple-600"
                 onClick={onAccept}
             >
                 Aceptar
             </button>
             <button
-                className="bg-white text-purple-500 py-2 px-4 rounded-lg w-full mb-2 font-semibold shadow hover:bg-gray-100 transition-colors shadow-md"
+                className="mb-2 w-full rounded-lg bg-white px-4 py-2 font-semibold text-purple-500 shadow shadow-md transition-colors hover:bg-gray-100"
                 onClick={onHide}
             >
                 No volver a mostrar
             </button>
         </div>
-
     );
 };
 
