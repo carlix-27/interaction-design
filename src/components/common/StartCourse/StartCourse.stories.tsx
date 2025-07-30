@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import StartCourse from './StartCourse';
+import type { Meta, StoryObj } from "@storybook/react";
+import StartCourse from "./StartCourse";
 
 const meta: Meta<typeof StartCourse> = {
-    title: 'Common/StartCourse',
+    title: "Common/StartCourse",
     component: StartCourse,
-    tags: ['autodocs'],
+    tags: ["autodocs"],
 };
 
 export default meta;
@@ -24,7 +24,7 @@ export const Disabled: Story = {
 
 export const CustomClass: Story = {
     args: {
-        className: 'shadow-lg',
+        className: "shadow-lg",
         disabled: false,
     },
 };

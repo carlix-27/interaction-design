@@ -1,27 +1,25 @@
-
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import UserGameProfile  from './UserGameProfile';
+import React from "react";
+import { Meta, StoryObj } from "@storybook/react";
+import UserGameProfile from "./UserGameProfile";
 
 const meta: Meta<typeof UserGameProfile> = {
-    title: 'CompeteWithFriends/UserGameProfile',
+    title: "CompeteWithFriends/UserGameProfile",
     component: UserGameProfile,
     argTypes: {
-
         username: {
-            control: 'text',
-            defaultValue: 'Martina',
+            control: "text",
+            defaultValue: "Martina",
         },
         achievements: {
-            control: 'object',
-            defaultValue: '2 veces Top 10',
+            control: "object",
+            defaultValue: "2 veces Top 10",
         },
         division: {
-            control: 'text',
-            defaultValue: 'Oro',
+            control: "text",
+            defaultValue: "Oro",
         },
         totalExp: {
-            control: 'number',
+            control: "number",
             defaultValue: 10500,
         },
     },
@@ -33,11 +31,9 @@ type Story = StoryObj<typeof UserGameProfile>;
 
 export const Default: Story = {
     args: {
-
-        username: 'Martina',
-        achievements: '2 veces Top 10',
-        division: 'Oro',
+        username: "Martina",
+        achievements: "2 veces Top 10",
+        division: "Oro",
         totalExp: 10500,
     },
 };
-

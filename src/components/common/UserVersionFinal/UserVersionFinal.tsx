@@ -7,12 +7,17 @@ interface UserProps {
     date: string;
 }
 
-export const UserVersionFinal: React.FC<UserProps> = ({ name, imageUrl, rating, date }) => (
+export const UserVersionFinal: React.FC<UserProps> = ({
+    name,
+    imageUrl,
+    rating,
+    date,
+}) => (
     <div className="flex items-center gap-3">
         <img
             src={imageUrl}
             alt={name}
-            className="w-8 h-8 rounded-full object-cover"
+            className="h-8 w-8 rounded-full object-cover"
         />
         <span className="text-sm font-medium text-gray-800">{name}</span>
         <Rating rating={rating} date={date} />

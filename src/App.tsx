@@ -9,20 +9,26 @@ import HomePageUIUX from "./pages/HomePage/HomePageUIUX";
 import HomePageArt from "./pages/HomePage/HomePageArt";
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path={"/"} element={<VisualizeContentHome />} />
-          <Route path={"/course"} element={<VisualizeContentCourseInfo />} />
-          <Route path={"/unit"} element={<VisualizeContentUnitInfo />} />
-          <Route path={"/home"} element={<HomePage />} />
-          <Route path={"/ui"} element={<HomePageUIUX />} />
-          <Route path={"/art"} element={<HomePageArt />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Routes>
+                    <Route path={"/"} element={<VisualizeContentHome />} />
+                    <Route
+                        path={"/course"}
+                        element={<VisualizeContentCourseInfo />}
+                    />
+                    <Route
+                        path={"/unit"}
+                        element={<VisualizeContentUnitInfo />}
+                    />
+                    <Route path={"/home"} element={<HomePage />} />
+                    <Route path={"/ui"} element={<HomePageUIUX />} />
+                    <Route path={"/art"} element={<HomePageArt />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

@@ -1,21 +1,21 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import QuestionQuiz from './QuestionQuiz';
+import React from "react";
+import { Meta, StoryObj } from "@storybook/react";
+import QuestionQuiz from "./QuestionQuiz";
 
 const meta: Meta<typeof QuestionQuiz> = {
-    title: 'CompeteWithFriends/QuestionQuiz',
+    title: "CompeteWithFriends/QuestionQuiz",
     component: QuestionQuiz,
     argTypes: {
         question: {
-            control: 'text',
-            defaultValue: '¿Cuál es la capital de España?',
+            control: "text",
+            defaultValue: "¿Cuál es la capital de España?",
         },
         currentQuestion: {
-            control: 'number',
+            control: "number",
             defaultValue: 3,
         },
         totalQuestions: {
-            control: 'number',
+            control: "number",
             defaultValue: 10,
         },
     },
@@ -27,7 +27,8 @@ type Story = StoryObj<typeof QuestionQuiz>;
 
 export const Default: Story = {
     args: {
-        question: 'Cuál es la forma correcta de declarar una variable en javaScript?',
+        question:
+            "Cuál es la forma correcta de declarar una variable en javaScript?",
         currentQuestion: 3,
         totalQuestions: 10,
     },

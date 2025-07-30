@@ -2,31 +2,31 @@
 import React from "react";
 
 interface LoadingSpinnerProps {
-  size?: number; // The overall size of the loading spinner
-  color?: string; // The color of the loading spinner
+    size?: number; // The overall size of the loading spinner
+    color?: string; // The color of the loading spinner
 }
 
 const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
-  size = 32,
-  color = "purple-500",
+    size = 32,
+    color = "purple-500",
 }) => {
-  return (
-    <div className="flex items-center justify-center">
-      <div className="flex items-center space-x-2">
-        {[...Array(1)].map((_, index) => (
-          <div
-            key={index}
-            className={`animate-spin rounded-full border-t-2 border-${color}`}
-            style={{
-              width: size - index * 4,
-              height: size - index * 4,
-              borderTopColor: `rgba(128, 0, 128, ${1 - index * 0.2})`,
-            }}
-          ></div>
-        ))}
-      </div>
-    </div>
-  );
+    return (
+        <div className="flex items-center justify-center">
+            <div className="flex items-center space-x-2">
+                {[...Array(1)].map((_, index) => (
+                    <div
+                        key={index}
+                        className={`animate-spin rounded-full border-t-2 border-${color}`}
+                        style={{
+                            width: size - index * 4,
+                            height: size - index * 4,
+                            borderTopColor: `rgba(128, 0, 128, ${1 - index * 0.2})`,
+                        }}
+                    ></div>
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default LoadingSpinner;
