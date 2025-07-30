@@ -1,7 +1,11 @@
 import React from "react";
 import Icon from "../../../assets/icons/Icon";
 
-export const CardForo: React.FC = () => {
+interface CardForoProps {
+    title?: string
+}
+
+export const CardForo: React.FC = ({title}: CardForoProps) => {
     return (
         <div
             style={{
@@ -19,8 +23,8 @@ export const CardForo: React.FC = () => {
                 boxSizing: "border-box",
             }}
         >
-            <span style={{ fontSize: "16px", fontWeight: 500 }}>Unidad 1</span>
-            <Icon name="Nav-arrow-right" />
+            <span style={{fontSize: "16px", fontWeight: 500}}>{title}</span>
+            <Icon name="Nav-arrow-right"/>
         </div>
     );
 };

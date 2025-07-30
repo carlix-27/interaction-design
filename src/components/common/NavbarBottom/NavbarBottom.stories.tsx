@@ -1,10 +1,10 @@
 // NavbarBottom.stories.tsx
-import React, { useState } from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import NavbarBottom, { BottomNavBarProps } from "./NavbarBottom";
+import React, {useState} from "react";
+import {Meta, StoryObj} from "@storybook/react";
+import NavbarBottom, {BottomNavBarProps} from "./NavbarBottom";
 
 const meta: Meta<typeof NavbarBottom> = {
-    title: "Navbar/NavbarBottom",
+    title: "Components/NavbarBottom",
     component: NavbarBottom,
     argTypes: {
         activeButton: {

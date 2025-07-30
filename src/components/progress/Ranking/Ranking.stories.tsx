@@ -1,8 +1,8 @@
 import React from "react";
-import Ranking, { RankingItem } from "./Ranking";
+import Ranking, {RankingItem} from "./Ranking";
 
 export default {
-    title: "Componentes/Ranking",
+    title: "Progress/Ranking",
     component: Ranking,
 };
 
@@ -26,25 +26,25 @@ const items: RankingItem[] = [
 ];
 
 export const VariantePrimero = () => (
-    <Ranking variant="first" items={items} />
+    <Ranking variant="first" items={items}/>
 );
 export const VarianteSegundo = () => (
-    <Ranking variant="second" items={items} />
+    <Ranking variant="second" items={items}/>
 );
 export const VarianteTercero = () => (
-    <Ranking variant="third" items={items} />
+    <Ranking variant="third" items={items}/>
 );
 export const VarianteCuarto = () => (
-    <Ranking variant="fourth" items={items} />
+    <Ranking variant="fourth" items={items}/>
 );
 export const VarianteSinMedalla = () => (
-    <Ranking variant="notMedal" items={items} />
+    <Ranking variant="notMedal" items={items}/>
 );
 
 export const Basico = () => (
-    <Ranking subject="Matematica I" items={items} showMore={true} />
+    <Ranking subject="Matematica I" items={items} showMore={true}/>
 );
 
 export const SinMas = () => (
-    <Ranking subject="Matematica I" items={items} showMore={false} />
+    <Ranking subject="Matematica I" items={items} showMore={false}/>
 );

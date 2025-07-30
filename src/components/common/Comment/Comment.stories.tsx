@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Comment } from "./Comment";
+import type {Meta, StoryObj} from "@storybook/react";
+import {Comment} from "./Comment";
 
 const meta: Meta<typeof Comment> = {
-    title: "Common/Comment",
+    title: "Components/Comment",
     component: Comment,
     tags: ["autodocs"],
 };

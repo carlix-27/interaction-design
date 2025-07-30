@@ -10,16 +10,16 @@ type MensajeProps = {
 };
 
 export const Mensaje: React.FC<MensajeProps> = ({
-    autor,
-    fecha,
-    hora,
-    texto,
-    estaOnline = false,
-}) => {
+                                                    autor,
+                                                    fecha,
+                                                    hora,
+                                                    texto,
+                                                    estaOnline = false,
+                                                }) => {
     return (
-        <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-            <div style={{ position: "relative", width: 40, height: 40 }}>
-                <Icon name="man_thinking" style={{ borderRadius: "50%" }} />
+        <div style={{display: "flex", alignItems: "flex-start", gap: "12px"}}>
+            <div style={{position: "relative", width: 40, height: 40}}>
+                <Icon name="man_thinking"/>
                 {estaOnline && (
                     <span
                         style={{
@@ -36,13 +36,13 @@ export const Mensaje: React.FC<MensajeProps> = ({
                 )}
             </div>
             <div>
-                <div style={{ fontSize: 14 }}>
+                <div style={{fontSize: 14}}>
                     <strong>{autor}</strong>{" "}
-                    <span style={{ color: "#999" }}>
+                    <span style={{color: "#999"}}>
                         {fecha}, {hora}
                     </span>
                 </div>
-                <div style={{ marginTop: 4 }}>{texto}</div>
+                <div style={{marginTop: 4}}>{texto}</div>
             </div>
         </div>
     );

@@ -1,13 +1,13 @@
 import React from "react";
-import { CardForo } from "./CardForo";
+import {CardForo} from "./CardForo";
 
 export default {
-    title: "Componentes/CardForo",
+    title: "Components/CardForo",
     component: CardForo,
 };
 
 export const Default = () => (
-    <CardForo title="Título del foro" onClick={() => alert("Card clickeado")} />
+    <CardForo/>
 );
 
-export const SinAcción = () => <CardForo title="Solo título, sin acción" />;
+export const SinAcción = () => <CardForo/>;

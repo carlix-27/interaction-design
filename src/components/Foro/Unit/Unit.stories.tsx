@@ -6,13 +6,9 @@ export default {
     component: Unit,
 };
 
-export const Default = () => <Unit />;
+export const Default = () => <Unit/>;
 
 // Ejemplo con props personalizados (ajusta según la interfaz de Unit)
 export const CustomProps = () => (
-    <Unit
-        title="Unidad 2: Algoritmos"
-        description="Aprende sobre algoritmos y estructuras de datos"
-        className="border border-gray-300"
-    />
+    <Unit/>
 );
