@@ -24,15 +24,7 @@ const meta: Meta<typeof TopBar> = {
             options: ['default', 'compact', 'withMenu', 'onlyTitle'],
             description: 'Variante del componente TopBar'
         },
-        showBackButton: { 
-            control: false 
-        },
-        onBackClick: { 
-            control: false
-        },
-        onMenuClick: { 
-            control: false
-        }
+      
     }
 };
 
@@ -42,31 +34,27 @@ type Story = StoryObj<typeof TopBar>;
 export const Default: Story = {
     args: {
         title: 'Arte',
-        variant: 'default',
-        showBackButton: true
+        variant: 'default'
     }
 };
 
 export const Compact: Story = {
     args: {
         title: 'Arte',
-        variant: 'compact',
-        showBackButton: true
+        variant: 'compact'
     }
 };
 
 export const WithMenu: Story = {
     args: {
         title: 'Arte',
-        variant: 'withMenu',
-        showBackButton: true
+        variant: 'withMenu'
     }
 };
 
 export const OnlyTitle: Story = {
     args: {
         title: 'Arte',
-        variant: 'onlyTitle',
-        showBackButton: true
+        variant: 'onlyTitle'
     }
 };

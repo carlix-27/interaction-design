@@ -2,10 +2,7 @@ import React from "react";
 
 interface TopBarProps {
   title?: string;
-  showBackButton?: boolean;
   variant?: "default" | "compact" | "withMenu" | "onlyTitle";
-  onBackClick?: () => void;
-  onMenuClick?: () => void;
 }
 
 const BackIcon = () => (
@@ -34,10 +31,7 @@ const VerticalMenuIcon = () => (
 
 export default function TopBar({
   title = "Arte",
-  showBackButton = true,
-  variant = "default",
-  onBackClick,
-  onMenuClick
+  variant = "default"
 }: TopBarProps) {
   const renderRightContent = () => {
     switch (variant) {
@@ -59,10 +53,7 @@ export default function TopBar({
                 fontSize: '18px',
                 fontStyle: 'normal',
                 fontWeight: 700,
-                lineHeight: '28px',
-                width: '239px',
-                height: '32px',
-                flexShrink: 0
+                lineHeight: '28px'
               }}
             >
               {title}
@@ -72,9 +63,8 @@ export default function TopBar({
       
       case "withMenu":
         return (
-          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', paddingRight: '16px' }}>
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <button 
-              onClick={onMenuClick}
               style={{ 
                 background: 'none', 
                 border: 'none', 
@@ -125,28 +115,27 @@ export default function TopBar({
       style={{
         display: 'flex',
         width: '390px',
-        padding: '16px 8px 16px 16px',
+        height: '56px',
+        padding: '16px',
         alignItems: 'center',
         gap: '16px',
-        background: 'var(--Color-Grey-Grey-50, #F9FAFB)'
+        background: 'var(--Color-Grey-Grey-50, #F9FAFB)',
+        flexShrink: 0
       }}
     >
       {/* Botón de regreso */}
-      {showBackButton && (
-        <button 
-          onClick={onBackClick}
-          style={{ 
-            background: 'none', 
-            border: 'none', 
-            cursor: 'pointer',
-            padding: 0,
-            display: 'flex',
-            alignItems: 'center'
-          }}
-        >
-          <BackIcon />
-        </button>
-      )}
+      <button 
+        style={{ 
+          background: 'none', 
+          border: 'none', 
+          cursor: 'pointer',
+          padding: 0,
+          display: 'flex',
+          alignItems: 'center'
+        }}
+      >
+        <BackIcon />
+      </button>
 
       {/* Contenido del lado derecho */}
       {renderRightContent()}

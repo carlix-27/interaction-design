@@ -65,9 +65,10 @@ const Card: React.FC<CardProps> = ({
             style={{
               width: '149px',
               flexShrink: 0,
-              color: '#131927',
+              color: 'var(--Color-Grey-Grey-900, #131927)',
               fontFamily: 'Roboto',
               fontSize: '12px',
+              fontStyle: 'normal',
               fontWeight: 400,
               lineHeight: '16px',
               marginBottom: '1px'
@@ -82,9 +83,10 @@ const Card: React.FC<CardProps> = ({
             style={{
               width: '155px',
               height: '28px',
-              color: '#6D717F',
+              color: 'var(--Color-Grey-Grey-500, #6D717F)',
               fontFamily: 'Roboto',
               fontSize: '12px',
+              fontStyle: 'normal',
               fontWeight: 400,
               lineHeight: '16px',
               marginTop: '2px'
@@ -107,7 +109,7 @@ const Card: React.FC<CardProps> = ({
               <Star />
               <span 
                 style={{
-                  color: '#6D717F',
+                  color: 'var(--Color-Grey-Grey-500, #6D717F)',
                   fontFamily: 'Roboto',
                   fontSize: '10px',
                   fontStyle: 'normal',
