@@ -4,7 +4,12 @@ import StartCourse from "./StartCourse";
 const meta: Meta<typeof StartCourse> = {
     title: "Components/StartCourse",
     component: StartCourse,
-    tags: ["autodocs"],
+    argTypes: {
+        text: {
+            control: 'text',
+            description: 'Texto que aparece en el botón'
+        }
+    }
 };
 
 export default meta;
@@ -12,19 +17,6 @@ type Story = StoryObj<typeof StartCourse>;
 
 export const Default: Story = {
     args: {
-        disabled: false,
-    },
-};
-
-export const Disabled: Story = {
-    args: {
-        disabled: true,
-    },
-};
-
-export const CustomClass: Story = {
-    args: {
-        className: "shadow-lg",
-        disabled: false,
-    },
+        text: 'Iniciar Curso'
+    }
 };
