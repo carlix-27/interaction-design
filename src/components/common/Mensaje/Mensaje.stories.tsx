@@ -1,8 +1,8 @@
-import React from 'react';
-import { Mensaje } from './Mensaje';
+import React from "react";
+import { Mensaje } from "./Mensaje";
 
 export default {
-    title: 'Componentes/Mensaje',
+    title: "Componentes/Mensaje",
     component: Mensaje,
 };
 

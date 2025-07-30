@@ -1,14 +1,14 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import SwordIcon from './SwordIcon';
+import React from "react";
+import { Meta, StoryObj } from "@storybook/react";
+import SwordIcon from "./SwordIcon";
 
 const meta: Meta<typeof SwordIcon> = {
-    title: 'CompeteWithFriends/SwordIcon',
+    title: "CompeteWithFriends/SwordIcon",
     component: SwordIcon,
     argTypes: {
         color: {
-            control: 'select',
-            options: ['purple'],
+            control: "select",
+            options: ["purple"],
         },
     },
 };
@@ -19,7 +19,6 @@ type Story = StoryObj<typeof SwordIcon>;
 
 export const Default: Story = {
     args: {
-        color: 'purple',
+        color: "purple",
     },
 };
-

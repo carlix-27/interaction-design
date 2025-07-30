@@ -1,53 +1,53 @@
 import React from "react";
 
 interface CardProps {
-  image: string;
-  title: string;
-  description: string;
-  altText?: string;
-  type?: "unit/project" | "instructor" | "question";
-  status?: boolean;
+    image: string;
+    title: string;
+    description: string;
+    altText?: string;
+    type?: "unit/project" | "instructor" | "question";
+    status?: boolean;
 }
 
 const Card: React.FC<CardProps> = ({
-  image,
-  title,
-  description,
-  altText = "Image",
-  type,
-  status,
+    image,
+    title,
+    description,
+    altText = "Image",
+    type,
+    status,
 }) => {
-  return (
-    <div className="flex flex-row items-center bg-grey-50 rounded-2xl shadow-md max-w-sm h-full">
-      <img
-        src={image}
-        alt={altText}
-        className={
-          type === "instructor"
-            ? "w-24 h-24 rounded-full ml-4 mr-4 object-cover"
-            : "w-24 h-full rounded-l-2xl object-cover"
-        }
-      />
-      <div className="flex flex-col ml-4 gap-1 text-left py-4 px-2">
-        <p className="text-xl fontFamily-subtitleFont fontSize-subtitle2 font-semibold text-gray-900">
-          {title}
-        </p>
-        <p className="text-gray-500 fontFamily-captionFont text-body2">
-          {description}
-        </p>
+    return (
+        <div className="flex h-full max-w-sm flex-row items-center rounded-2xl bg-grey-50 shadow-md">
+            <img
+                src={image}
+                alt={altText}
+                className={
+                    type === "instructor"
+                        ? "ml-4 mr-4 h-24 w-24 rounded-full object-cover"
+                        : "h-full w-24 rounded-l-2xl object-cover"
+                }
+            />
+            <div className="ml-4 flex flex-col gap-1 px-2 py-4 text-left">
+                <p className="fontFamily-subtitleFont fontSize-subtitle2 text-xl font-semibold text-gray-900">
+                    {title}
+                </p>
+                <p className="fontFamily-captionFont text-body2 text-gray-500">
+                    {description}
+                </p>
 
-        {type === "question" && (
-          <p
-            className={`font-semibold ${
-              status ? "text-blue-500" : "text-red-500"
-            }`}
-          >
-            {status ? "Resuelto" : "No Resuelto"}
-          </p>
-        )}
-      </div>
-    </div>
-  );
+                {type === "question" && (
+                    <p
+                        className={`font-semibold ${
+                            status ? "text-blue-500" : "text-red-500"
+                        }`}
+                    >
+                        {status ? "Resuelto" : "No Resuelto"}
+                    </p>
+                )}
+            </div>
+        </div>
+    );
 };
 
 export default Card;

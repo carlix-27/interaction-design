@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type BuscarProps = {
     placeholder?: string;
@@ -7,21 +7,21 @@ type BuscarProps = {
 };
 
 export const Buscar: React.FC<BuscarProps> = ({
-                                                  placeholder = '¿Qué vas a aprender hoy?',
-                                                  onChange,
-                                                  value,
-                                              }) => {
+    placeholder = "¿Qué vas a aprender hoy?",
+    onChange,
+    value,
+}) => {
     return (
         <div
             style={{
-                display: 'flex',
-                alignItems: 'center',
-                padding: '8px 12px',
-                borderRadius: '8px',
-                backgroundColor: '#F8F9FA',
-                border: '1px solid #E0E0E0',
-                width: '100%',
-                maxWidth: '400px',
+                display: "flex",
+                alignItems: "center",
+                padding: "8px 12px",
+                borderRadius: "8px",
+                backgroundColor: "#F8F9FA",
+                border: "1px solid #E0E0E0",
+                width: "100%",
+                maxWidth: "400px",
             }}
         >
             {/* Ícono SVG de lupa */}
@@ -44,14 +44,14 @@ export const Buscar: React.FC<BuscarProps> = ({
                 type="text"
                 placeholder={placeholder}
                 value={value}
-                onChange={(e) => onChange?.(e.target.value)}
+                onChange={e => onChange?.(e.target.value)}
                 style={{
-                    border: 'none',
-                    outline: 'none',
-                    backgroundColor: 'transparent',
+                    border: "none",
+                    outline: "none",
+                    backgroundColor: "transparent",
                     flex: 1,
-                    fontSize: '14px',
-                    color: '#495057',
+                    fontSize: "14px",
+                    color: "#495057",
                 }}
             />
         </div>

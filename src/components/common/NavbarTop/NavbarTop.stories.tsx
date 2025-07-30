@@ -1,13 +1,13 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import NavbarTop, { NavbarTopProps } from './NavbarTop';
+import React from "react";
+import { Meta, StoryObj } from "@storybook/react";
+import NavbarTop, { NavbarTopProps } from "./NavbarTop";
 
 const meta: Meta<typeof NavbarTop> = {
-    title: 'Navbar/NavbarTop',
+    title: "Navbar/NavbarTop",
     component: NavbarTop,
     argTypes: {
-        courseName: { control: 'text' },
-        hasNotifications: { control: 'boolean' },
+        courseName: { control: "text" },
+        hasNotifications: { control: "boolean" },
     },
 };
 
@@ -17,14 +17,14 @@ type Story = StoryObj<NavbarTopProps>;
 
 export const NoNotifications: Story = {
     args: {
-        courseName: 'Course Name',
+        courseName: "Course Name",
         hasNotifications: false,
     },
 };
 
 export const WithNotifications: Story = {
     args: {
-        courseName: 'Course Name',
+        courseName: "Course Name",
         hasNotifications: true,
     },
 };

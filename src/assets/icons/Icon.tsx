@@ -1,629 +1,1016 @@
 import React from "react";
 
 interface IconProps {
-  name: string;
+    name: string;
 }
 
-const Icon: React.FC<IconProps> = ({ name }) => {
-  switch (name) {
-    case "arrow-down":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-          >
-            <path
-                d="M6 9L12 15L18 9"
-                stroke="#9EA2AE"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-          </svg>
-      );
-
-    case "computer":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-          >
-            <path
-                d="M2.5 21L17.5 21"
-                stroke="#B93DED"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M21.5 21L22.5 21"
-                stroke="#B93DED"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M2.5 16.4V3.6C2.5 3.26863 2.76863 3 3.1 3H21.9C22.2314 3 22.5 3.26863 22.5 3.6V16.4C22.5 16.7314 22.2314 17 21.9 17H3.1C2.76863 17 2.5 16.7314 2.5 16.4Z"
-                stroke="#B93DED"
-                stroke-width="1.5"
-            />
-          </svg>
-      );
-    case "plus":
-      return (
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M6 12H12M18 12H12M12 12V6M12 12V18" stroke="#F9FAFB" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round"/>
-          </svg>
-      );
-
-    case "plus_black":
-      return (
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-            <path d="M1.00098 7.33008H7.00098M13.001 7.33008H7.00098M7.00098 7.33008V1.33008M7.00098 7.33008V13.3301"
-                  stroke="#131927" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      );
-
-    case "send-black":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="19"
-              viewBox="0 0 18 19"
-              fill="none"
-          >
-            <path
-                d="M10.762 9.33931L0.00197649 8.25531L0.000976562 1.40331C0.00110746 1.22033 0.0479844 1.04042 0.13716 0.88065C0.226336 0.720875 0.354854 0.586533 0.510522 0.490368C0.66619 0.394202 0.843846 0.339402 1.02664 0.331167C1.20943 0.322931 1.39129 0.361533 1.55498 0.44331L17.407 8.36931C17.5851 8.45863 17.7348 8.59572 17.8394 8.76526C17.944 8.93479 17.9994 9.13009 17.9994 9.32931C17.9994 9.52853 17.944 9.72383 17.8394 9.89336C17.7348 10.0629 17.5851 10.2 17.407 10.2893L1.55698 18.2153C1.39329 18.2971 1.21143 18.3357 1.02864 18.3275C0.845846 18.3192 0.66819 18.2644 0.512522 18.1683C0.356854 18.0721 0.228336 17.9377 0.13916 17.778C0.0499842 17.6182 0.00310755 17.4383 0.00297666 17.2553V10.4033L10.762 9.33931Z"
-                fill="black"
-            />
-          </svg>
-      );
-
-    case 'arrow-left':
-      return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-        <path d="M15 6.5L9 12.5L15 18.5" stroke="#131927" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round"/>
-      </svg>
-
-    case "arrow-up":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-          >
-            <path
-                d="M6 15L12 9L18 15"
-                stroke="#9EA2AE"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-          </svg>
-      );
-
-    case "play":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="29"
-              viewBox="0 0 32 29"
-              fill="none"
-          >
-            <path
-                d="M8.88388 5.30793C8.48416 5.09326 8 5.38281 8 5.83652V23.1633C8 23.617 8.48416 23.9066 8.88388 23.6919L25.0157 15.0285C25.4372 14.8022 25.4372 14.1977 25.0157 13.9713L8.88388 5.30793Z"
-                fill="white"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-          </svg>
-      );
-
-    case "bell":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-          >
-            <path
-                d="M18 8.9C18 7.20261 17.3679 5.57475 16.2426 4.37452C15.1174 3.17428 13.5913 2.5 12 2.5C10.4087 2.5 8.88258 3.17428 7.75736 4.37452C6.63214 5.57475 6 7.20261 6 8.9C6 16.3667 3 18.5 3 18.5H21C21 18.5 18 16.3667 18 8.9Z"
-                stroke="#131927"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M13.7295 21.5C13.5537 21.8031 13.3014 22.0547 12.9978 22.2295C12.6941 22.4044 12.3499 22.4965 11.9995 22.4965C11.6492 22.4965 11.3049 22.4044 11.0013 22.2295C10.6977 22.0547 10.4453 21.8031 10.2695 21.5"
-                stroke="#131927"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-          </svg>
-      );
-
-    case "bell-notification":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-          >
-            <path
-                d="M18.1336 11.5C18.7155 16.8755 21 18.5 21 18.5H3C3 18.5 6 16.3667 6 8.9C6 7.20261 6.63214 5.57475 7.75736 4.37452C8.88258 3.17428 10.4087 2.5 12 2.5C12.3373 2.5 12.6717 2.5303 13 2.58949"
-                stroke="#131927"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M19 8.5C20.6569 8.5 22 7.15685 22 5.5C22 3.84315 20.6569 2.5 19 2.5C17.3431 2.5 16 3.84315 16 5.5C16 7.15685 17.3431 8.5 19 8.5Z"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M13.7295 21.5C13.5537 21.8031 13.3014 22.0547 12.9978 22.2295C12.6941 22.4044 12.3499 22.4965 11.9995 22.4965C11.6492 22.4965 11.3049 22.4044 11.0013 22.2295C10.6977 22.0547 10.4453 21.8031 10.2695 21.5"
-                stroke="#131927"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-          </svg>
-      );
-
-    case "house-solid":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-          >
-            <g clip-path="url(#clip0_2892_407)">
-              <path
-                  d="M24.4976 11.9766C24.4976 12.8203 23.8724 13.4813 23.1639 13.4813H21.8303L21.8594 20.9906C21.8594 21.1172 21.8511 21.2437 21.8386 21.3703V22.1297C21.8386 23.1656 21.0926 24.0047 20.1715 24.0047H19.5047C19.4588 24.0047 19.413 24.0047 19.3671 24C19.3088 24.0047 19.2504 24.0047 19.1921 24.0047L17.8376 24H16.8373C15.9162 24 15.1702 23.1609 15.1702 22.125V21V18C15.1702 17.1703 14.5742 16.5 13.8365 16.5H11.1692C10.4315 16.5 9.83549 17.1703 9.83549 18V21V22.125C9.83549 23.1609 9.08946 24 8.16839 24H7.16813H5.83862C5.7761 24 5.71359 23.9953 5.65107 23.9906C5.60106 23.9953 5.55104 24 5.50103 24H4.83419C3.91312 24 3.16709 23.1609 3.16709 22.125V16.875C3.16709 16.8328 3.16709 16.7859 3.17126 16.7438V13.4766H1.83758C1.08739 13.4766 0.503906 12.8203 0.503906 11.9719C0.503906 11.55 0.628939 11.175 0.920681 10.8469L11.6026 0.375C11.8944 0.046875 12.2278 0 12.5195 0C12.8113 0 13.1447 0.09375 13.3947 0.328125L24.0392 10.8516C24.3726 11.1797 24.5393 11.5547 24.4976 11.9766Z"
-                  fill="#A80CE8"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_2892_407">
-                <rect
+const Icon: React.FC<IconProps> = ({name}) => {
+    switch (name) {
+        case "arrow-down":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="white"
-                    transform="translate(0.5)"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                >
+                    <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#9EA2AE"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "computer":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                >
+                    <path
+                        d="M2.5 21L17.5 21"
+                        stroke="#B93DED"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M21.5 21L22.5 21"
+                        stroke="#B93DED"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M2.5 16.4V3.6C2.5 3.26863 2.76863 3 3.1 3H21.9C22.2314 3 22.5 3.26863 22.5 3.6V16.4C22.5 16.7314 22.2314 17 21.9 17H3.1C2.76863 17 2.5 16.7314 2.5 16.4Z"
+                        stroke="#B93DED"
+                        stroke-width="1.5"
+                    />
+                </svg>
+            );
+        case "plus":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                >
+                    <path
+                        d="M6 12H12M18 12H12M12 12V6M12 12V18"
+                        stroke="#F9FAFB"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "plus_black":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    fill="none"
+                >
+                    <path
+                        d="M1.00098 7.33008H7.00098M13.001 7.33008H7.00098M7.00098 7.33008V1.33008M7.00098 7.33008V13.3301"
+                        stroke="#131927"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "send-black":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="19"
+                    viewBox="0 0 18 19"
+                    fill="none"
+                >
+                    <path
+                        d="M10.762 9.33931L0.00197649 8.25531L0.000976562 1.40331C0.00110746 1.22033 0.0479844 1.04042 0.13716 0.88065C0.226336 0.720875 0.354854 0.586533 0.510522 0.490368C0.66619 0.394202 0.843846 0.339402 1.02664 0.331167C1.20943 0.322931 1.39129 0.361533 1.55498 0.44331L17.407 8.36931C17.5851 8.45863 17.7348 8.59572 17.8394 8.76526C17.944 8.93479 17.9994 9.13009 17.9994 9.32931C17.9994 9.52853 17.944 9.72383 17.8394 9.89336C17.7348 10.0629 17.5851 10.2 17.407 10.2893L1.55698 18.2153C1.39329 18.2971 1.21143 18.3357 1.02864 18.3275C0.845846 18.3192 0.66819 18.2644 0.512522 18.1683C0.356854 18.0721 0.228336 17.9377 0.13916 17.778C0.0499842 17.6182 0.00310755 17.4383 0.00297666 17.2553V10.4033L10.762 9.33931Z"
+                        fill="black"
+                    />
+                </svg>
+            );
+
+        case "arrow-left":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                >
+                    <path
+                        d="M15 6.5L9 12.5L15 18.5"
+                        stroke="#131927"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "arrow-up":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                >
+                    <path
+                        d="M6 15L12 9L18 15"
+                        stroke="#9EA2AE"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "play":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="29"
+                    viewBox="0 0 32 29"
+                    fill="none"
+                >
+                    <path
+                        d="M8.88388 5.30793C8.48416 5.09326 8 5.38281 8 5.83652V23.1633C8 23.617 8.48416 23.9066 8.88388 23.6919L25.0157 15.0285C25.4372 14.8022 25.4372 14.1977 25.0157 13.9713L8.88388 5.30793Z"
+                        fill="white"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "bell":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                >
+                    <path
+                        d="M18 8.9C18 7.20261 17.3679 5.57475 16.2426 4.37452C15.1174 3.17428 13.5913 2.5 12 2.5C10.4087 2.5 8.88258 3.17428 7.75736 4.37452C6.63214 5.57475 6 7.20261 6 8.9C6 16.3667 3 18.5 3 18.5H21C21 18.5 18 16.3667 18 8.9Z"
+                        stroke="#131927"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M13.7295 21.5C13.5537 21.8031 13.3014 22.0547 12.9978 22.2295C12.6941 22.4044 12.3499 22.4965 11.9995 22.4965C11.6492 22.4965 11.3049 22.4044 11.0013 22.2295C10.6977 22.0547 10.4453 21.8031 10.2695 21.5"
+                        stroke="#131927"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "bell-notification":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                >
+                    <path
+                        d="M18.1336 11.5C18.7155 16.8755 21 18.5 21 18.5H3C3 18.5 6 16.3667 6 8.9C6 7.20261 6.63214 5.57475 7.75736 4.37452C8.88258 3.17428 10.4087 2.5 12 2.5C12.3373 2.5 12.6717 2.5303 13 2.58949"
+                        stroke="#131927"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M19 8.5C20.6569 8.5 22 7.15685 22 5.5C22 3.84315 20.6569 2.5 19 2.5C17.3431 2.5 16 3.84315 16 5.5C16 7.15685 17.3431 8.5 19 8.5Z"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M13.7295 21.5C13.5537 21.8031 13.3014 22.0547 12.9978 22.2295C12.6941 22.4044 12.3499 22.4965 11.9995 22.4965C11.6492 22.4965 11.3049 22.4044 11.0013 22.2295C10.6977 22.0547 10.4453 21.8031 10.2695 21.5"
+                        stroke="#131927"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "house-solid":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                >
+                    <g clip-path="url(#clip0_2892_407)">
+                        <path
+                            d="M24.4976 11.9766C24.4976 12.8203 23.8724 13.4813 23.1639 13.4813H21.8303L21.8594 20.9906C21.8594 21.1172 21.8511 21.2437 21.8386 21.3703V22.1297C21.8386 23.1656 21.0926 24.0047 20.1715 24.0047H19.5047C19.4588 24.0047 19.413 24.0047 19.3671 24C19.3088 24.0047 19.2504 24.0047 19.1921 24.0047L17.8376 24H16.8373C15.9162 24 15.1702 23.1609 15.1702 22.125V21V18C15.1702 17.1703 14.5742 16.5 13.8365 16.5H11.1692C10.4315 16.5 9.83549 17.1703 9.83549 18V21V22.125C9.83549 23.1609 9.08946 24 8.16839 24H7.16813H5.83862C5.7761 24 5.71359 23.9953 5.65107 23.9906C5.60106 23.9953 5.55104 24 5.50103 24H4.83419C3.91312 24 3.16709 23.1609 3.16709 22.125V16.875C3.16709 16.8328 3.16709 16.7859 3.17126 16.7438V13.4766H1.83758C1.08739 13.4766 0.503906 12.8203 0.503906 11.9719C0.503906 11.55 0.628939 11.175 0.920681 10.8469L11.6026 0.375C11.8944 0.046875 12.2278 0 12.5195 0C12.8113 0 13.1447 0.09375 13.3947 0.328125L24.0392 10.8516C24.3726 11.1797 24.5393 11.5547 24.4976 11.9766Z"
+                            fill="#A80CE8"
+                        />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2892_407">
+                            <rect
+                                width="24"
+                                height="24"
+                                fill="white"
+                                transform="translate(0.5)"
+                            />
+                        </clipPath>
+                    </defs>
+                </svg>
+            );
+
+        case "user":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                >
+                    <path
+                        d="M5.5 20V19C5.5 15.134 8.63401 12 12.5 12V12C16.366 12 19.5 15.134 19.5 19V20"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M12.5 12C14.7091 12 16.5 10.2091 16.5 8C16.5 5.79086 14.7091 4 12.5 4C10.2909 4 8.5 5.79086 8.5 8C8.5 10.2091 10.2909 12 12.5 12Z"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "medal-gold":
+            return (
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M6 2L9 8"
+                        stroke="#FFA500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M18 2L15 8"
+                        stroke="#FFA500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M12 2L12 8"
+                        stroke="#FFA500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                    <circle
+                        cx="12"
+                        cy="14"
+                        r="6"
+                        fill="none"
+                        stroke="#FFA500"
+                        stroke-width="2"
+                    />
+
+                    <text
+                        x="12"
+                        y="17"
+                        text-anchor="middle"
+                        font-size="8"
+                        font-family="Arial"
+                        fill="#FFA500"
+                    >
+                        1
+                    </text>
+                </svg>
+            );
+
+        case "medal-silver":
+            return (
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M6 2L9 8"
+                        stroke="#6D717F"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M18 2L15 8"
+                        stroke="#6D717F"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M12 2L12 8"
+                        stroke="#6D717F"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <circle
+                        cx="12"
+                        cy="14"
+                        r="6"
+                        fill="none"
+                        stroke="#6D717F"
+                        stroke-width="2"
+                    />
+                    <text
+                        x="12.1"
+                        y="17"
+                        text-anchor="middle"
+                        font-size="8"
+                        font-family="Arial"
+                        fill="#6D717F"
+                    >
+                        2
+                    </text>
+                </svg>
+            );
+
+        case "medal-bronze":
+            return (
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M6 2L9 8"
+                        stroke="#CD7F32"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M18 2L15 8"
+                        stroke="#CD7F32"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M12 2L12 8"
+                        stroke="#CD7F32"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <circle
+                        cx="12"
+                        cy="14"
+                        r="6"
+                        fill="none"
+                        stroke="#CD7F32"
+                        stroke-width="2"
+                    />
+                    <text
+                        x="12"
+                        y="16.5"
+                        text-anchor="middle"
+                        font-size="8"
+                        font-family="Arial"
+                        fill="#CD7F32"
+                    >
+                        3
+                    </text>
+                </svg>
+            );
+
+        case "medal-default":
+            return (
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M6 2L9 8"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M18 2L15 8"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M12 2L12 8"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <circle
+                        cx="12"
+                        cy="14"
+                        r="6"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-width="2"
+                    />
+                </svg>
+            );
+
+        case "list":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                >
+                    <path
+                        d="M8.5 6L20.5 6"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M4.5 6.01L4.51 5.99889"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M4.5 12.01L4.51 11.9989"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M4.5 18.01L4.51 17.9989"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M8.5 12L20.5 12"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M8.5 18L20.5 18"
+                        stroke="#A80CE8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "wifi":
+            return (
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M12 19.51L12.01 19.4989"
+                        stroke="#B93DED"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M2 8C8 3.5 16 3.5 22 8"
+                        stroke="#B93DED"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M5 12C9 9 15 9 19 12"
+                        stroke="#B93DED"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M8.5 15.4994C10.7504 14.0994 13.2498 14.099 15.5001 15.4994"
+                        stroke="#B93DED"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "search":
+            return (
+                <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M14.166 14.166L17.4993 17.4993"
+                        stroke="#212936"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0108 15.8333 12.6801 15.0846 13.887 13.8744C15.0897 12.6685 15.8333 11.0044 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667Z"
+                        stroke="#212936"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
+
+        case "woman_avatar":
+            return (
+                <img
+                    src="/woman_avatar.svg"
+                    alt="Woman Avatar"
+                    className="h-full w-full"
                 />
-              </clipPath>
-            </defs>
-          </svg>
-      );
+            );
 
-    case "user":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-          >
-            <path
-                d="M5.5 20V19C5.5 15.134 8.63401 12 12.5 12V12C16.366 12 19.5 15.134 19.5 19V20"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M12.5 12C14.7091 12 16.5 10.2091 16.5 8C16.5 5.79086 14.7091 4 12.5 4C10.2909 4 8.5 5.79086 8.5 8C8.5 10.2091 10.2909 12 12.5 12Z"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-          </svg>
-      );
+        case "prize":
+            return <img src="/Prize.svg" alt="Price"/>;
 
-    case "medal-gold":
-      return (
-          <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-                d="M6 2L9 8"
-                stroke="#FFA500"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M18 2L15 8"
-                stroke="#FFA500"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M12 2L12 8"
-                stroke="#FFA500"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
+        case "trophy":
+            return (
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                        d="M7.33333 12.6667V10.6C6.78889 10.4778 6.30289 10.2473 5.87533 9.90867C5.44778 9.57 5.13378 9.14489 4.93333 8.63333C4.1 8.53333 3.40289 8.16956 2.842 7.542C2.28111 6.91444 2.00044 6.17822 2 5.33333V4.66667C2 4.3 2.13067 3.98622 2.392 3.72533C2.65333 3.46444 2.96711 3.33378 3.33333 3.33333H4.66667C4.66667 2.96667 4.79733 2.65289 5.05867 2.392C5.32 2.13111 5.63378 2.00044 6 2H10C10.3667 2 10.6807 2.13067 10.942 2.392C11.2033 2.65333 11.3338 2.96711 11.3333 3.33333H12.6667C13.0333 3.33333 13.3473 3.464 13.6087 3.72533C13.87 3.98667 14.0004 4.30044 14 4.66667V5.33333C14 6.17778 13.7193 6.914 13.158 7.542C12.5967 8.17 11.8996 8.53378 11.0667 8.63333C10.8667 9.14444 10.5529 9.56955 10.1253 9.90867C9.69778 10.2478 9.21156 10.4782 8.66667 10.6V12.6667H10.6667C10.8556 12.6667 11.014 12.7307 11.142 12.8587C11.27 12.9867 11.3338 13.1449 11.3333 13.3333C11.3329 13.5218 11.2689 13.6802 11.1413 13.8087C11.0138 13.9371 10.8556 14.0009 10.6667 14H5.33333C5.14444 14 4.98622 13.936 4.85867 13.808C4.73111 13.68 4.66711 13.5218 4.66667 13.3333C4.66622 13.1449 4.73022 12.9867 4.85867 12.8587C4.98711 12.7307 5.14533 12.6667 5.33333 12.6667H7.33333ZM4.66667 7.2V4.66667H3.33333V5.33333C3.33333 5.75556 3.45556 6.13622 3.7 6.47533C3.94444 6.81444 4.26667 7.056 4.66667 7.2ZM8 9.33333C8.55556 9.33333 9.02778 9.13889 9.41667 8.75C9.80555 8.36111 10 7.88889 10 7.33333V3.33333H6V7.33333C6 7.88889 6.19444 8.36111 6.58333 8.75C6.97222 9.13889 7.44444 9.33333 8 9.33333ZM11.3333 7.2C11.7333 7.05556 12.0556 6.81378 12.3 6.47467C12.5444 6.13556 12.6667 5.75511 12.6667 5.33333V4.66667H11.3333V7.2Z"
+                        fill="#6D717F"/>
+                </svg>
+            );
 
-            <circle
-                cx="12"
-                cy="14"
-                r="6"
-                fill="none"
-                stroke="#FFA500"
-                stroke-width="2"
-            />
+        case "conflict":
+            return <img src="/conflict.svg" alt="Conflict"/>;
 
-            <text
-                x="12"
-                y="17"
-                text-anchor="middle"
-                font-size="8"
-                font-family="Arial"
-                fill="#FFA500"
-            >
-              1
-            </text>
-          </svg>
-      );
+        case "man_thinking":
+            return (
+                <img
+                    src="/man_thinking_avatar.svg"
+                    alt="Man Thinking Avatar"
+                    className="h-full w-full"
+                />
+            );
 
-    case "medal-silver":
-      return (
-          <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-                d="M6 2L9 8"
-                stroke="#6D717F"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M18 2L15 8"
-                stroke="#6D717F"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M12 2L12 8"
-                stroke="#6D717F"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <circle
-                cx="12"
-                cy="14"
-                r="6"
-                fill="none"
-                stroke="#6D717F"
-                stroke-width="2"
-            />
-            <text
-                x="12.1"
-                y="17"
-                text-anchor="middle"
-                font-size="8"
-                font-family="Arial"
-                fill="#6D717F"
-            >
-              2
-            </text>
-          </svg>
-      );
+        case "woman_large_pink_hair":
+            return (
+                <img
+                    src="/woman_large_pink_hair.svg"
+                    alt="Woman Large Pink Hair Avatar"
+                    className="h-full w-full"
+                />
+            );
 
-    case "medal-bronze":
-      return (
-          <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-                d="M6 2L9 8"
-                stroke="#CD7F32"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M18 2L15 8"
-                stroke="#CD7F32"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M12 2L12 8"
-                stroke="#CD7F32"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <circle
-                cx="12"
-                cy="14"
-                r="6"
-                fill="none"
-                stroke="#CD7F32"
-                stroke-width="2"
-            />
-            <text
-                x="12"
-                y="16.5"
-                text-anchor="middle"
-                font-size="8"
-                font-family="Arial"
-                fill="#CD7F32"
-            >
-              3
-            </text>
-          </svg>
-      );
+        case "woman_blue_dress":
+            return (
+                <img
+                    src="/woman_blue_dress.svg"
+                    alt="Woman Blue Dress Avatar"
+                    className="h-full w-full"
+                />
+            );
 
-    case "medal-default":
-      return (
-          <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-                d="M6 2L9 8"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M18 2L15 8"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M12 2L12 8"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <circle
-                cx="12"
-                cy="14"
-                r="6"
-                fill="none"
-                stroke="#000000"
-                stroke-width="2"
-            />
-          </svg>
-      );
+        case "woman_v_sign":
+            return (
+                <img
+                    src="/woman_v_sign.svg"
+                    alt="Woman V Avatar"
+                    className="h-full w-full"
+                />
+            );
 
-    case "list":
-      return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-          >
-            <path
-                d="M8.5 6L20.5 6"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M4.5 6.01L4.51 5.99889"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M4.5 12.01L4.51 11.9989"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M4.5 18.01L4.51 17.9989"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M8.5 12L20.5 12"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-            <path
-                d="M8.5 18L20.5 18"
-                stroke="#A80CE8"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-          </svg>
-      );
+        case "woman_heart_sign":
+            return (
+                <img
+                    src="/woman_heart_sign.svg"
+                    alt="Woman Heart Sign Avatar"
+                    className="h-full w-full"
+                />
+            );
 
-    case 'wifi':
-      return <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 19.51L12.01 19.4989" stroke="#B93DED" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <path d="M2 8C8 3.5 16 3.5 22 8" stroke="#B93DED" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <path d="M5 12C9 9 15 9 19 12" stroke="#B93DED" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <path d="M8.5 15.4994C10.7504 14.0994 13.2498 14.099 15.5001 15.4994" stroke="#B93DED" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+        case "man_thumb_up":
+            return (
+                <img
+                    src="/man_thumb_up.svg"
+                    alt="Man Thumb Up Avatar"
+                    className="h-full w-full"
+                />
+            );
 
-    case 'search':
-      return <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14.166 14.166L17.4993 17.4993" stroke="#212936" stroke-width="3" stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <path
-            d="M2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0108 15.8333 12.6801 15.0846 13.887 13.8744C15.0897 12.6685 15.8333 11.0044 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667Z"
-            stroke="#212936" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+        case "man_with_dog":
+            return (
+                <img
+                    src="/man_with_dog.svg"
+                    alt="Man with dog Avatar"
+                    className="h-full w-full"
+                />
+            );
 
+        case "battle":
+            return <img src="/Battle%20(1).png" alt="Battle Icon"/>;
 
-    case "woman_avatar":
-      return (
-          <img
-              src="/woman_avatar.svg"
-              alt="Woman Avatar"
-              className="w-full h-full"
-          />
-      );
+        case "star-full":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path
+                        d="M3.99995 6.60983L1.87238 7.95913C1.80986 7.99155 1.75184 8.00468 1.69831 7.99853C1.64517 7.99196 1.5934 7.97267 1.54299 7.94066C1.49219 7.90784 1.4539 7.86146 1.42811 7.80155C1.40232 7.74163 1.39998 7.67618 1.42108 7.60519L1.98726 5.07525L0.114648 3.37017C0.0618984 3.32503 0.0271228 3.27106 0.010321 3.20828C-0.00648068 3.14549 -0.00276864 3.08537 0.0214571 3.02792C0.0456829 2.97047 0.0779187 2.92327 0.118165 2.88634C0.158801 2.85064 0.213505 2.82643 0.282275 2.8137L2.7533 2.58718L3.71686 0.191438C3.74343 0.123727 3.78172 0.0748925 3.83174 0.0449355C3.88175 0.0149785 3.93782 0 3.99995 0C4.06208 0 4.11834 0.0149785 4.16875 0.0449355C4.21915 0.0748925 4.25725 0.123727 4.28304 0.191438L5.2466 2.58718L7.71704 2.8137C7.7862 2.82602 7.8411 2.85043 7.88174 2.88695C7.92237 2.92307 7.9548 2.97005 7.97903 3.02792C8.00286 3.08537 8.00638 3.14549 7.98958 3.20828C7.97278 3.27106 7.938 3.32503 7.88525 3.37017L6.01264 5.07525L6.57882 7.60519C6.6007 7.67536 6.59855 7.74061 6.57237 7.80093C6.54619 7.86126 6.50771 7.90763 6.45691 7.94005C6.4069 7.97288 6.35512 7.99237 6.30159 7.99853C6.24845 8.00468 6.19062 7.99155 6.1281 7.95913L3.99995 6.60983Z"
+                        fill="#860ABA"
+                    />
+                </svg>
+            );
 
-    case "prize":
-      return (
-          <img
-              src="/Prize.svg"
-              alt="Price"
-          />
-      );
+        case "star-half":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path
+                        d="M3.99995 1.08399V5.88533L5.84619 7.07027L5.36265 4.85427L6.9891 3.37694L4.84981 3.17688L3.99995 1.08399ZM3.99995 6.60983L1.87238 7.95913C1.80986 7.99155 1.75184 8.00468 1.69831 7.99853C1.64517 7.99196 1.5934 7.97267 1.54299 7.94066C1.49219 7.90784 1.4539 7.86146 1.42811 7.80155C1.40232 7.74163 1.39998 7.67618 1.42108 7.60519L1.98726 5.07525L0.114648 3.37017C0.0618984 3.32503 0.0271228 3.27106 0.010321 3.20828C-0.00648068 3.14549 -0.00276864 3.08537 0.0214571 3.02792C0.0456829 2.97047 0.0779187 2.92327 0.118165 2.88634C0.158801 2.85064 0.213505 2.82643 0.282275 2.8137L2.7533 2.58718L3.71686 0.191438C3.74343 0.123727 3.78172 0.0748925 3.83174 0.0449355C3.88175 0.0149785 3.93782 0 3.99995 0C4.06208 0 4.11834 0.0149785 4.16875 0.0449355C4.21915 0.0748925 4.25725 0.123727 4.28304 0.191438L5.2466 2.58718L7.71704 2.8137C7.7862 2.82602 7.8411 2.85043 7.88174 2.88695C7.92237 2.92307 7.9548 2.97005 7.97903 3.02792C8.00286 3.08537 8.00638 3.14549 7.98958 3.20828C7.97278 3.27106 7.938 3.32503 7.88525 3.37017L6.01264 5.07525L6.57882 7.60519C6.6007 7.67536 6.59855 7.74061 6.57237 7.80093C6.54619 7.86126 6.50771 7.90763 6.45691 7.94005C6.4069 7.97288 6.35512 7.99237 6.30159 7.99853C6.24845 8.00468 6.19062 7.99155 6.1281 7.95913L3.99995 6.60983Z"
+                        fill="#860ABA"
+                    />
+                </svg>
+            );
 
-    case "trophy":
-      return (
-          <img
-              src="/Trophy.svg"
-              alt="Trophy"
-          />
-      );
+        case "star-empty":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path
+                        d="M2.15371 7.05488L3.99995 5.88533L5.84619 7.07027L5.36265 4.85427L6.9891 3.37694L4.84981 3.17688L3.99995 1.08399L3.1501 3.16149L1.01081 3.36155L2.63725 4.85427L2.15371 7.05488ZM3.99995 6.60983L1.87238 7.95913C1.80986 7.99155 1.75184 8.00468 1.69831 7.99853C1.64517 7.99196 1.5934 7.97267 1.54299 7.94066C1.49219 7.90784 1.4539 7.86146 1.42811 7.80155C1.40232 7.74163 1.39998 7.67618 1.42108 7.60519L1.98726 5.07525L0.114648 3.37017C0.0618984 3.32503 0.0271228 3.27106 0.010321 3.20828C-0.00648068 3.14549 -0.00276864 3.08537 0.0214571 3.02792C0.0456829 2.97047 0.0779187 2.92327 0.118165 2.88634C0.158801 2.85064 0.213505 2.82643 0.282275 2.8137L2.7533 2.58718L3.71686 0.191438C3.74343 0.123727 3.78172 0.0748925 3.83174 0.0449355C3.88175 0.0149785 3.93782 0 3.99995 0C4.06208 0 4.11834 0.0149785 4.16875 0.0449355C4.21915 0.0748925 4.25725 0.123727 4.28304 0.191438L5.2466 2.58718L7.71704 2.8137C7.7862 2.82602 7.8411 2.85043 7.88174 2.88695C7.92237 2.92307 7.9548 2.97005 7.97903 3.02792C8.00286 3.08537 8.00638 3.14549 7.98958 3.20828C7.97278 3.27106 7.938 3.32503 7.88525 3.37017L6.01264 5.07525L6.57882 7.60519C6.6007 7.67536 6.59855 7.74061 6.57237 7.80093C6.54619 7.86126 6.50771 7.90763 6.45691 7.94005C6.4069 7.97288 6.35512 7.99237 6.30159 7.99853C6.24845 8.00468 6.19062 7.99155 6.1281 7.95913L3.99995 6.60983Z"
+                        fill="#860ABA"
+                    />
+                </svg>
+            );
 
-    case "conflict":
-      return (
-          <img
-              src="/conflict.svg"
-              alt="Conflict"
-          />
-      );
+        case "arrow-right":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                >
+                    <path
+                        d="M12 8L20 16L12 24"
+                        stroke="#131927"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    />
+                </svg>
+            );
 
-    case "man_thinking":
-      return (
-          <img
-              src="/man_thinking_avatar.svg"
-              alt="Man Thinking Avatar"
-              className="w-full h-full"
-          />
-      );
+        case "paint-brush":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M11.134 1.53506C11.834 1.02606 12.55 0.593058 13.21 0.380058C13.859 0.170058 14.673 0.113058 15.279 0.720058C15.882 1.32106 15.847 2.13106 15.647 2.79006C15.445 3.45806 15.023 4.18006 14.522 4.88606C13.511 6.31006 12.026 7.87306 10.747 9.13506C9.64902 10.2191 8.61502 10.9741 7.70702 11.4351C7.79656 12.0165 7.74769 12.6108 7.56438 13.1698C7.38107 13.7287 7.06848 14.2366 6.65202 14.6521C6.22102 15.0831 5.58702 15.3431 4.99502 15.5131C4.38102 15.6901 3.70102 15.8001 3.08102 15.8701C2.32262 15.9549 1.56015 15.9983 0.797023 16.0001H0.743023C0.546704 15.9982 0.357926 15.9195 0.219008 15.7808C0.0800902 15.642 0.00110915 15.4544 -0.000976562 15.2581L0.742023 15.2501L2.34374e-05 15.2571V15.2031C0.00182474 14.4399 0.0452224 13.6775 0.130023 12.9191C0.197357 12.2711 0.31669 11.6331 0.488023 11.0051C0.658023 10.4141 0.918023 9.77906 1.34802 9.34806C1.76511 8.93095 2.27471 8.61813 2.83543 8.43499C3.39614 8.25185 3.99214 8.20356 4.57502 8.29406C5.04102 7.40106 5.80002 6.38706 6.88902 5.31206C8.16002 4.05706 9.72202 2.56206 11.134 1.53506ZM1.62002 13.0891C1.56869 13.5531 1.53402 14.0181 1.51602 14.4841C1.98269 14.4661 2.44802 14.4314 2.91202 14.3801C3.47545 14.3222 4.03327 14.2189 4.58002 14.0711C5.10602 13.9201 5.43602 13.7461 5.59102 13.5911C6.01298 13.1691 6.25004 12.5968 6.25004 12.0001C6.25004 11.4033 6.01298 10.831 5.59102 10.4091C5.38209 10.2001 5.13405 10.0344 4.86107 9.92132C4.58808 9.80824 4.2955 9.75004 4.00002 9.75004C3.40328 9.75004 2.83098 9.9871 2.40902 10.4091C2.25402 10.5641 2.08002 10.8941 1.92902 11.4191C1.7811 11.9665 1.67776 12.525 1.62002 13.0891ZM12.016 2.74906C10.792 3.63906 9.41102 4.93806 8.19402 6.13306L9.91202 7.85106C11.122 6.64606 12.422 5.25406 13.299 4.01806C13.769 3.35606 14.079 2.79106 14.211 2.35606C14.345 1.91206 14.243 1.80506 14.22 1.78106H14.219V1.78006C14.205 1.76606 14.106 1.66706 13.671 1.80706C13.239 1.94706 12.676 2.26906 12.016 2.74906ZM7.18402 10.0151C7.76398 9.68954 8.31002 9.30698 8.81402 8.87306L7.15502 7.21606C6.71415 7.71067 6.32512 8.24915 5.99402 8.82306C6.47602 9.12506 6.88302 9.53306 7.18402 10.0151Z"
+                        fill="#860ABA"
+                    />
+                </svg>
+            );
 
-    case "woman_large_pink_hair":
-      return (
-          <img
-              src="/woman_large_pink_hair.svg"
-              alt="Woman Large Pink Hair Avatar"
-              className="w-full h-full"
-          />
-      );
+        case "fire":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                >
+                    <path
+                        d="M5.92595 20.574C6.80534 21.3107 7.84679 21.8286 8.96495 22.085C9.07195 22.12 9.14395 21.98 9.07195 21.91C6.67695 19.625 7.99295 17.152 8.96495 16.037C9.65795 15.241 10.6449 13.93 10.5729 12.172C10.5729 11.996 10.7529 11.855 10.8949 11.961C12.2539 12.664 13.1829 14.211 13.4329 15.476C13.8269 15.09 13.9699 14.492 13.9699 13.965C13.9699 13.789 14.1839 13.648 14.3629 13.789C15.6499 14.949 17.8659 18.886 14.2909 21.979C14.2199 22.05 14.2909 22.191 14.3629 22.156C15.447 21.8719 16.4664 21.3824 17.3659 20.714C23.1929 16.214 19.4029 8.23405 16.9359 5.59805C16.6149 5.28105 16.0429 5.49205 16.0429 5.94905C16.0069 6.89905 15.7209 7.95305 14.9709 8.65605C14.3989 6.26605 12.4929 3.55105 9.77595 2.21505C9.41895 2.03905 8.98995 2.32005 9.02595 2.70705C9.09595 5.97705 6.96295 8.05905 5.10395 10.766C3.45895 13.191 2.38695 17.656 5.92595 20.574Z"
+                        fill="#860ABA"
+                    />
+                </svg>
+            );
 
-    case "woman_blue_dress":
-      return (
-          <img
-              src="/woman_blue_dress.svg"
-              alt="Woman Blue Dress Avatar"
-              className="w-full h-full"
-          />
-      );
+        case "chat":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                >
+                    <path
+                        d="M5.6 19.92L7.124 18.701L7.134 18.693C7.452 18.438 7.613 18.31 7.792 18.219C7.95267 18.137 8.122 18.0777 8.3 18.041C8.499 18 8.706 18 9.122 18H17.803C18.921 18 19.481 18 19.908 17.782C20.2843 17.5903 20.5903 17.2843 20.782 16.908C21 16.48 21 15.92 21 14.804V7.197C21 6.079 21 5.519 20.782 5.092C20.59 4.71554 20.2837 4.40957 19.907 4.218C19.48 4 18.92 4 17.8 4H6.2C5.08 4 4.52 4 4.092 4.218C3.71569 4.40974 3.40974 4.71569 3.218 5.092C3 5.52 3 6.08 3 7.2V18.671C3 19.737 3 20.27 3.218 20.543C3.31174 20.6607 3.43083 20.7557 3.56641 20.821C3.70198 20.8863 3.85053 20.9201 4.001 20.92C4.351 20.92 4.767 20.586 5.6 19.92Z"
+                        stroke="#860ABA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
 
-    case "woman_v_sign":
-      return (
-          <img
-              src="/woman_v_sign.svg"
-              alt="Woman V Avatar"
-              className="w-full h-full"
-          />
-      );
+        case "mini-chat":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M3.73333 13.28L4.74933 12.4673L4.756 12.462C4.968 12.292 5.07533 12.2066 5.19467 12.146C5.30178 12.0913 5.41467 12.0517 5.53333 12.0273C5.666 12 5.804 12 6.08133 12H11.8687C12.614 12 12.9873 12 13.272 11.8546C13.5229 11.7268 13.7268 11.5228 13.8547 11.272C14 10.9866 14 10.6133 14 9.86929V4.79796C14 4.05263 14 3.67929 13.8547 3.39463C13.7267 3.14365 13.5225 2.93968 13.2713 2.81196C12.9867 2.66663 12.6133 2.66663 11.8667 2.66663H4.13333C3.38667 2.66663 3.01333 2.66663 2.728 2.81196C2.47713 2.93979 2.27316 3.14375 2.14533 3.39463C2 3.67996 2 4.05329 2 4.79996V12.4473C2 13.158 2 13.5133 2.14533 13.6953C2.20783 13.7738 2.28722 13.8371 2.3776 13.8806C2.46799 13.9241 2.56702 13.9467 2.66733 13.9466C2.90067 13.9466 3.178 13.724 3.73333 13.28Z"
+                        stroke="#9EA2AE"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
 
-    case "woman_heart_sign":
-      return (
-          <img
-              src="/woman_heart_sign.svg"
-              alt="Woman Heart Sign Avatar"
-              className="w-full h-full"
-          />
-      );
+        case "color-mini-chat":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M3.73333 13.28L4.74933 12.4673L4.756 12.462C4.968 12.292 5.07533 12.2066 5.19467 12.146C5.30178 12.0913 5.41467 12.0517 5.53333 12.0273C5.666 12 5.804 12 6.08133 12H11.8687C12.614 12 12.9873 12 13.272 11.8546C13.5229 11.7268 13.7268 11.5228 13.8547 11.272C14 10.9866 14 10.6133 14 9.86929V4.79796C14 4.05263 14 3.67929 13.8547 3.39463C13.7267 3.14365 13.5225 2.93968 13.2713 2.81196C12.9867 2.66663 12.6133 2.66663 11.8667 2.66663H4.13333C3.38667 2.66663 3.01333 2.66663 2.728 2.81196C2.47713 2.93979 2.27316 3.14375 2.14533 3.39463C2 3.67996 2 4.05329 2 4.79996V12.4473C2 13.158 2 13.5133 2.14533 13.6953C2.20783 13.7738 2.28722 13.8371 2.3776 13.8806C2.46799 13.9241 2.56702 13.9467 2.66733 13.9466C2.90067 13.9466 3.178 13.724 3.73333 13.28Z"
+                        stroke="#860ABA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            );
 
-    case "man_thumb_up":
-      return (
-          <img
-              src="/man_thumb_up.svg"
-              alt="Man Thumb Up Avatar"
-              className="w-full h-full"
-          />
-      );
+        case "color-forum":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M13.9999 13.7334C13.911 13.7334 13.8277 13.7167 13.7499 13.6834C13.6721 13.65 13.5999 13.6 13.5333 13.5334L11.9999 12H5.33325C4.96659 12 4.65281 11.8696 4.39192 11.6087C4.13103 11.3478 4.00036 11.0338 3.99992 10.6667V10H11.3333C11.6999 10 12.0139 9.8696 12.2753 9.60871C12.5366 9.34782 12.667 9.03382 12.6666 8.66671V4.00004H13.3333C13.6999 4.00004 14.0139 4.13071 14.2753 4.39204C14.5366 4.65337 14.667 4.96715 14.6666 5.33337V13.05C14.6666 13.25 14.5999 13.414 14.4666 13.542C14.3333 13.67 14.1777 13.7338 13.9999 13.7334ZM2.66659 8.11671L3.44992 7.33337H9.99992V2.66671H2.66659V8.11671ZM1.99992 10.4C1.82214 10.4 1.66659 10.3363 1.53325 10.2087C1.39992 10.0812 1.33325 9.91715 1.33325 9.71671V2.66671C1.33325 2.30004 1.46392 1.98626 1.72525 1.72537C1.98659 1.46449 2.30036 1.33382 2.66659 1.33337H9.99992C10.3666 1.33337 10.6806 1.46404 10.9419 1.72537C11.2033 1.98671 11.3337 2.30049 11.3333 2.66671V7.33337C11.3333 7.70004 11.2028 8.01404 10.9419 8.27537C10.681 8.53671 10.367 8.66715 9.99992 8.66671H3.99992L2.46659 10.2C2.39992 10.2667 2.3277 10.3167 2.24992 10.35C2.17214 10.3834 2.08881 10.4 1.99992 10.4Z"
+                        fill="#860ABA"
+                    />
+                </svg>
+            );
 
-    case "man_with_dog":
-      return (
-          <img
-              src="/man_with_dog.svg"
-              alt="Man with dog Avatar"
-              className="w-full h-full"
-          />
-      );
+        case "subtitle":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M2.66659 13.3334C2.29992 13.3334 1.98614 13.2029 1.72525 12.942C1.46436 12.6811 1.3337 12.3671 1.33325 12V4.00002C1.33325 3.63335 1.46392 3.31958 1.72525 3.05869C1.98659 2.7978 2.30036 2.66713 2.66659 2.66669H13.3333C13.6999 2.66669 14.0139 2.79735 14.2753 3.05869C14.5366 3.32002 14.667 3.6338 14.6666 4.00002V12C14.6666 12.3667 14.5361 12.6807 14.2753 12.942C14.0144 13.2034 13.7004 13.3338 13.3333 13.3334H2.66659ZM4.66659 10.6667H8.66659C8.85547 10.6667 9.01392 10.6027 9.14192 10.4747C9.26992 10.3467 9.3337 10.1885 9.33325 10C9.33281 9.81158 9.26881 9.65335 9.14125 9.52535C9.0137 9.39735 8.85547 9.33335 8.66659 9.33335H4.66659C4.4777 9.33335 4.31947 9.39735 4.19192 9.52535C4.06436 9.65335 4.00036 9.81158 3.99992 10C3.99947 10.1885 4.06347 10.3469 4.19192 10.4754C4.32036 10.6038 4.47859 10.6676 4.66659 10.6667ZM7.33325 8.00002H11.3333C11.5221 8.00002 11.6806 7.93602 11.8086 7.80802C11.9366 7.68002 12.0004 7.5218 11.9999 7.33335C11.9995 7.14491 11.9355 6.98669 11.8079 6.85869C11.6804 6.73069 11.5221 6.66669 11.3333 6.66669H7.33325C7.14436 6.66669 6.98614 6.73069 6.85859 6.85869C6.73103 6.98669 6.66703 7.14491 6.66659 7.33335C6.66614 7.5218 6.73014 7.68024 6.85859 7.80869C6.98703 7.93713 7.14525 8.00091 7.33325 8.00002ZM4.66659 8.00002C4.85547 8.00002 5.01392 7.93602 5.14192 7.80802C5.26992 7.68002 5.3337 7.5218 5.33325 7.33335C5.33281 7.14491 5.26881 6.98669 5.14125 6.85869C5.0137 6.73069 4.85547 6.66669 4.66659 6.66669C4.4777 6.66669 4.31947 6.73069 4.19192 6.85869C4.06436 6.98669 4.00036 7.14491 3.99992 7.33335C3.99947 7.5218 4.06347 7.68024 4.19192 7.80869C4.32036 7.93713 4.47859 8.00091 4.66659 8.00002ZM11.3333 10.6667C11.5221 10.6667 11.6806 10.6027 11.8086 10.4747C11.9366 10.3467 12.0004 10.1885 11.9999 10C11.9995 9.81158 11.9355 9.65335 11.8079 9.52535C11.6804 9.39735 11.5221 9.33335 11.3333 9.33335C11.1444 9.33335 10.9861 9.39735 10.8586 9.52535C10.731 9.65335 10.667 9.81158 10.6666 10C10.6661 10.1885 10.7301 10.3469 10.8586 10.4754C10.987 10.6038 11.1453 10.6676 11.3333 10.6667Z"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
 
-    case "battle":
-      return (
-          <img
-              src="/Battle%20(1).png"
-              alt="Battle Icon"
-          />
-      );
+        case "language":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M13.7199 12.9133L11.7266 7.33998C11.5866 6.97332 11.2732 6.74665 10.9132 6.74665C10.5532 6.74665 10.2466 6.97332 10.0932 7.35332L8.10658 12.9133C8.08207 12.9755 8.07029 13.042 8.07192 13.1088C8.07355 13.1757 8.08857 13.2415 8.11609 13.3024C8.1436 13.3633 8.18305 13.4181 8.23211 13.4635C8.28117 13.5089 8.33884 13.5441 8.4017 13.5668C8.46457 13.5895 8.53136 13.5994 8.59811 13.5959C8.66487 13.5924 8.73025 13.5755 8.79037 13.5463C8.85049 13.5171 8.90415 13.4761 8.94815 13.4258C8.99216 13.3754 9.02563 13.3168 9.04658 13.2533L9.45992 12.1H12.3599L12.7732 13.2533C12.8466 13.46 13.0399 13.5866 13.2466 13.5866C13.2999 13.5866 13.3599 13.58 13.4132 13.56C13.5379 13.5149 13.6395 13.4221 13.6957 13.3021C13.752 13.1821 13.7583 13.0446 13.7132 12.92L13.7199 12.9133ZM9.82658 11.0933L10.9199 8.03332L12.0132 11.0933H9.82658ZM8.12658 5.23332C6.61992 7.61332 5.25992 9.05332 3.60658 10.0133C3.55012 10.0462 3.48773 10.0675 3.423 10.0763C3.35826 10.085 3.29244 10.0809 3.2293 10.0642C3.16615 10.0475 3.10692 10.0185 3.05498 9.97886C3.00304 9.93924 2.95941 9.88979 2.92658 9.83332C2.89321 9.77699 2.87138 9.71458 2.86237 9.64973C2.85336 9.58489 2.85735 9.51889 2.8741 9.4556C2.89085 9.39231 2.92004 9.33298 2.95995 9.28109C2.99987 9.22919 3.04971 9.18575 3.10658 9.15332C4.50658 8.33998 5.65325 7.17332 6.93992 5.23998H2.74658C2.47325 5.23998 2.24658 5.01332 2.24658 4.73998C2.24658 4.46665 2.47325 4.23998 2.74658 4.23998H5.24658V2.91998C5.24658 2.64665 5.47325 2.41998 5.74658 2.41998C6.01992 2.41998 6.24658 2.64665 6.24658 2.91998V4.23998H8.74658C9.01992 4.23998 9.24658 4.46665 9.24658 4.73998C9.24658 5.01332 9.01992 5.23998 8.74658 5.23998H8.11992L8.12658 5.23332ZM8.15325 10.08C8.06658 10.08 7.97992 10.06 7.89992 10.0133C7.46658 9.75998 7.04658 9.47998 6.65325 9.18665C6.54716 9.10708 6.47703 8.98864 6.45827 8.85736C6.43952 8.72608 6.47368 8.59274 6.55325 8.48665C6.63281 8.38056 6.75126 8.31043 6.88254 8.29167C7.01381 8.27292 7.14716 8.30708 7.25325 8.38665C7.61325 8.65998 8.00658 8.91332 8.40658 9.14665C8.50129 9.20241 8.57504 9.28776 8.6165 9.38954C8.65795 9.49132 8.66482 9.60391 8.63603 9.70997C8.60724 9.81604 8.54439 9.90971 8.45716 9.97656C8.36993 10.0434 8.26315 10.0798 8.15325 10.08Z"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
 
-    default:
-      return null;
-  }
+        case "info":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M7.33325 5.99998H8.66658V4.66665H7.33325M7.99992 13.3333C5.05992 13.3333 2.66659 10.94 2.66659 7.99998C2.66659 5.05998 5.05992 2.66665 7.99992 2.66665C10.9399 2.66665 13.3333 5.05998 13.3333 7.99998C13.3333 10.94 10.9399 13.3333 7.99992 13.3333ZM7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 9.76809 2.03563 11.4638 3.28587 12.714C3.90493 13.3331 4.63986 13.8241 5.4487 14.1592C6.25753 14.4942 7.12444 14.6666 7.99992 14.6666C9.76803 14.6666 11.4637 13.9643 12.714 12.714C13.9642 11.4638 14.6666 9.76809 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331ZM7.33325 11.3333H8.66658V7.33331H7.33325V11.3333Z"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
+
+        case "steamline":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.80508 0.953985C5.70992 0.900783 5.60251 0.873397 5.49349 0.874546C5.38448 0.875696 5.27766 0.905339 5.18365 0.960535C5.08963 1.01573 5.01169 1.09456 4.95756 1.18919C4.90343 1.28382 4.875 1.39097 4.87508 1.49998V8.21799C4.54374 8.32026 4.24238 8.50189 3.99718 8.74709C3.75199 8.99229 3.57036 9.29365 3.46808 9.62498H0.63208C0.46632 9.62498 0.307349 9.69083 0.190138 9.80804C0.0729281 9.92525 0.00708008 10.0842 0.00708008 10.25C0.00708008 10.4157 0.0729281 10.5747 0.190138 10.6919C0.307349 10.8091 0.46632 10.875 0.63208 10.875H3.46808C3.60204 11.3092 3.87158 11.689 4.23718 11.9588C4.60278 12.2286 5.04521 12.3742 5.49958 12.3742C5.95395 12.3742 6.39638 12.2286 6.76198 11.9588C7.12758 11.689 7.39712 11.3092 7.53108 10.875H10.4841V12.5C10.4841 12.6236 10.5207 12.7445 10.5894 12.8473C10.658 12.9501 10.7557 13.0302 10.8699 13.0775C10.9841 13.1248 11.1098 13.1372 11.231 13.1131C11.3523 13.089 11.4637 13.0294 11.5511 12.942L13.8011 10.692C13.8591 10.6339 13.9052 10.565 13.9366 10.4892C13.968 10.4134 13.9842 10.3321 13.9842 10.25C13.9842 10.1679 13.968 10.0866 13.9366 10.0108C13.9052 9.93493 13.8591 9.86602 13.8011 9.80798L11.5511 7.55798C11.4637 7.47055 11.3523 7.41101 11.231 7.38688C11.1098 7.36276 10.9841 7.37514 10.8699 7.42245C10.7557 7.46976 10.658 7.54989 10.5894 7.65269C10.5207 7.75549 10.4841 7.87635 10.4841 7.99998V9.62498H7.53008C7.4279 9.29376 7.24642 8.99248 7.00141 8.74728C6.75639 8.50209 6.45523 8.3204 6.12408 8.21799V6.61698L10.0541 4.42098C10.1513 4.3668 10.2324 4.28762 10.2888 4.19163C10.3452 4.09564 10.3749 3.98632 10.3749 3.87498C10.3749 3.76365 10.3452 3.65433 10.2888 3.55834C10.2324 3.46235 10.1513 3.38317 10.0541 3.32898L5.80508 0.953985ZM6.37508 10.25C6.37535 10.0179 6.28341 9.79526 6.11951 9.63097C6.03835 9.54963 5.94196 9.48507 5.83585 9.44097C5.72974 9.39688 5.61599 9.37412 5.50108 9.37398C5.38617 9.37385 5.27237 9.39636 5.16616 9.44021C5.05995 9.48406 4.96341 9.5484 4.88207 9.62956C4.71779 9.79347 4.62535 10.0159 4.62508 10.248V10.252C4.62521 10.3669 4.64797 10.4806 4.69207 10.5868C4.73616 10.6929 4.80072 10.7893 4.88207 10.8704C4.96341 10.9516 5.05995 11.0159 5.16616 11.0598C5.27237 11.1036 5.38617 11.1261 5.50108 11.126C5.61599 11.1259 5.72974 11.1031 5.83585 11.059C5.94196 11.0149 6.03835 10.9503 6.11951 10.869C6.20066 10.7877 6.26501 10.6911 6.30886 10.5849C6.35271 10.4787 6.37521 10.3649 6.37508 10.25ZM6.12508 5.18498V2.56498L8.46908 3.87498L6.12508 5.18498Z"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
+
+        case "forum":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M13.9999 13.7333C13.911 13.7333 13.8277 13.7166 13.7499 13.6833C13.6721 13.65 13.5999 13.6 13.5333 13.5333L11.9999 12H5.33325C4.96659 12 4.65281 11.8695 4.39192 11.6086C4.13103 11.3478 4.00036 11.0338 3.99992 10.6666V9.99998H11.3333C11.6999 9.99998 12.0139 9.86953 12.2753 9.60865C12.5366 9.34776 12.667 9.03376 12.6666 8.66665V3.99998H13.3333C13.6999 3.99998 14.0139 4.13065 14.2753 4.39198C14.5366 4.65331 14.667 4.96709 14.6666 5.33331V13.05C14.6666 13.25 14.5999 13.414 14.4666 13.542C14.3333 13.67 14.1777 13.7338 13.9999 13.7333ZM2.66659 8.11665L3.44992 7.33331H9.99992V2.66665H2.66659V8.11665ZM1.99992 10.4C1.82214 10.4 1.66659 10.3362 1.53325 10.2086C1.39992 10.0811 1.33325 9.91709 1.33325 9.71665V2.66665C1.33325 2.29998 1.46392 1.9862 1.72525 1.72531C1.98659 1.46442 2.30036 1.33376 2.66659 1.33331H9.99992C10.3666 1.33331 10.6806 1.46398 10.9419 1.72531C11.2033 1.98665 11.3337 2.30042 11.3333 2.66665V7.33331C11.3333 7.69998 11.2028 8.01398 10.9419 8.27531C10.681 8.53665 10.367 8.66709 9.99992 8.66665H3.99992L2.46659 10.2C2.39992 10.2666 2.3277 10.3166 2.24992 10.35C2.17214 10.3833 2.08881 10.4 1.99992 10.4Z"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
+
+        case "IconDetails":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M7.33333 12.6667V10.6C6.78889 10.4778 6.30289 10.2473 5.87533 9.90867C5.44778 9.57 5.13378 9.14489 4.93333 8.63333C4.1 8.53333 3.40289 8.16956 2.842 7.542C2.28111 6.91444 2.00044 6.17822 2 5.33333V4.66667C2 4.3 2.13067 3.98622 2.392 3.72533C2.65333 3.46444 2.96711 3.33378 3.33333 3.33333H4.66667C4.66667 2.96667 4.79733 2.65289 5.05867 2.392C5.32 2.13111 5.63378 2.00044 6 2H10C10.3667 2 10.6807 2.13067 10.942 2.392C11.2033 2.65333 11.3338 2.96711 11.3333 3.33333H12.6667C13.0333 3.33333 13.3473 3.464 13.6087 3.72533C13.87 3.98667 14.0004 4.30044 14 4.66667V5.33333C14 6.17778 13.7193 6.914 13.158 7.542C12.5967 8.17 11.8996 8.53378 11.0667 8.63333C10.8667 9.14444 10.5529 9.56955 10.1253 9.90867C9.69778 10.2478 9.21156 10.4782 8.66667 10.6V12.6667H10.6667C10.8556 12.6667 11.014 12.7307 11.142 12.8587C11.27 12.9867 11.3338 13.1449 11.3333 13.3333C11.3329 13.5218 11.2689 13.6802 11.1413 13.8087C11.0138 13.9371 10.8556 14.0009 10.6667 14H5.33333C5.14444 14 4.98622 13.936 4.85867 13.808C4.73111 13.68 4.66711 13.5218 4.66667 13.3333C4.66622 13.1449 4.73022 12.9867 4.85867 12.8587C4.98711 12.7307 5.14533 12.6667 5.33333 12.6667H7.33333ZM4.66667 7.2V4.66667H3.33333V5.33333C3.33333 5.75556 3.45556 6.13622 3.7 6.47533C3.94444 6.81444 4.26667 7.056 4.66667 7.2ZM8 9.33333C8.55556 9.33333 9.02778 9.13889 9.41667 8.75C9.80555 8.36111 10 7.88889 10 7.33333V3.33333H6V7.33333C6 7.88889 6.19444 8.36111 6.58333 8.75C6.97222 9.13889 7.44444 9.33333 8 9.33333ZM11.3333 7.2C11.7333 7.05556 12.0556 6.81378 12.3 6.47467C12.5444 6.13556 12.6667 5.75511 12.6667 5.33333V4.66667H11.3333V7.2Z"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
+
+        case "arrow-back-rounded":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                >
+                    <path
+                        d="M7.82496 13L12.725 17.9C12.925 18.1 13.021 18.3333 13.013 18.6C13.005 18.8667 12.9006 19.1 12.7 19.3C12.5 19.4833 12.2666 19.5793 12 19.588C11.7333 19.5967 11.5 19.5007 11.3 19.3L4.69996 12.7C4.59996 12.6 4.52896 12.4917 4.48696 12.375C4.44496 12.2583 4.42463 12.1333 4.42596 12C4.4273 11.8667 4.4483 11.7417 4.48896 11.625C4.52963 11.5083 4.6003 11.4 4.70096 11.3L11.301 4.69999C11.4843 4.51665 11.7136 4.42499 11.989 4.42499C12.2643 4.42499 12.5016 4.51665 12.701 4.69999C12.901 4.89999 13.001 5.13765 13.001 5.41299C13.001 5.68832 12.901 5.92565 12.701 6.12499L7.82496 11H19C19.2833 11 19.521 11.096 19.713 11.288C19.905 11.48 20.0006 11.7173 20 12C19.9993 12.2827 19.9033 12.5203 19.712 12.713C19.5206 12.9057 19.2833 13.0013 19 13H7.82496Z"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
+
+        case "more-2-fill":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="4"
+                    height="21"
+                    viewBox="0 0 4 21"
+                    fill="none"
+                >
+                    <path
+                        d="M2.59305 20.258L2.58205 20.26L2.51105 20.295L2.49105 20.299L2.47705 20.295L2.40605 20.26C2.39538 20.2567 2.38738 20.2583 2.38205 20.265L2.37805 20.275L2.36105 20.703L2.36605 20.723L2.37605 20.736L2.48005 20.81L2.49505 20.814L2.50705 20.81L2.61105 20.736L2.62305 20.72L2.62705 20.703L2.61005 20.276C2.60738 20.2653 2.60172 20.2593 2.59305 20.258ZM2.85805 20.145L2.84505 20.147L2.66005 20.24L2.65005 20.25L2.64705 20.261L2.66505 20.691L2.67005 20.703L2.67805 20.71L2.87905 20.803C2.89172 20.8063 2.90138 20.8037 2.90805 20.795L2.91205 20.781L2.87805 20.167C2.87472 20.155 2.86805 20.1477 2.85805 20.145ZM2.14305 20.147C2.13864 20.1443 2.13338 20.1435 2.12835 20.1446C2.12332 20.1457 2.11891 20.1487 2.11605 20.153L2.11005 20.167L2.07605 20.781C2.07672 20.793 2.08238 20.801 2.09305 20.805L2.10805 20.803L2.30905 20.71L2.31905 20.702L2.32305 20.691L2.34005 20.261L2.33705 20.249L2.32705 20.239L2.14305 20.147Z"
+                        fill="#6D717F"
+                    />
+                    <path
+                        d="M2 14C2.53043 14 3.03914 14.2107 3.41421 14.5858C3.78929 14.9609 4 15.4696 4 16C4 16.5304 3.78929 17.0391 3.41421 17.4142C3.03914 17.7893 2.53043 18 2 18C1.46957 18 0.96086 17.7893 0.585787 17.4142C0.210714 17.0391 0 16.5304 0 16C0 15.4696 0.210714 14.9609 0.585787 14.5858C0.96086 14.2107 1.46957 14 2 14ZM2 7C2.53043 7 3.03914 7.21071 3.41421 7.58579C3.78929 7.96086 4 8.46957 4 9C4 9.53043 3.78929 10.0391 3.41421 10.4142C3.03914 10.7893 2.53043 11 2 11C1.46957 11 0.96086 10.7893 0.585787 10.4142C0.210714 10.0391 0 9.53043 0 9C0 8.46957 0.210714 7.96086 0.585787 7.58579C0.96086 7.21071 1.46957 7 2 7ZM2 0C2.53043 0 3.03914 0.210714 3.41421 0.585786C3.78929 0.960859 4 1.46957 4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4C1.46957 4 0.96086 3.78929 0.585787 3.41421C0.210714 3.03914 0 2.53043 0 2C0 1.46957 0.210714 0.960859 0.585787 0.585786C0.96086 0.210714 1.46957 0 2 0Z"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
+
+        case "search-icon":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                >
+                    <path
+                        d="M5.66672 11.3255C4.08599 11.3255 2.74618 10.7767 1.64732 9.67906C0.549105 8.58209 0 7.24332 0 5.66276C0 4.08219 0.549105 2.74309 1.64732 1.64546C2.74553 0.547828 4.08533 -0.00065825 5.66672 5.9284e-07C7.24812 0.000659436 8.58759 0.549475 9.68515 1.64645C10.7827 2.74342 11.3318 4.08219 11.3325 5.66276C11.3325 6.34927 11.2108 7.01371 10.9676 7.65608C10.7244 8.29846 10.4047 8.84793 10.0085 9.30451L15.8512 15.1422C15.9435 15.2344 15.9929 15.3481 15.9995 15.4831C16.0055 15.6169 15.956 15.7365 15.8512 15.8419C15.7457 15.9473 15.6291 16 15.5012 16C15.3733 16 15.2566 15.9473 15.1511 15.8419L9.30941 10.0032C8.81501 10.4242 8.24646 10.75 7.60375 10.9806C6.96104 11.2112 6.31504 11.3265 5.66574 11.3265M5.66574 10.3382C6.97752 10.3382 8.08529 9.88693 8.98904 8.98431C9.89213 8.0817 10.3437 6.97451 10.3437 5.66276C10.3437 4.351 9.89246 3.24414 8.99003 2.34219C8.0876 1.44023 6.98016 0.988924 5.66771 0.988265C4.35527 0.988265 3.2475 1.43957 2.34441 2.34219C1.44132 3.2448 0.989444 4.35166 0.988785 5.66276C0.988125 6.97385 1.43967 8.08071 2.34342 8.98332C3.24717 9.88594 4.35461 10.3372 5.66574 10.3372"
+                        fill="#6D717F"
+                    />
+                </svg>
+            );
+
+        default:
+            return null;
+    }
 };
 
 export default Icon;
