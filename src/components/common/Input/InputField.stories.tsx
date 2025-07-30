@@ -1,16 +1,16 @@
 import React from "react";
-import { Meta, StoryFn } from "@storybook/react";
-import InputField, { InputFieldProps } from "./InputField";
-import { iconArray, iconList } from "../../../assets/icons/icon_list";
+import {Meta, StoryFn} from "@storybook/react";
+import InputField, {InputFieldProps} from "./InputField";
+import {iconArray, iconList} from "../../../assets/icons/icon_list";
 
 export default {
-    title: "Input/InputField",
+    title: "Components/InputField",
     component: InputField,
     argTypes: {
-        leftIcon: { control: "select", options: iconArray },
-        rightIcon: { control: "select", options: iconArray },
-        label: { control: "text" },
-        placeholder: { control: "text" },
+        leftIcon: {control: "select", options: iconArray},
+        rightIcon: {control: "select", options: iconArray},
+        label: {control: "text"},
+        placeholder: {control: "text"},
     },
 } as Meta;
 

@@ -1,13 +1,13 @@
 import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import NavbarTop, { NavbarTopProps } from "./NavbarTop";
+import {Meta, StoryObj} from "@storybook/react";
+import NavbarTop, {NavbarTopProps} from "./NavbarTop";
 
 const meta: Meta<typeof NavbarTop> = {
-    title: "Navbar/NavbarTop",
+    title: "Components/NavbarTop",
     component: NavbarTop,
     argTypes: {
-        courseName: { control: "text" },
-        hasNotifications: { control: "boolean" },
+        courseName: {control: "text"},
+        hasNotifications: {control: "boolean"},
     },
 };
 

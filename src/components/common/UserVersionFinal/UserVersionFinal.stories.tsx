@@ -1,8 +1,8 @@
 import React from "react";
-import { UserVersionFinal } from "./UserVersionFinal";
+import {UserVersionFinal} from "./UserVersionFinal";
 
 export default {
-    title: "Componentes/UserVersionFinal",
+    title: "Components/UserVersionFinal",
     component: UserVersionFinal,
 };
 

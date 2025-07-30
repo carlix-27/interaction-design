@@ -1,14 +1,14 @@
 // LoadingSpinner.stories.tsx
 import React from "react";
-import { Meta, StoryFn } from "@storybook/react";
+import {Meta, StoryFn} from "@storybook/react";
 import LoadingSpinner from "./LoadingSpinner";
 
 export default {
-    title: "Loader/LoadingSpinner",
+    title: "Components/LoadingSpinner",
     component: LoadingSpinner,
     argTypes: {
-        size: { control: "number" },
-        color: { control: "text" },
+        size: {control: "number"},
+        color: {control: "text"},
     },
 } as Meta<typeof LoadingSpinner>;
 
